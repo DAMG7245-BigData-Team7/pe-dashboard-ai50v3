@@ -4,220 +4,210 @@
 
 ---
 
-## Setting
+## 🧭 Setting
 
-Your **PE Dashboard Factory** from Assignment 2 (Project ORBIT Part 1) successfully automated data ingestion and Markdown dashboard generation for the **Forbes AI 50**.  
-That system relied on:
+In Assignment 4 (Project ORBIT Part 1) you automated ingestion and Markdown dashboard generation for the **Forbes AI 50** using Airflow ETL + FastAPI + Streamlit.  
+That system worked, but it was **static**—no reasoning, no secure integration with multiple data tools.
 
-- Structured payloads assembled from scraped data  
-- RAG (vector DB) retrieval  
-- FastAPI + Streamlit app  
-- Airflow for initial and daily pipelines  
+Now, **Priya Rao (VP of Data Engineering)** wants you to evolve it into an **agentic, production-ready platform** that can:
 
-However, the workflow is still **static and scheduled** — it does not reason, adapt, or coordinate multiple tools and data sources autonomously.
-
-To take Project ORBIT to the next level, **Priya Rao (VP of Data Engineering)** wants to introduce:
-
-- **Supervisory LLM Agents** that orchestrate complex PE due-diligence flows  
-- **MCP (Model Context Protocol)** to standardize access to internal tools, prompts & resources  
-- **ReAct (Reasoning + Acting)** pattern for iterative tool use  
-- **Graph-based workflows** (e.g., LangGraph or WorkflowBuilder) with Human-in-the-Loop (HITL) checkpoints  
-
-Your job is to **upgrade the PE Dashboard Factory into an Agentic Due Diligence Workflow.**
-
-This assignment builds directly on **Assignment 2 — Project ORBIT Part 1.**
+- Orchestrate due-diligence workflows through **supervisory LLM agents**  
+- Standardize tool access with the **Model Context Protocol (MCP)**  
+- Employ **ReAct reasoning** for transparency  
+- Run under **Airflow orchestration** with containerized MCP services  
+- Pause for **Human-in-the-Loop (HITL)** review when risks appear  
 
 ---
 
-## Learning Outcomes
+## 🎯 Learning Outcomes
 
-By completing this assignment, you will:
+By the end you will:
 
-- Build specialized LLM Agents using modern frameworks (e.g., **Microsoft Agent Framework** or **LangChain v1**)  
-- Design & implement a **Supervisory Agent Architecture** for multi-step task delegation  
-- Implement the **Model Context Protocol (MCP)** to expose your dashboard logic as **Tools, Prompts and Resources**  
-- Apply the **ReAct Pattern** (Thought → Action → Observation) for transparent reasoning  
-- Build an **Agentic Workflow** with graph-based flow control & explicit planning  
-- Integrate **Human-in-the-Loop (HITL)** decision points for risk verification  
-- Implement **Tool Filtering** & secure access control  
+- Build specialized LLM agents (LangChain v1 or Microsoft Agent Framework)  
+- Design a **Supervisory Agent Architecture** that delegates to sub-agents  
+- Implement an **MCP server** exposing Tools / Prompts / Resources  
+- Apply the **ReAct pattern** (Thought → Action → Observation) with structured logs  
+- Compose a **graph-based workflow** (LangGraph or WorkflowBuilder) with conditional edges  
+- Integrate **Airflow DAGs**, **Docker**, and **.env configuration** for deployment  
+- Add **pytest tests** and structured logging for maintainability  
+- Embed **Human-in-the-Loop (HITL)** approval nodes for risk verification  
 
 ---
 
-## Phase 1 – Agent Infrastructure & Tool Definition (Labs 12 – 13)
+## 🧱 Project Architecture Overview
 
-### Lab 12 — Core Agent Tools
+```mermaid
+flowchart TD
+    subgraph Airflow
+        DAG1[Initial Load DAG]
+        DAG2[Daily Update DAG]
+        DAG3[Agentic Dashboard DAG]
+    end
+    subgraph Services
+        MCP[MCP Server]
+        AGENT[Supervisor Agent]
+    end
+    DAG3 -->|HTTP/CLI| MCP
+    MCP --> AGENT
+    AGENT -->|calls Tools| MCP
+    AGENT -->|Risk Detected| HITL[Human Approval]
+    AGENT --> STORE[(Dashboards DB / S3)]
 
-**Goal:** Define and expose the core tools your Due Diligence Agent will use to access Assignment 2 data.
-
-Each tool is an `async def` Python function using **Pydantic models** for structured I/O.
-
-**Tasks**
-
-1. Implement `src/tools/payload_tool.py`:
-
-```python
-async def get_latest_structured_payload(company_id: str) -> Payload:
-    """
-    Retrieve the latest fully assembled structured payload for a company.
-    Payload schema must include: company_record, events, snapshots, products, leadership, visibility.
-    """
-
-	2.	Implement src/tools/rag_tool.py:
-
-async def rag_search_company(company_id: str, query: str) -> list[dict]:
-    """
-    Run retrieval-augmented search for the company and query.
-    Returns [{ "text": ..., "source_url": ..., "score": ... }]
-    """
-
-	3.	Implement src/tools/risk_logger.py:
-
-async def report_layoff_signal(signal_data: LayoffSignal) -> bool:
-    """
-    Log or persist a layoff / risk event.
-    Destructive tool — side effects only (e.g., write to DB or log).
-    """
-
-LayoffSignal must include company_id, occurred_on, description, source_url.
-	4.	Add LLM-friendly docstrings and type annotations.
-	5.	(Optional) Register tools in your chosen agent framework (e.g., @tool).
-
-Checkpoint
-	•	Run python tests/test_tools.py to fetch a payload, run a RAG query, and log a risk event.
 
 ⸻
 
-Lab 13 — Agent Bootstrap (Core Supervisor)
+🧩 Phase 1 – Agent Infrastructure & Tool Definition (Labs 12–13)
 
-Goal: Instantiate the Due Diligence Supervisor Agent and verify tool usage.
+Lab 12 — Core Agent Tools
 
-Tasks
-	1.	Choose framework ( Microsoft Agent Framework or LangChain v1 ).
-	2.	Implement src/agents/supervisor_agent.py with system instructions:
+Implement async Python tools with Pydantic models for structured I/O:
 
-“You are a PE Due Diligence Supervisor Agent. Use tools to retrieve payloads, run RAG queries, log risks, and generate 8-section PE dashboards.”
+Tool	Purpose
+get_latest_structured_payload(company_id)	Return the latest assembled payload from Assignment 2
+rag_search_company(company_id, query)	Query the Vector DB for contextual snippets
+report_layoff_signal(signal_data)	Log or flag high-risk events (layoffs / breaches)
 
-	3.	Register tools get_latest_structured_payload, rag_search_company, report_layoff_signal.
-	4.	Driver script asks agent to evaluate funding profile and layoff risks for a company.
-
-Checkpoint
-
-Logs show the agent calling tools in a loop to reach its goal.
+✅ Checkpoint: Unit tests (tests/test_tools.py) validate each tool’s behavior.
 
 ⸻
 
-Phase 2 – Model Context Protocol (MCP) Integration (Labs 14 – 15)
+Lab 13 — Supervisor Agent Bootstrap
+	•	Instantiate a Due Diligence Supervisor Agent with system prompt:
+“You are a PE Due Diligence Supervisor Agent. Use tools to retrieve payloads, run RAG queries, log risks, and generate PE dashboards.”
+	•	Register the three tools.
+	•	Verify tool invocation loop via ReAct logs.
+
+✅ Checkpoint: Console logs show Thought → Action → Observation sequence.
+
+⸻
+
+🌐 Phase 2 – Model Context Protocol (MCP) Integration (Labs 14–15)
 
 Lab 14 — MCP Server Implementation
 
-Goal: Encapsulate dashboard generation logic inside an MCP server (HTTP-based).
-
-Tasks
-	1.	Implement src/server/mcp_server.py (using FastMCP or FastAPI).
-	2.	Expose:
+Create src/server/mcp_server.py exposing HTTP endpoints:
 
 Type	Endpoint	Description
-Tool	/tool/generate_rag_dashboard	Calls RAG-based dashboard logic (Assignment 2)
-Tool	/tool/generate_structured_dashboard	Calls structured payload dashboard logic
-Resource	/resource/ai50/companies	Lists AI 50 company IDs
-Prompt	/prompt/pe-dashboard	Returns the 8-section dashboard prompt template
+Tool	/tool/generate_structured_dashboard	Calls structured dashboard logic
+Tool	/tool/generate_rag_dashboard	Calls RAG dashboard logic
+Resource	/resource/ai50/companies	Lists company IDs
+Prompt	/prompt/pe-dashboard	Returns 8-section dashboard template
 
-	3.	Document inputs & outputs so the agent knows when to use each tool.
-	4.	Test with MCP Inspector or API client.
+Provide Dockerfile (Dockerfile.mcp) and .env variables for config.
 
-Checkpoint:
-MCP Inspector shows all Tools, Resources, and Prompts visible and callable.
+✅ Checkpoint: MCP Inspector shows registered tools/resources/prompts.
 
 ⸻
 
 Lab 15 — Agent MCP Consumption
+	•	Configure mcp_config.json with base URL and tools.
+	•	Allow Supervisor Agent to invoke MCP tools securely with tool filtering.
+	•	Add integration test (tests/test_mcp_server.py) that requests a dashboard.
 
-Goal: Configure Supervisor Agent to use MCP tools as remote functions.
-
-Tasks
-	1.	Create src/server/mcp_config.json with base URL and tool list.
-	2.	Connect Supervisor Agent to MCP server as a tool source.
-	3.	Use tool filtering to restrict agent to dashboard/RAG tools.
-	4.	Test: ask agent “Generate the latest PE dashboard for company X using MCP tools.”
-
-Checkpoint:
-Agent → MCP → dashboard → Agent response end-to-end successfully returns Markdown.
+✅ Checkpoint: Agent → MCP → Dashboard → Agent round trip works.
 
 ⸻
 
-Phase 3 – Advanced Agent Implementation (Labs 16 – 18)
+🧠 Phase 3 – Advanced Agent Implementation (Labs 16–18)
 
-Lab 16 — Due Diligence Agent Refinement (ReAct Pattern)
+Lab 16 — ReAct Pattern Implementation
+	•	Log Thought/Action/Observation triplets in structured JSON (log file or stdout).
+	•	Use correlation IDs (run_id, company_id).
+	•	Save one trace under docs/REACT_TRACE_EXAMPLE.md.
 
-Goal: Implement explicit ReAct loop (Thought → Action → Observation).
-
-Tasks
-	•	Log each Thought/Action/Observation triplet.
-	•	Use loop structure for funding and risk evaluation.
-
-Example Trace
-
-Thought: Fetch structured payload
-Action: get_latest_structured_payload(company_id="...")
-Observation: {payload}
-Thought: Search RAG for layoffs
-Action: rag_search_company(...)
-Observation: Found 1 article mentioning layoffs
-
-Checkpoint:
-Logs clearly show ReAct sequence.
+✅ Checkpoint: JSON logs show sequential ReAct steps.
 
 ⸻
 
 Lab 17 — Supervisory Workflow Pattern (Graph-based)
 
-Goal: Structure end-to-end workflow using LangGraph or WorkflowBuilder.
+Use LangGraph or WorkflowBuilder to define nodes:
 
-Workflow Nodes
+Node	Responsibility
+Planner	Constructs plan of actions
+Data Generator	Invokes MCP dashboard tools
+Evaluator	Scores dashboards per rubric
+Risk Detector	Branches to HITL if keywords found
 
-Node	Purpose
-Planner	Creates plan (Structured → RAG → Eval → Risk check)
-Data Generation	Executes MCP tools
-Evaluation	Compares dashboards via rubric (Factual, Schema, Provenance, Hallucination, Readability)
-Risk Edge	Checks for keywords (layoffs, regulatory incident, data breach) → HITL if found
+Provide workflow diagram (docs/WORKFLOW_GRAPH.md) and unit test covering both branches.
 
-Checkpoint:
-python src/workflows/due_diligence_graph.py prints nodes visited and branch taken.
-
-⸻
-
-Lab 18 — Human-in-the-Loop (HITL) Integration & Visualization
-
-Goal: Pause workflow on risk and require human approval.
-
-Tasks
-	•	Implement HITL node that waits for CLI or HTTP approval.
-	•	Record execution path (Dev UI, LangSmith or Mermaid).
-	•	Save trace examples in docs/REACT_TRACE_EXAMPLE.md.
-
-Checkpoint:
-Workflow shows HITL pause and resume after approval.
+✅ Checkpoint: python src/workflows/due_diligence_graph.py prints branch taken.
 
 ⸻
 
-Deliverables
+Lab 18 — HITL Integration & Visualization
+	•	Implement CLI or HTTP pause for human approval.
+	•	Record execution path with LangGraph Dev UI or Mermaid.
+	•	Save trace and decision path in docs/REACT_TRACE_EXAMPLE.md.
 
-#	Deliverable	Description
-1	Updated GitHub Repo	pe-dashboard-ai50-v3 with Assignment 5 code
-2	MCP Server	src/server/mcp_server.py exposing Tools/Resources/Prompts
-3	Core Agent Tools	Async functions + Pydantic models
-4	Agentic Workflow	Supervisor + ReAct + Graph + Conditional Risk
-5	HITL Integration	Manual pause/resume for risk cases
-6	Documentation	README + workflow diagram + ReAct trace
-7	Demo Video (≤ 5 min)	Show workflow execution + HITL pause
-8	Contribution Attestation	Team names and roles
+✅ Checkpoint: Demo video shows workflow pausing and resuming after approval.
+
+⸻
+
+☁️ Phase 4 – Orchestration & Deployment (Add-On)
+
+Airflow DAGs Integration
+
+Create under airflow/dags/:
+
+File	Purpose
+orbit_initial_load_dag.py	Initial data load and payload assembly
+orbit_daily_update_dag.py	Incremental updates of snapshots and vector DB
+orbit_agentic_dashboard_dag.py	Invokes MCP + Agentic workflow daily for all AI 50 companies
+
+✅ Checkpoint: Each DAG runs locally or in Dockerized Airflow and updates dashboards.
+
+Containerization and Configuration
+
+Provide:
+	•	Dockerfile.mcp (for MCP Server)
+	•	Dockerfile.agent (for Supervisor Agent + Workflow)
+	•	docker-compose.yml linking services + optional vector DB
+	•	.env.example for API keys and service URLs
+	•	config/settings_example.yaml for parameterization
+
+✅ Checkpoint: docker compose up brings up MCP + Agent locally.
+
+⸻
+
+🧪 Testing & Observability
+
+Minimum Tests (pytest)
+
+Test	Purpose
+test_tools.py	Validate core tools return expected schema
+test_mcp_server.py	Ensure MCP endpoints return Markdown
+test_workflow_branches.py	Assert risk vs no-risk branch logic
+
+Run: pytest -v --maxfail=1 --disable-warnings
+
+Logging & Metrics
+	•	Use Python logging or structlog (JSON format).
+	•	Include fields: timestamp, run_id, company_id, phase, message.
+	•	Optional: emit basic counters (e.g., dashboards generated, HITL triggered).
+
+⸻
+
+📦 Deliverables
+
+#	Deliverable	Requirements
+1	Updated GitHub Repo (pe-dashboard-ai50-v3)	Full code + docs + Airflow DAGs
+2	MCP Server Service	Dockerized HTTP server exposing Tools/Resources/Prompts
+3	Supervisor Agent & Workflow	Implements ReAct + Graph + HITL
+4	Airflow Integration	DAG invokes Agentic workflow on schedule
+5	Configuration Mgmt	.env and config/ externalization
+6	Testing Suite	≥ 3 pytest cases
+7	Structured Logging	JSON ReAct trace saved to docs/
+8	Docker Deployment	Dockerfiles + docker-compose
+9	Demo Video (≤ 5 min)	Show workflow execution + HITL pause
+10	Contribution Attestation	Completed form
 
 
 ⸻
 
-Dashboard Format Reminder (from Assignment 2)
+🧮 Dashboard Format (Reference)
 
-Dashboards must include these 8 sections (in order):
+Eight mandatory sections:
 	1.	Company Overview
 	2.	Business Model and GTM
 	3.	Funding & Investor Profile
@@ -228,23 +218,38 @@ Dashboards must include these 8 sections (in order):
 	8.	Disclosure Gaps (bullet list of missing info)
 
 Rules
-	•	Use literal “Not disclosed.” if a field is unavailable.
-	•	Never invent ARR, MRR, valuation or customer logos.
+	•	Use literal “Not disclosed.” for missing fields.
+	•	Never invent ARR/MRR/valuation/customer logos.
 	•	Always include final Disclosure Gaps section.
 
 ⸻
 
-Submission
+🚀 Production Readiness Checklist
+
+Before submission, verify that your system:
+	•	Has working Airflow DAGs for initial/daily/agentic runs
+	•	Runs MCP Server + Agent via Docker Compose
+	•	Loads config and secrets from .env or config/
+	•	Implements structured ReAct logging (JSON)
+	•	Includes at least 3 automated pytest tests
+	•	Documents setup and run instructions in README.md
+	•	Demo video shows HITL pause/resume
+	•	README contains system diagram and architecture summary
+
+⸻
+
+🧾 Submission
 	•	Repo name: pe-dashboard-ai50-v3-<teamname>
-	•	Include at root: Assignment5.md, README.md, docs/, src/, and demo video link.
+	•	Push to GitHub with all code, docs, and Docker/Airflow files.
+	•	Include demo video link in README.
 	•	Submit GitHub URL + video link via LMS.
 
 ⸻
 
-Reference Materials
-	•	Python AI Series handouts: Structured Outputs, Tool Calling, Agents, MCP
+📚 References & Resources
+	•	Python AI Series modules (Structured Outputs, Tool Calling, Agents, MCP)
 	•	Model Context Protocol Docs
 	•	LangGraph Docs
 	•	Microsoft Agent Framework Samples
-
-⸻
+	•	Apache Airflow Quick Start
+	•	Docker Compose Guide
