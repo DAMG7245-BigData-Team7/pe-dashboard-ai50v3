@@ -52,6 +52,7 @@ flowchart TD
     AGENT -->|calls Tools| MCP
     AGENT -->|Risk Detected| HITL[Human Approval]
     AGENT --> STORE[(Dashboards DB or S3)]
+```
 
 
 🧩 Phase 1 – Agent Infrastructure & Tool Definition (Labs 12–13)
