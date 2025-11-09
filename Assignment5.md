@@ -54,8 +54,6 @@ flowchart TD
     AGENT --> STORE[(Dashboards DB or S3)]
 
 
-⸻
-
 🧩 Phase 1 – Agent Infrastructure & Tool Definition (Labs 12–13)
 
 Lab 12 — Core Agent Tools
