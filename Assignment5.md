@@ -51,7 +51,7 @@ flowchart TD
     MCP --> AGENT
     AGENT -->|calls Tools| MCP
     AGENT -->|Risk Detected| HITL[Human Approval]
-    AGENT --> STORE[(Dashboards DB / S3)]
+    AGENT --> STORE[(Dashboards DB or S3)]
 
 
 ⸻
