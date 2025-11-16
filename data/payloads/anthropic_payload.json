@@ -1,0 +1,94 @@
+{
+  "company": {
+    "company_name": "Anthropic",
+    "company_id": "anthropic",
+    "website": "https://www.anthropic.com",
+    "description": "AI safety and research company developing Claude, a helpful, harmless, and honest AI assistant",
+    "founded_year": 2021,
+    "hq_city": "San Francisco",
+    "hq_country": "United States",
+    "category": "Foundation Models",
+    "linkedin": "https://www.linkedin.com/company/anthropicresearch/",
+    "tagline": "Building safe, beneficial AI systems"
+  },
+  "snapshot": {
+    "snapshot_date": "2025-01-14",
+    "total_funding": "$7.6B",
+    "total_funding_numeric": 7600.0,
+    "last_funding_date": "2024-03-15",
+    "last_funding_stage": "series_c",
+    "valuation": "$18B",
+    "headcount": 500,
+    "leadership_count": 8
+  },
+  "investor_profile": {
+    "total_raised": "$7.6B",
+    "total_raised_numeric": 7600.0,
+    "funding_rounds": [
+      {
+        "date": "2024-03-15",
+        "stage": "series_c",
+        "amount": "$4B",
+        "amount_numeric": 4000.0,
+        "lead_investor": "Amazon",
+        "other_investors": ["Google", "Salesforce Ventures", "Zoom Ventures"],
+        "valuation": "$18B",
+        "source": "TechCrunch"
+      }
+    ],
+    "lead_investors": ["Amazon", "Google"],
+    "all_investors": ["Amazon", "Google", "Salesforce Ventures", "Zoom Ventures", "Sam Altman", "Dustin Moskovitz"]
+  },
+  "growth_metrics": {
+    "headcount": 500,
+    "headcount_growth_yoy": 150.0,
+    "open_roles": 50,
+    "office_locations": ["San Francisco", "New York", "London"],
+    "partnerships_count": 12,
+    "recent_partnerships": ["Amazon Web Services", "Notion", "DuckDuckGo"]
+  },
+  "visibility": {
+    "news_mentions_30d": 200,
+    "sentiment_score": 0.85,
+    "awards": ["Time 100 Most Influential Companies 2024", "Forbes AI 50 2024"]
+  },
+  "events": [
+    {
+      "date": "2024-03-15",
+      "event_type": "funding",
+      "title": "Anthropic raises $4B Series C led by Amazon",
+      "description": "Largest AI funding round of 2024",
+      "source": "https://techcrunch.com/anthropic-funding"
+    }
+  ],
+  "funding_rounds": [],
+  "leadership": [
+    {
+      "name": "Dario Amodei",
+      "title": "CEO & Co-Founder",
+      "linkedin": "https://www.linkedin.com/in/dario-amodei",
+      "background": "Former VP of Research at OpenAI"
+    },
+    {
+      "name": "Daniela Amodei",
+      "title": "President & Co-Founder",
+      "linkedin": "https://www.linkedin.com/in/daniela-amodei",
+      "background": "Former VP of Operations at OpenAI"
+    }
+  ],
+  "products": [
+    {
+      "name": "Claude",
+      "description": "Constitutional AI assistant focused on safety and helpfulness",
+      "launch_date": "2023-03",
+      "category": "Large Language Model"
+    }
+  ],
+  "disclosure_gaps": {
+    "missing_fields": ["Revenue", "Customer Count", "ARR"]
+  },
+  "data_sources": ["Forbes AI 50", "Crunchbase", "TechCrunch", "LinkedIn"],
+  "extracted_at": "2025-01-14T10:00:00",
+  "risks": [],
+  "opportunities": ["Enterprise AI adoption", "AWS partnership expansion"]
+}
