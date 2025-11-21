@@ -22,44 +22,40 @@ Project ORBIT transforms traditional PE dashboard generation into an **agentic, 
 
 ## 🏗️ System Architecture
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                     AIRFLOW ORCHESTRATION                    │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────┐  │
-│  │ Initial Load │  │ Daily Update │  │ Agentic Dashboard│  │
-│  │     DAG      │  │     DAG      │  │       DAG        │  │
-│  └──────────────┘  └──────────────┘  └──────────────────┘  │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    MCP SERVER (Port 9000)                    │
-│  ┌─────────┐   ┌───────────┐   ┌─────────┐                 │
-│  │  Tools  │   │ Resources │   │ Prompts │                 │
-│  └─────────┘   └───────────┘   └─────────┘                 │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│                  LANGGRAPH WORKFLOW                          │
-│                                                              │
-│  Planner → Data Gen → Evaluator → Risk Detector             │
-│                                         ↓                    │
-│                              [Risk Detected?]                │
-│                              ↙              ↘                │
-│                          HITL          Auto-Approve          │
-│                              ↘              ↙                │
-│                              Final Decision                  │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    DATA & STORAGE                            │
-│  ┌──────────┐   ┌──────────┐   ┌──────────┐               │
-│  │ Payloads │   │Dashboards│   │  Logs    │               │
-│  │  (JSON)  │   │(Markdown)│   │ (JSONL)  │               │
-│  └──────────┘   └──────────┘   └──────────┘               │
-└─────────────────────────────────────────────────────────────┘
+```mermaid
+graph TB
+    subgraph "Phase 1: Data Collection"
+        A[Web Scraper] --> B[Raw Data]
+        B --> C[LLM Extraction]
+        C --> D[Structured Payloads]
+        B --> E[Vector DB]
+    end
+    
+    subgraph "Phase 2: Agentic Workflow"
+        F[Airflow DAG] -->|Triggers| G[MCP Server]
+        G --> H[Supervisor Agent]
+        H --> I{Risk<br/>Detected?}
+        I -->|Yes| J[HITL Approval]
+        I -->|No| K[Auto-Approve]
+        J --> L[Final Decision]
+        K --> L
+    end
+    
+    subgraph "Data Sources"
+        D --> G
+        E --> G
+    end
+    
+    subgraph "Outputs"
+        L --> M[Dashboards]
+        L --> N[Risk Logs]
+        H --> O[ReAct Traces]
+    end
+    
+    style I fill:#ff6b6b,stroke:#c92a2a,color:#fff
+    style J fill:#ff6b6b,stroke:#c92a2a,color:#fff
+    style G fill:#339af0,stroke:#1971c2,color:#fff
+    style H fill:#51cf66,stroke:#2f9e44,color:#fff
 ```
 
 ---
@@ -123,7 +119,7 @@ cp .env.example .env
 # Edit .env with your API keys
 
 # 5. Run MCP Server (Terminal 1)
-uvicorn src.server.mcp_server:app --port 9000
+ python -m src.server.mcp_server
 
 # 6. Run Workflow (Terminal 2)
 PYTHONPATH=. python3 src/workflows/due_diligence_graph.py anthropic
@@ -239,28 +235,18 @@ pe-dashboard-ai50-v3/
 │   └── test_workflow_branches.py      # Workflow branch tests
 ├── airflow/
 │   └── dags/
-│       ├── orbit_initial_load_dag.py
-│       ├── orbit_daily_update_dag.py
 │       └── orbig_agentic_dashboard_dag.py
-├── docker/
-│   ├── Dockerfile.mcp                 # MCP server container
-│   └── Dockerfile.agent               # Agent/workflow container
 ├── config/
 │   ├── mcp_config.json                # MCP client config
 │   └── settings_example.yaml          # Application settings
-├── docs/
-│   ├── WORKFLOW_GRAPH.md              # Workflow documentation
-│   ├── REACT_TRACE_EXAMPLE.md         # ReAct pattern example
-│   └── SYSTEM_ARCHITECTURE.md         # Architecture docs
 ├── data/                               # Runtime data
 ├── logs/                               # Log files
 ├── docker-compose.yml                 # Full stack orchestration
 ├── .env.example                        # Environment template
 ├── requirements.txt                    # Python dependencies
-├── PHASE1_COMPLETE.md                 # Phase 1 docs
-├── PHASE2_COMPLETE.md                 # Phase 2 docs
-├── PHASE3_COMPLETE.md                 # Phase 3 docs
-├── PHASE4_COMPLETE.md                 # Phase 4 docs
+├── Dockerfile.mcp                 
+├── Dockerfile.agent                
+├── Dockerfile.airflow                
 └── README.md                           # This file
 ```
 
@@ -361,18 +347,6 @@ pytest -v
 
 ---
 
-## 📚 Documentation
-
-- [Phase 1 Complete](PHASE1_COMPLETE.md) - Agent Infrastructure & Tools
-- [Phase 2 Complete](PHASE2_COMPLETE.md) - MCP Server Integration
-- [Phase 3 Complete](PHASE3_COMPLETE.md) - Advanced Workflows
-- [Phase 4 Complete](PHASE4_COMPLETE.md) - Orchestration & Deployment
-- [Workflow Graph](docs/WORKFLOW_GRAPH.md) - LangGraph workflow docs
-- [ReAct Trace Example](docs/REACT_TRACE_EXAMPLE.md) - ReAct pattern demo
-- [System Architecture](docs/SYSTEM_ARCHITECTURE.md) - Architecture overview
-
----
-
 ## 📈 Metrics & Performance
 
 - **Total Lines of Code**: ~5,700 lines
@@ -384,15 +358,10 @@ pytest -v
 
 ---
 
-## 🤝 Contributing
-
-This is an academic project for DAMG7245. For questions or issues, please contact the course staff.
-
----
 
 ## 📄 License
 
-MIT License - See [LICENSE](LICENSE) for details
+MIT License - See [LICENSE](LICENSE) for detail
 
 ---
 
@@ -404,7 +373,7 @@ MIT License - See [LICENSE](LICENSE) for details
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - LangChain & LangGraph for agent frameworks
 - Model Context Protocol (MCP) specification
@@ -413,5 +382,5 @@ MIT License - See [LICENSE](LICENSE) for details
 
 ---
 
-**Status**: ✅ All 4 Phases Complete (100%)
+
 **Last Updated**: November 16, 2025
