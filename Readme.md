@@ -23,43 +23,7 @@ Project ORBIT transforms traditional PE dashboard generation into an **agentic, 
 ## 🏗️ System Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                     AIRFLOW ORCHESTRATION                    │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────┐  │
-│  │ Initial Load │  │ Daily Update │  │ Agentic Dashboard│  │
-│  │     DAG      │  │     DAG      │  │       DAG        │  │
-│  └──────────────┘  └──────────────┘  └──────────────────┘  │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    MCP SERVER (Port 9000)                    │
-│  ┌─────────┐   ┌───────────┐   ┌─────────┐                 │
-│  │  Tools  │   │ Resources │   │ Prompts │                 │
-│  └─────────┘   └───────────┘   └─────────┘                 │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│                  LANGGRAPH WORKFLOW                          │
-│                                                              │
-│  Planner → Data Gen → Evaluator → Risk Detector             │
-│                                         ↓                    │
-│                              [Risk Detected?]                │
-│                              ↙              ↘                │
-│                          HITL          Auto-Approve          │
-│                              ↘              ↙                │
-│                              Final Decision                  │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    DATA & STORAGE                            │
-│  ┌──────────┐   ┌──────────┐   ┌──────────┐               │
-│  │ Payloads │   │Dashboards│   │  Logs    │               │
-│  │  (JSON)  │   │(Markdown)│   │ (JSONL)  │               │
-│  └──────────┘   └──────────┘   └──────────┘               │
-└─────────────────────────────────────────────────────────────┘
+
 ```
 
 ---
@@ -215,53 +179,7 @@ PYTHONPATH=. pytest --cov=src --cov-report=html
 ## 📁 Project Structure
 
 ```
-pe-dashboard-ai50-v3/
-├── src/
-│   ├── agents/
-│   │   ├── supervisor_agent.py       # Main supervisor with ReAct
-│   │   ├── planner_agent.py          # Plan generation
-│   │   └── evaluation_agent.py       # Dashboard evaluation
-│   ├── tools/
-│   │   ├── payload_tool.py           # Payload retrieval
-│   │   ├── rag_tool.py               # Vector DB search
-│   │   └── risk_logger.py            # Risk signal logging
-│   ├── workflows/
-│   │   └── due_diligence_graph.py    # LangGraph workflow
-│   ├── server/
-│   │   └── mcp_server.py             # MCP HTTP server
-│   ├── utils/
-│   │   ├── react_logger.py           # ReAct trace logger
-│   │   └── dashboard_generator.py    # Dashboard generation
-│   └── models.py                      # Pydantic models
-├── tests/
-│   ├── test_tools.py                  # Tool unit tests
-│   ├── test_mcpserver.py              # MCP integration tests
-│   └── test_workflow_branches.py      # Workflow branch tests
-├── airflow/
-│   └── dags/
-│       ├── orbit_initial_load_dag.py
-│       ├── orbit_daily_update_dag.py
-│       └── orbig_agentic_dashboard_dag.py
-├── docker/
-│   ├── Dockerfile.mcp                 # MCP server container
-│   └── Dockerfile.agent               # Agent/workflow container
-├── config/
-│   ├── mcp_config.json                # MCP client config
-│   └── settings_example.yaml          # Application settings
-├── docs/
-│   ├── WORKFLOW_GRAPH.md              # Workflow documentation
-│   ├── REACT_TRACE_EXAMPLE.md         # ReAct pattern example
-│   └── SYSTEM_ARCHITECTURE.md         # Architecture docs
-├── data/                               # Runtime data
-├── logs/                               # Log files
-├── docker-compose.yml                 # Full stack orchestration
-├── .env.example                        # Environment template
-├── requirements.txt                    # Python dependencies
-├── PHASE1_COMPLETE.md                 # Phase 1 docs
-├── PHASE2_COMPLETE.md                 # Phase 2 docs
-├── PHASE3_COMPLETE.md                 # Phase 3 docs
-├── PHASE4_COMPLETE.md                 # Phase 4 docs
-└── README.md                           # This file
+
 ```
 
 ---
@@ -404,14 +322,3 @@ MIT License - See [LICENSE](LICENSE) for details
 
 ---
 
-## 🙏 Acknowledgments
-
-- LangChain & LangGraph for agent frameworks
-- Model Context Protocol (MCP) specification
-- Apache Airflow for orchestration
-- OpenAI & Pinecone for AI infrastructure
-
----
-
-**Status**: ✅ All 4 Phases Complete (100%)
-**Last Updated**: November 16, 2025
