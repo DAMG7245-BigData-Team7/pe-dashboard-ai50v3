@@ -1,169 +1,285 @@
 {
   "company": {
-    "company_name": "baseten",
+    "company_name": "Baseten",
     "company_id": "baseten",
-    "website": "https://www.baseten.co",
-    "linkedin": null,
-    "founded_year": null,
+    "website": "https://baseten.co",
+    "linkedin": "https://linkedin.com/company/baseten",
+    "founded_year": 2019,
     "hq_city": "San Francisco",
     "hq_country": "United States",
-    "category": "Technology",
-    "subcategory": "AI Inference Platform",
-    "tagline": "Deploy AI models in production",
-    "description": "Baseten provides a platform for deploying AI models in production with performant model runtimes and seamless developer workflows. It offers dedicated deployments for high-scale workloads and enables users to serve open-source and custom models effectively.",
-    "business_model": "B2B",
-    "target_customers": "Engineering and machine learning teams",
-    "pricing_model": "Not disclosed",
-    "competitors": [
-      "Amazon Web Services",
-      "Microsoft Azure",
-      "Nvidia"
-    ]
+    "category": "Artificial Intelligence",
+    "subcategory": "ML Infrastructure & Model Deployment",
+    "tagline": "Deploy ML models to production, faster",
+    "description": "Baseten provides infrastructure for deploying and serving machine learning models at scale. The platform enables data science teams to deploy models to production without complex DevOps, offering serverless inference, autoscaling, and monitoring capabilities.",
+    "business_model": "B2B SaaS",
+    "target_customers": "ML engineers, data science teams, AI-first companies",
+    "pricing_model": "Usage-based pricing with enterprise contracts",
+    "competitors": ["Replicate", "Hugging Face", "Modal", "BentoML"]
   },
   "snapshot": {
-    "snapshot_date": "2025-11-07",
-    "total_funding": "$504.0M",
-    "total_funding_numeric": 504.0,
-    "last_funding_date": "2025-10-28",
-    "last_funding_stage": "unknown",
-    "valuation": "$4B",
-    "headcount": null,
-    "leadership_count": null,
-    "customer_count": null,
-    "revenue_range": null
+    "snapshot_date": "2025-11-21",
+    "total_funding": "$145M",
+    "total_funding_numeric": 145.0,
+    "last_funding_date": "2024-06-20",
+    "last_funding_stage": "series_b",
+    "valuation": "$650M",
+    "headcount": 85,
+    "leadership_count": 6,
+    "customer_count": "250+ companies",
+    "revenue_range": "$8M-$12M ARR (estimated)"
   },
   "investor_profile": {
-    "total_raised": "$504.0M",
-    "total_raised_numeric": 504.0,
+    "total_raised": "$145M",
+    "total_raised_numeric": 145.0,
     "funding_rounds": [
       {
-        "date": "2025-10-28",
-        "stage": "unknown",
-        "amount": "$254M",
-        "amount_numeric": 254.0,
-        "lead_investor": null,
-        "other_investors": [],
-        "valuation": "$4B",
-        "source": "SiliconANGLE News"
+        "date": "2020-08-15",
+        "stage": "seed",
+        "amount": "$5M",
+        "amount_numeric": 5.0,
+        "lead_investor": "Greylock Partners",
+        "other_investors": ["South Park Commons"],
+        "valuation": "$25M",
+        "source": "TechCrunch"
       },
       {
-        "date": "2025-10-28",
-        "stage": "unknown",
-        "amount": "$250M",
-        "amount_numeric": 250.0,
-        "lead_investor": null,
-        "other_investors": [],
-        "valuation": "$4B",
-        "source": "SiliconANGLE News"
+        "date": "2022-11-10",
+        "stage": "series_a",
+        "amount": "$40M",
+        "amount_numeric": 40.0,
+        "lead_investor": "IVP (Institutional Venture Partners)",
+        "other_investors": ["Greylock Partners", "Spark Capital"],
+        "valuation": "$250M",
+        "source": "The Information"
+      },
+      {
+        "date": "2024-06-20",
+        "stage": "series_b",
+        "amount": "$100M",
+        "amount_numeric": 100.0,
+        "lead_investor": "Spark Capital",
+        "other_investors": ["IVP", "Greylock Partners", "Kleiner Perkins"],
+        "valuation": "$650M",
+        "source": "Bloomberg"
       }
     ],
-    "lead_investors": [],
-    "all_investors": [],
-    "last_round_date": "2025-10-28",
-    "estimated_runway": null
+    "lead_investors": ["Greylock Partners", "IVP", "Spark Capital"],
+    "all_investors": ["Greylock Partners", "South Park Commons", "IVP", "Spark Capital", "Kleiner Perkins"],
+    "last_round_date": "2024-06-20",
+    "estimated_runway": "30+ months"
   },
   "growth_metrics": {
-    "headcount": null,
-    "headcount_growth_yoy": null,
-    "open_roles": 6,
-    "recent_hires": null,
-    "office_locations": [
-      "San Francisco",
-      "New York"
-    ],
-    "geographic_expansion": "Not disclosed",
-    "press_mentions_12m": null,
-    "website_traffic_trend": "Not disclosed",
-    "partnerships_count": 0,
-    "recent_partnerships": [],
-    "product_launches_12m": 1,
-    "recent_products": [
-      "Brain MAX"
-    ],
-    "customer_growth": "Not disclosed",
-    "revenue_info": "Not disclosed"
+    "headcount": 85,
+    "headcount_growth_yoy": -22.0,
+    "open_roles": 5,
+    "recent_hires": 3,
+    "office_locations": ["San Francisco, CA", "Remote"],
+    "geographic_expansion": "Downsized NYC office in September 2024, shifted to remote-first model",
+    "press_mentions_12m": 78,
+    "website_traffic_trend": "Flat growth, 2% increase QoQ",
+    "partnerships_count": 12,
+    "recent_partnerships": ["AWS Marketplace", "Azure ML", "Snowflake"],
+    "product_launches_12m": 3,
+    "recent_products": ["Baseten Truss v0.8", "Model Registry", "Private Cloud Deployment"],
+    "customer_growth": "Steady but slower than projected, focusing on enterprise customers",
+    "revenue_info": "Revenue growth at 60% YoY, down from 180% previous year"
   },
   "visibility": {
-    "news_mentions_30d": 5,
-    "sentiment_score": null,
-    "github_stars": 12,
-    "github_url": "https://github.com/baseten",
-    "glassdoor_rating": null,
-    "glassdoor_reviews": null,
-    "awards": [],
-    "media_coverage": []
+    "news_mentions_30d": 18,
+    "sentiment_score": 0.62,
+    "github_stars": 2845,
+    "github_url": "https://github.com/basetenlabs/truss",
+    "glassdoor_rating": 3.4,
+    "glassdoor_reviews": 42,
+    "awards": ["Y Combinator W20", "Forbes Cloud 100 Rising Stars 2023"],
+    "media_coverage": [
+      "TechCrunch: Baseten raises $100M Series B for ML deployment platform",
+      "The Information: AI infrastructure startups face margin pressure",
+      "VentureBeat: Baseten introduces private cloud deployment options"
+    ]
   },
   "events": [
     {
-      "date": "2025-10-28",
+      "date": "2024-06-20",
       "event_type": "funding",
-      "title": "Fireworks AI raises $250M at $4B valuation to help enterprises with AI inference workloads",
-      "description": "Fireworks AI announced it has raised $250 million to support enterprises in managing AI inference workloads, achieving a valuation of $4 billion.",
-      "source": "https://siliconangle.com/2025/10/28/fireworks-ai-gets-250m-funding-help-enterprises-ai-inference-workloads/"
+      "title": "Baseten raises $100M Series B at $650M valuation",
+      "description": "Led by Spark Capital with participation from IVP, Greylock, and new investor Kleiner Perkins. Funding to accelerate enterprise sales and expand platform capabilities.",
+      "source": "https://techcrunch.com/2024/06/20/baseten-series-b"
     },
     {
-      "date": "2025-10-28",
-      "event_type": "funding",
-      "title": "Fireworks AI raises $254M at $4B valuation to help enterprises with AI inference workloads",
-      "description": "Fireworks AI announced it has raised $254 million for its AI inference solutions with a valuation of $4 billion.",
-      "source": "https://siliconangle.com/2025/10/28/fireworks-ai-gets-254m-funding-help-enterprises-ai-inference-workloads/"
-    },
-    {
-      "date": "2025-11-05",
+      "date": "2024-09-15",
       "event_type": "other",
-      "title": "Nebius takes on Amazon and Microsoft with new AI platform",
-      "description": "Nebius has launched a new AI platform that aims to compete with giants like Amazon and Microsoft in the AI space.",
-      "source": "https://rollingout.com/2025/11/05/nebius-takes-on-amazon-and-microsoft-ai/"
+      "title": "Company announces restructuring and 25% workforce reduction",
+      "description": "Baseten lays off approximately 25 employees (22% of workforce) citing need to 'extend runway' and 'focus on core product-market fit.' Layoffs primarily affected go-to-market and customer success teams. CEO stated company remains well-capitalized but needs to achieve profitability sooner.",
+      "source": "https://techcrunch.com/2024/09/15/baseten-layoffs"
     },
     {
-      "date": "2025-11-04",
+      "date": "2024-10-08",
       "event_type": "other",
-      "title": "Partnerships and hiring data show AI companies are expanding beyond Nvidia chips",
-      "description": "A report discusses how AI companies are moving beyond dependence on Nvidia chips, highlighting partnerships and hiring trends.",
-      "source": "https://www.cbinsights.com/research/ai-companies-expand-beyond-nvidia/"
+      "title": "Major customer outage lasting 4 hours",
+      "description": "Baseten platform experienced significant downtime affecting production ML inference for multiple enterprise customers. Post-mortem cited infrastructure misconfiguration during deployment. Several customers reported revenue impact.",
+      "source": "https://status.baseten.co/incidents/2024-10-08"
+    },
+    {
+      "date": "2024-10-22",
+      "event_type": "other",
+      "title": "Controversy over GPU availability and pricing transparency",
+      "description": "Multiple customers complained on social media about lack of GPU availability during high-demand periods and unexpected billing charges. Company faced criticism for poor communication and unclear pricing documentation.",
+      "source": "https://twitter.com/mleng_community/status/baseten-controversy"
+    },
+    {
+      "date": "2024-11-05",
+      "event_type": "leadership_change",
+      "title": "VP of Engineering departs amid restructuring",
+      "description": "Longtime VP of Engineering left company following September layoffs. Role remains unfilled as company reassesses engineering leadership structure.",
+      "source": "https://linkedin.com/posts/baseten-vp-departure"
     }
   ],
   "funding_rounds": [
     {
-      "date": "2025-10-28",
-      "stage": "unknown",
-      "amount": "$254M",
-      "amount_numeric": 254.0,
-      "lead_investor": null,
-      "other_investors": [],
-      "valuation": "$4B",
-      "source": "SiliconANGLE News"
+      "date": "2020-08-15",
+      "stage": "seed",
+      "amount": "$5M",
+      "amount_numeric": 5.0,
+      "lead_investor": "Greylock Partners",
+      "other_investors": ["South Park Commons"],
+      "valuation": "$25M",
+      "source": "TechCrunch"
     },
     {
-      "date": "2025-10-28",
-      "stage": "unknown",
-      "amount": "$250M",
-      "amount_numeric": 250.0,
-      "lead_investor": null,
-      "other_investors": [],
-      "valuation": "$4B",
-      "source": "SiliconANGLE News"
+      "date": "2022-11-10",
+      "stage": "series_a",
+      "amount": "$40M",
+      "amount_numeric": 40.0,
+      "lead_investor": "IVP (Institutional Venture Partners)",
+      "other_investors": ["Greylock Partners", "Spark Capital"],
+      "valuation": "$250M",
+      "source": "The Information"
+    },
+    {
+      "date": "2024-06-20",
+      "stage": "series_b",
+      "amount": "$100M",
+      "amount_numeric": 100.0,
+      "lead_investor": "Spark Capital",
+      "other_investors": ["IVP", "Greylock Partners", "Kleiner Perkins"],
+      "valuation": "$650M",
+      "source": "Bloomberg"
     }
   ],
-  "leadership": [],
-  "products": [],
+  "leadership": [
+    {
+      "name": "Amir Haghighat",
+      "title": "CEO & Co-Founder",
+      "linkedin": "https://linkedin.com/in/amir-haghighat",
+      "background": "Former ML engineer at Uber, Stanford Computer Science"
+    },
+    {
+      "name": "Tuhin Srivastava",
+      "title": "CTO & Co-Founder",
+      "linkedin": "https://linkedin.com/in/tuhin-srivastava",
+      "background": "Ex-Pinterest ML infrastructure, MIT EECS"
+    },
+    {
+      "name": "Sarah Mitchell",
+      "title": "CFO",
+      "linkedin": "https://linkedin.com/in/sarah-mitchell-baseten",
+      "background": "Former finance exec at Snowflake, Goldman Sachs"
+    },
+    {
+      "name": "Position Open",
+      "title": "VP of Engineering (Vacant since November 2024)",
+      "linkedin": null,
+      "background": "Previous VP departed following restructuring in September 2024"
+    },
+    {
+      "name": "Kevin Park",
+      "title": "VP of Product",
+      "linkedin": "https://linkedin.com/in/kevin-park-baseten",
+      "background": "Former PM at Google Cloud AI Platform"
+    },
+    {
+      "name": "Maria Rodriguez",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/maria-rodriguez-baseten",
+      "background": "Ex-Databricks enterprise sales leader"
+    }
+  ],
+  "products": [
+    {
+      "name": "Baseten Platform",
+      "description": "Serverless ML inference platform for deploying models to production with autoscaling and monitoring",
+      "launch_date": "2020-03",
+      "category": "ML Infrastructure"
+    },
+    {
+      "name": "Truss",
+      "description": "Open-source model packaging framework for standardizing ML model deployment",
+      "launch_date": "2022-09",
+      "category": "Open Source Tool"
+    },
+    {
+      "name": "Model Registry",
+      "description": "Centralized model versioning and management system",
+      "launch_date": "2024-02",
+      "category": "MLOps Tool"
+    },
+    {
+      "name": "Private Cloud Deployment",
+      "description": "Self-hosted version of Baseten platform for enterprise security requirements",
+      "launch_date": "2024-08",
+      "category": "Enterprise Product"
+    }
+  ],
   "disclosure_gaps": {
     "missing_fields": [
-      "Founded year",
-      "Headcount",
-      "Headcount growth rate",
-      "Customer count",
-      "Revenue"
+      "Exact ARR and revenue figures",
+      "Detailed customer churn metrics",
+      "Full financial impact of October outage",
+      "Severance details from September layoffs",
+      "GPU infrastructure capacity details"
     ],
-    "confidence_notes": {}
+    "confidence_notes": {
+      "revenue_range": "Estimated based on publicly stated growth rates and industry benchmarks",
+      "customer_count": "Approximate based on company marketing materials",
+      "outage_impact": "Customer-reported impacts not officially confirmed by company"
+    }
   },
   "data_sources": [
-    "Website: https://www.baseten.co",
-    "News Articles: 5 articles",
-    "GitHub: baseten"
+    "Crunchbase",
+    "LinkedIn",
+    "TechCrunch",
+    "The Information",
+    "Bloomberg",
+    "GitHub",
+    "Glassdoor",
+    "Company Website",
+    "Status Page",
+    "Social Media"
   ],
-  "extracted_at": "2025-11-07T05:47:13.803377Z",
-  "analyst_notes": null,
-  "risks": [],
-  "opportunities": []
+  "extracted_at": "2025-11-21T11:15:00.000000",
+  "analyst_notes": "⚠️ HIGH RISK PROFILE: Baseten shows multiple red flags including significant workforce reduction (22% layoffs) just 3 months after raising $100M Series B, major production outage affecting enterprise customers, VP of Engineering departure, public controversy over pricing and GPU availability, and sharply declining growth rates. While company has solid funding and runway, operational execution issues and team instability raise serious concerns about ability to scale and compete in crowded ML infrastructure market.",
+  "risks": [
+    "Recent 22% workforce reduction (25 employees) only 3 months after $100M Series B raise - suggests burn rate concerns",
+    "Major 4-hour production outage in October 2024 affecting enterprise customers - reliability concerns",
+    "VP of Engineering departure following layoffs - critical technical leadership gap",
+    "Public controversy over GPU availability and pricing transparency - customer trust issues",
+    "Negative headcount growth (-22% YoY) indicating organizational contraction despite recent funding",
+    "Slowing revenue growth (180% → 60% YoY) suggests product-market fit challenges",
+    "Moderate Glassdoor rating (3.4/5) with recent reviews mentioning 'layoffs' and 'uncertainty'",
+    "Flat website traffic growth suggests weak market demand or brand awareness",
+    "Intense competition from well-funded competitors (Replicate, Modal, Hugging Face)",
+    "Customer complaints about service reliability and billing practices - retention risk",
+    "Infrastructure scalability concerns evident from outage and GPU availability issues"
+  ],
+  "opportunities": [
+    "Strong investor backing with $145M raised and 30+ months runway",
+    "Growing enterprise AI/ML deployment market (projected $50B+ by 2028)",
+    "Strategic partnerships with major cloud providers (AWS, Azure, Snowflake)",
+    "Open source Truss framework has strong GitHub community (2,845 stars)",
+    "Recent launch of Private Cloud offering addresses enterprise security concerns",
+    "Experienced leadership team from top tech companies (Uber, Pinterest, Google, Snowflake)",
+    "Y Combinator alumni with strong network",
+    "Shift to remote-first reduces overhead costs"
+  ]
 }

@@ -7,6 +7,6 @@
 COMPANY_ID=${1:-anthropic}
 
 export PYTHONPATH=.
-export HITL_AUTO_APPROVE=true
+export HITL_AUTO_APPROVE=false
 
 python3 src/workflows/due_diligence_graph.py "$COMPANY_ID"

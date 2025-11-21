@@ -1,1 +1,0 @@
-# System Architecture (to be filled)

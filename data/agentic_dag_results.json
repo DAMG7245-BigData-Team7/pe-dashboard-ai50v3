@@ -1,0 +1,466 @@
+{
+  "dag_id": "orbit_agentic_dashboard",
+  "execution_date": "2025-11-21T11:26:18.015364+00:00",
+  "completed_at": "2025-11-21T12:01:22.007232",
+  "test_mode": false,
+  "test_limit": 50,
+  "summary": {
+    "total_available": 50,
+    "total_processed": 50,
+    "successful": 50,
+    "failed": 0,
+    "hitl_triggered": 1,
+    "companies": [
+      {
+        "company_id": "abridge",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "anthropic",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "anysphere",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "baseten",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "captions",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "clay",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "coactive-ai",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "cohere",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "crusoe",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "databricks",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "decagon",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "deepl",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "elevenlabs",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "figure-ai",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "fireworks-ai",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "glean",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "harvey",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "hebbia",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "hugging-face",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "lambda",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "langchain",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "luminance",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "mercor",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "midjourney",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "mistral-ai",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "notion",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "openai",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "openevidence",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "perplexity-ai",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "photoroom",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "pika",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "runway",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "sakana-ai",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "sambanova",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "scale-ai",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "sierra",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "skild-ai",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "snorkel-ai",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "speak",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "stackblitz",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "suno",
+        "status": "success",
+        "risk_detected": true,
+        "hitl_required": true,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> hitl -> final_decision"
+      },
+      {
+        "company_id": "synthesia",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "thinking-machine-labs",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "together-ai",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "vannevar-labs",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "vast-data",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "windsurf",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "world-labs",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "writer",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      },
+      {
+        "company_id": "xai",
+        "status": "success",
+        "risk_detected": false,
+        "hitl_required": false,
+        "hitl_approved": true,
+        "recommendation": "APPROVED",
+        "execution_path": "planner -> data_generator_fallback -> evaluator -> risk_detector -> auto_approve -> final_decision"
+      }
+    ]
+  }
+}
