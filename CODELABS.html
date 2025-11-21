@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codelab: Project ORBIT - PE Due Diligence Agentic System</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- Prism.js for Syntax Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --secondary-color: #34a853;
+            --warning-color: #ea4335;
+            --sidebar-bg: #f8f9fa;
+            --text-color: #3c4043;
+            --code-bg: #2d2d2d;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Sidebar Styles */
+        aside {
+            width: 300px;
+            background-color: var(--sidebar-bg);
+            border-right: 1px solid #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+        }
+
+        .sidebar-header {
+            padding: 20px;
+            font-weight: 500;
+            color: #5f6368;
+            font-size: 14px;
+            border-bottom: 1px solid #e0e0e0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .sidebar-header h2 {
+            margin: 0 0 5px 0;
+            font-size: 18px;
+        }
+
+        .sidebar-header p {
+            margin: 0;
+            font-size: 12px;
+            opacity: 0.9;
+        }
+
+        .steps-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            overflow-y: auto;
+        }
+
+        .steps-list li {
+            padding: 14px 20px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #5f6368;
+            border-left: 4px solid transparent;
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .steps-list li .step-icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .steps-list li:hover {
+            background-color: #e8f0fe;
+            color: var(--primary-color);
+        }
+
+        .steps-list li.active {
+            border-left: 4px solid var(--primary-color);
+            background-color: #e8f0fe;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .steps-list li.active .step-icon {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Main Content Styles */
+        main {
+            flex-grow: 1;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 32px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        .header-badges {
+            display: flex;
+            gap: 10px;
+        }
+
+        .badge {
+            font-size: 12px;
+            background: rgba(255,255,255,0.2);
+            padding: 6px 12px;
+            border-radius: 20px;
+        }
+
+        .content-container {
+            padding: 40px 60px;
+            max-width: 950px;
+            margin: 0 auto;
+            flex-grow: 1;
+        }
+
+        .step-content {
+            display: none;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .step-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 400;
+            margin-bottom: 24px;
+            color: #202124;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2 .emoji {
+            font-size: 36px;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin-top: 32px;
+            font-weight: 500;
+            color: #202124;
+        }
+
+        p {
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .info-box {
+            background-color: #e8f0fe;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 20px 0;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .warning-box {
+            background-color: #fce8e6;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 20px 0;
+            border-left: 4px solid var(--warning-color);
+        }
+
+        .success-box {
+            background-color: #e6f4ea;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 20px 0;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        /* Architecture Diagram */
+        .architecture-diagram {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 24px 0;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 13px;
+            overflow-x: auto;
+            border: 1px solid #e0e0e0;
+        }
+
+        .architecture-diagram pre {
+            margin: 0;
+            background: transparent !important;
+            padding: 0 !important;
+        }
+
+        /* Code File Header */
+        .code-header {
+            background: #3c4043;
+            color: #9aa0a6;
+            padding: 8px 16px;
+            border-radius: 8px 8px 0 0;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 12px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .code-header .file-icon {
+            color: #8ab4f8;
+        }
+
+        /* Footer / Navigation Buttons */
+        footer {
+            padding: 20px 60px;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            background: white;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        button:hover {
+            background-color: #1664d0;
+            transform: translateY(-1px);
+        }
+
+        button:disabled {
+            background-color: #dadce0;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        button.secondary {
+            background-color: white;
+            color: var(--primary-color);
+            border: 1px solid #dadce0;
+        }
+
+        button.secondary:hover {
+            background-color: #f1f3f4;
+        }
+
+        /* Code Block Styling */
+        pre {
+            border-radius: 0 0 8px 8px !important;
+            margin: 0 0 20px 0 !important;
+        }
+
+        pre code {
+            font-family: 'Roboto Mono', monospace !important;
+            font-size: 13px !important;
+        }
+
+        /* Terminal Output */
+        .terminal {
+            background: #1e1e1e;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 13px;
+            color: #d4d4d4;
+            overflow-x: auto;
+        }
+
+        .terminal .prompt {
+            color: #4ec9b0;
+        }
+
+        .terminal .output {
+            color: #9cdcfe;
+        }
+
+        .terminal .success {
+            color: #4ec9b0;
+        }
+
+        .terminal .warning {
+            color: #dcdcaa;
+        }
+
+        .terminal .error {
+            color: #f14c4c;
+        }
+
+        /* Feature Cards */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 24px 0;
+        }
+
+        .feature-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .feature-card h4 {
+            margin: 0 0 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .feature-card p {
+            margin: 0;
+            font-size: 14px;
+            color: #5f6368;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        th {
+            background: #f8f9fa;
+            font-weight: 500;
+        }
+
+        ul, ol {
+            line-height: 1.8;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        code {
+            background: #f1f3f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 13px;
+        }
+
+        @media (max-width: 768px) {
+            aside { display: none; }
+            .content-container { padding: 20px; }
+            footer { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside>
+        <div class="sidebar-header">
+            <h2>PROJECT ORBIT</h2>
+            <p>PE Due Diligence Agentic System</p>
+        </div>
+        <ul class="steps-list" id="stepsList">
+            <li class="active" onclick="goToStep(0)"><span class="step-icon">1</span> Overview</li>
+            <li onclick="goToStep(1)"><span class="step-icon">2</span> Architecture</li>
+            <li onclick="goToStep(2)"><span class="step-icon">3</span> Core Tools</li>
+            <li onclick="goToStep(3)"><span class="step-icon">4</span> MCP Server</li>
+            <li onclick="goToStep(4)"><span class="step-icon">5</span> Supervisor Agent</li>
+            <li onclick="goToStep(5)"><span class="step-icon">6</span> LangGraph Workflow</li>
+            <li onclick="goToStep(6)"><span class="step-icon">7</span> HITL Implementation</li>
+            <li onclick="goToStep(7)"><span class="step-icon">8</span> Airflow DAGs</li>
+            <li onclick="goToStep(8)"><span class="step-icon">9</span> Running the Demo</li>
+            <li onclick="goToStep(9)"><span class="step-icon">10</span> Conclusion</li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+        <header>
+            <h1>Building an Agentic PE Due Diligence System</h1>
+            <div class="header-badges">
+                <span class="badge">Advanced</span>
+                <span class="badge">45 mins</span>
+            </div>
+        </header>
+
+        <div class="content-container">
+
+            <!-- STEP 1: Overview -->
+            <div class="step-content active" id="step0">
+                <h2><span class="emoji">🎯</span> Overview</h2>
+
+                <div class="info-box">
+                    <strong>Level:</strong> Advanced &nbsp;|&nbsp;
+                    <strong>Stack:</strong> Python, LangChain, LangGraph, MCP, FastAPI, Airflow, Docker
+                </div>
+
+                <p>Welcome to <strong>Project ORBIT</strong> - an intelligent, production-ready PE due diligence system powered by LangChain agents, LangGraph workflows, and the Model Context Protocol (MCP).</p>
+
+                <p>In this codelab, you'll explore how to build an agentic system that automates Private Equity due diligence by:</p>
+
+                <ul>
+                    <li>Ingesting and processing company data from multiple sources</li>
+                    <li>Performing RAG (Retrieval Augmented Generation) searches</li>
+                    <li>Detecting risks like layoffs, breaches, and lawsuits</li>
+                    <li>Generating comprehensive 8-section PE dashboards</li>
+                    <li>Implementing Human-in-the-Loop (HITL) for high-risk cases</li>
+                </ul>
+
+                <h3>What You'll Learn</h3>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>🔧 MCP Integration</h4>
+                        <p>Expose Python tools via Model Context Protocol for agent consumption</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🔄 LangGraph Workflows</h4>
+                        <p>Build deterministic state machines with conditional branching</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🚨 HITL Checkpoints</h4>
+                        <p>Implement human approval gates for risk management</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📊 ReAct Logging</h4>
+                        <p>Structured Thought→Action→Observation logging</p>
+                    </div>
+                </div>
+
+                <h3>Prerequisites</h3>
+                <ul>
+                    <li>Python 3.13+</li>
+                    <li>OpenAI API Key</li>
+                    <li>Pinecone API Key (optional, for RAG)</li>
+                    <li>Docker & Docker Compose</li>
+                </ul>
+            </div>
+
+            <!-- STEP 2: Architecture -->
+            <div class="step-content" id="step1">
+                <h2><span class="emoji">🏗️</span> System Architecture</h2>
+
+                <p>Project ORBIT follows a layered architecture that separates concerns and enables scalability:</p>
+
+                <div class="architecture-diagram">
+<pre>
+┌─────────────────────────────────────────────────────────────────┐
+│                     AIRFLOW ORCHESTRATION                        │
+│  ┌──────────────┐  ┌──────────────┐  ┌────────────────────┐    │
+│  │ Initial Load │  │ Daily Update │  │ Agentic Dashboard  │    │
+│  │     DAG      │  │     DAG      │  │       DAG          │    │
+│  └──────────────┘  └──────────────┘  └────────────────────┘    │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                    MCP SERVER (Port 9000)                        │
+│  ┌─────────────┐   ┌─────────────┐   ┌─────────────┐           │
+│  │    Tools    │   │  Resources  │   │   Prompts   │           │
+│  │ (Dashboard) │   │ (Companies) │   │ (Templates) │           │
+│  └─────────────┘   └─────────────┘   └─────────────┘           │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                    LANGGRAPH WORKFLOW                            │
+│                                                                  │
+│  Planner → Data Gen → Evaluator → Risk Detector                 │
+│                                         ↓                        │
+│                              ┌─────────────────────┐             │
+│                              │   Risk Detected?    │             │
+│                              └─────────────────────┘             │
+│                              ↙                    ↘              │
+│                          HITL                Auto-Approve        │
+│                              ↘                    ↙              │
+│                              Final Decision → END                │
+└─────────────────────────────────────────────────────────────────┘
+</pre>
+                </div>
+
+                <h3>Key Components</h3>
+
+                <table>
+                    <tr>
+                        <th>Component</th>
+                        <th>Technology</th>
+                        <th>Purpose</th>
+                    </tr>
+                    <tr>
+                        <td>Agents</td>
+                        <td>LangChain + OpenAI</td>
+                        <td>Supervisor, Planner, Evaluator with ReAct pattern</td>
+                    </tr>
+                    <tr>
+                        <td>MCP Server</td>
+                        <td>FastAPI</td>
+                        <td>Tool/Resource/Prompt exposure via HTTP</td>
+                    </tr>
+                    <tr>
+                        <td>Workflow</td>
+                        <td>LangGraph</td>
+                        <td>StateGraph with conditional branching</td>
+                    </tr>
+                    <tr>
+                        <td>Orchestration</td>
+                        <td>Apache Airflow</td>
+                        <td>Scheduled DAGs for automation</td>
+                    </tr>
+                    <tr>
+                        <td>Storage</td>
+                        <td>JSON/JSONL</td>
+                        <td>Payloads, dashboards, logs</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- STEP 3: Core Tools -->
+            <div class="step-content" id="step2">
+                <h2><span class="emoji">🔧</span> The Core Tools</h2>
+
+                <p>Before the agent can act, it needs tools to interact with data. We define three core tools:</p>
+
+                <h3>1. Payload Tool</h3>
+                <p>Retrieves structured company data from JSON payloads:</p>
+
+                <div class="code-header"><span class="file-icon">📄</span> src/tools/payload_tool.py</div>
+                <pre><code class="language-python">async def get_latest_structured_payload(company_id: str) -> CompanyPayload:
+    """
+    Retrieve the latest fully assembled structured payload for a company.
+
+    Returns CompanyPayload with:
+    - company: Core company information
+    - snapshot: Point-in-time metrics
+    - investor_profile: Funding rounds and investors
+    - growth_metrics: Headcount, partnerships, products
+    - risks: Identified risk signals
+    """
+    possible_paths = [
+        Path(f"data/payloads/{company_id}_payload.json"),
+        Path(f"data/payloads/{company_id}.json"),
+    ]
+
+    for path in possible_paths:
+        if path.exists():
+            with open(path, 'r') as f:
+                payload_data = json.load(f)
+            return CompanyPayload(**payload_data)
+
+    raise FileNotFoundError(f"No payload found for {company_id}")</code></pre>
+
+                <h3>2. RAG Search Tool</h3>
+                <p>Performs semantic search against a Pinecone vector database:</p>
+
+                <div class="code-header"><span class="file-icon">📄</span> src/tools/rag_tool.py</div>
+                <pre><code class="language-python">async def rag_search_company(company_id: str, query: str, k: int = 5) -> List[Dict]:
+    """
+    Search company documents using RAG (Retrieval Augmented Generation).
+
+    Args:
+        company_id: Company identifier
+        query: Natural language query (e.g., "layoffs OR workforce reduction")
+        k: Number of results to return
+
+    Returns:
+        List of relevant passages with scores and metadata
+    """
+    # Generate embedding for query
+    embedding = openai_client.embeddings.create(
+        input=query, model="text-embedding-3-small"
+    ).data[0].embedding
+
+    # Query Pinecone with company filter
+    results = index.query(
+        vector=embedding,
+        top_k=k,
+        filter={"company_id": company_id},
+        include_metadata=True
+    )
+
+    return [{"text": m.metadata["text"], "score": m.score} for m in results.matches]</code></pre>
+
+                <h3>3. Risk Logger Tool</h3>
+                <p>Logs high-risk events to a persistent JSONL file:</p>
+
+                <div class="code-header"><span class="file-icon">📄</span> src/tools/risk_logger.py</div>
+                <pre><code class="language-python">class LayoffSignal(BaseModel):
+    company_id: str
+    occurred_on: date
+    description: str
+    source_url: str
+    severity: str = "high"
+
+async def report_layoff_signal(signal: LayoffSignal, log_file: str = "logs/risk_signals.jsonl") -> bool:
+    """Logs high-risk events to a persistent JSONL file for auditing."""
+    signal_dict = {
+        "company_id": signal.company_id,
+        "occurred_on": signal.occurred_on.isoformat(),
+        "description": signal.description,
+        "source_url": signal.source_url,
+        "severity": signal.severity,
+        "detected_at": datetime.utcnow().isoformat()
+    }
+
+    Path(log_file).parent.mkdir(parents=True, exist_ok=True)
+    with open(log_file, 'a') as f:
+        f.write(json.dumps(signal_dict) + '\n')
+
+    return True</code></pre>
+            </div>
+
+            <!-- STEP 4: MCP Server -->
+            <div class="step-content" id="step3">
+                <h2><span class="emoji">🌐</span> MCP Server Integration</h2>
+
+                <p>Instead of hardcoding tools into the agent, we wrap them in a <strong>Model Context Protocol (MCP)</strong> server. This allows any MCP-compliant client to discover and use our tools via HTTP.</p>
+
+                <div class="info-box">
+                    <strong>MCP Components:</strong><br>
+                    • <strong>Tools</strong> - Actions the agent can perform (generate dashboards)<br>
+                    • <strong>Resources</strong> - Data the agent can read (company list)<br>
+                    • <strong>Prompts</strong> - Templates for structured outputs (dashboard template)
+                </div>
+
+                <div class="code-header"><span class="file-icon">📄</span> src/server/mcp_server.py</div>
+                <pre><code class="language-python">from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+
+app = FastAPI(title="PE Dashboard MCP Server", version="1.0.0")
+
+# ============ TOOLS ============
+
+@app.post("/tool/generate_structured_dashboard")
+async def generate_structured_dashboard(request: DashboardRequest):
+    """Tool: Generate structured PE dashboard from company payload."""
+    markdown = await DashboardGenerator.generate_structured_dashboard(request.company_id)
+    return {
+        "company_id": request.company_id,
+        "markdown": markdown,
+        "method": "structured",
+        "generated_at": datetime.utcnow().isoformat()
+    }
+
+@app.post("/tool/generate_rag_dashboard")
+async def generate_rag_dashboard(request: DashboardRequest):
+    """Tool: Generate RAG-based PE dashboard from vector DB."""
+    markdown = await DashboardGenerator.generate_rag_dashboard(request.company_id)
+    return {"company_id": request.company_id, "markdown": markdown, "method": "RAG"}
+
+# ============ RESOURCES ============
+
+@app.get("/resource/ai50/companies")
+async def get_companies():
+    """Resource: List all Forbes AI 50 company IDs."""
+    return {"company_ids": load_company_ids(), "count": len(load_company_ids())}
+
+# ============ PROMPTS ============
+
+@app.get("/prompt/pe-dashboard")
+async def get_pe_dashboard_prompt():
+    """Prompt: 8-section PE dashboard template."""
+    return {
+        "id": "pe-dashboard",
+        "name": "PE Due Diligence Dashboard Template",
+        "sections": ["Company Overview", "Business Model", "Funding", "Growth",
+                     "Visibility", "Risks", "Outlook", "Disclosure Gaps"]
+    }
+
+# ============ HEALTH CHECK ============
+
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy", "server": "MCP PE Dashboard"}</code></pre>
+
+                <h3>MCP Client Configuration</h3>
+                <div class="code-header"><span class="file-icon">📄</span> config/mcp_config.json</div>
+                <pre><code class="language-json">{
+  "server_name": "PE Dashboard MCP Server",
+  "base_url": "http://localhost:9000",
+  "security": {
+    "tool_filtering": true,
+    "allowed_tools": ["generate_structured_dashboard", "generate_rag_dashboard"],
+    "timeout": 30
+  }
+}</code></pre>
+            </div>
+
+            <!-- STEP 5: Supervisor Agent -->
+            <div class="step-content" id="step4">
+                <h2><span class="emoji">🤖</span> The Supervisor Agent</h2>
+
+                <p>The Supervisor Agent is the brain of the system. It uses the <strong>ReAct</strong> (Reasoning + Acting) pattern to plan, execute, and observe.</p>
+
+                <div class="info-box">
+                    <strong>ReAct Pattern:</strong><br>
+                    1. <strong>Thought</strong> 💭 - Reason about what to do next<br>
+                    2. <strong>Action</strong> 🔧 - Execute a tool<br>
+                    3. <strong>Observation</strong> 👁️ - Analyze the result<br>
+                    4. <strong>Final Answer</strong> ✅ - Conclude with findings
+                </div>
+
+                <div class="code-header"><span class="file-icon">📄</span> src/agents/supervisor_agent.py</div>
+                <pre><code class="language-python">class DueDiligenceSupervisorAgent:
+    """PE Due Diligence Supervisor Agent with MCP Support"""
+
+    def __init__(self, model: str = "gpt-4o-mini", enable_mcp: bool = False):
+        self.llm = ChatOpenAI(model=model, temperature=0)
+        self.react_logger = ReActLogger()
+
+        if enable_mcp:
+            # Register MCP tool wrappers
+            self.tools = [
+                get_payload,
+                search_company_docs,
+                log_risk_signal,
+                generate_structured_dashboard_mcp,  # Calls MCP server
+                generate_rag_dashboard_mcp
+            ]
+
+    def run(self, company_id: str) -> str:
+        """Execute due diligence workflow with ReAct pattern."""
+
+        # Step 1: Thought
+        self.react_logger.log_thought(f"Starting due diligence for {company_id}")
+
+        # Step 2: Action - Get payload
+        self.react_logger.log_action("get_payload", {"company_id": company_id})
+        payload_result = get_payload.invoke({"company_id": company_id})
+
+        # Step 3: Observation
+        self.react_logger.log_observation(payload_result)
+
+        # Step 4: Action - Search for risks
+        self.react_logger.log_action("search_company_docs",
+            {"query": f"{company_id}|layoffs OR workforce reduction"})
+        search_result = search_company_docs.invoke(...)
+
+        # Step 5: Conditional risk logging
+        if "layoff" in search_result.lower():
+            self.react_logger.log_thought("Risk signals detected!")
+            log_risk_signal.invoke(...)
+
+        # Step 6: Final Answer
+        self.react_logger.log_final_answer(f"Due diligence complete for {company_id}")
+        return final_summary</code></pre>
+            </div>
+
+            <!-- STEP 6: LangGraph Workflow -->
+            <div class="step-content" id="step5">
+                <h2><span class="emoji">🔄</span> LangGraph Workflow</h2>
+
+                <p>To ensure reliability, we wrap the agent logic in a <strong>LangGraph StateGraph</strong>. This creates a deterministic workflow with conditional branching and checkpointing.</p>
+
+                <h3>Workflow Nodes</h3>
+                <table>
+                    <tr>
+                        <th>Node</th>
+                        <th>Purpose</th>
+                    </tr>
+                    <tr><td>📋 Planner</td><td>Constructs plan of actions</td></tr>
+                    <tr><td>🔧 Data Generator</td><td>Invokes MCP dashboard tools</td></tr>
+                    <tr><td>📊 Evaluator</td><td>Scores dashboards per rubric</td></tr>
+                    <tr><td>⚠️ Risk Detector</td><td>Scans for risk keywords</td></tr>
+                    <tr><td>🚨 HITL</td><td>Human approval checkpoint</td></tr>
+                    <tr><td>✅ Auto-Approve</td><td>Automatic approval (no risks)</td></tr>
+                    <tr><td>📝 Final Decision</td><td>Summarizes results</td></tr>
+                </table>
+
+                <div class="code-header"><span class="file-icon">📄</span> src/workflows/due_diligence_graph.py</div>
+                <pre><code class="language-python">from langgraph.graph import StateGraph, END
+from langgraph.checkpoint.memory import MemorySaver
+
+class DueDiligenceState(TypedDict):
+    company_id: str
+    run_id: str
+    plan: dict | None
+    structured_dashboard: str | None
+    rag_dashboard: str | None
+    risk_detected: bool
+    risk_keywords: list[str]
+    hitl_required: bool
+    hitl_approved: bool | None
+    final_decision: str | None
+    execution_path: list[str]
+
+def create_due_diligence_graph() -> StateGraph:
+    workflow = StateGraph(DueDiligenceState)
+
+    # Add nodes
+    workflow.add_node("planner", planner_node)
+    workflow.add_node("data_generator", data_generator_node)
+    workflow.add_node("evaluator", evaluator_node)
+    workflow.add_node("risk_detector", risk_detector_node)
+    workflow.add_node("hitl", hitl_node)
+    workflow.add_node("auto_approve", auto_approve_node)
+    workflow.add_node("final_decision", final_decision_node)
+
+    # Define edges
+    workflow.set_entry_point("planner")
+    workflow.add_edge("planner", "data_generator")
+    workflow.add_edge("data_generator", "evaluator")
+    workflow.add_edge("evaluator", "risk_detector")
+
+    # Conditional branching after risk detection
+    workflow.add_conditional_edges(
+        "risk_detector",
+        route_after_risk_detection,
+        {"hitl": "hitl", "auto_approve": "auto_approve"}
+    )
+
+    workflow.add_edge("hitl", "final_decision")
+    workflow.add_edge("auto_approve", "final_decision")
+    workflow.add_edge("final_decision", END)
+
+    return workflow</code></pre>
+            </div>
+
+            <!-- STEP 7: HITL Implementation -->
+            <div class="step-content" id="step6">
+                <h2><span class="emoji">🚨</span> Human-in-the-Loop (HITL)</h2>
+
+                <p>When the Risk Detector finds keywords like <code>layoff</code>, <code>breach</code>, or <code>lawsuit</code>, the workflow pauses for human approval.</p>
+
+                <h3>Risk Keywords Monitored</h3>
+                <div class="warning-box">
+                    <code>layoff</code>, <code>layoffs</code>, <code>workforce reduction</code>,
+                    <code>breach</code>, <code>data breach</code>, <code>security breach</code>,
+                    <code>lawsuit</code>, <code>litigation</code>, <code>fraud</code>,
+                    <code>bankruptcy</code>, <code>chapter 11</code>, <code>controversy</code>
+                </div>
+
+                <div class="code-header"><span class="file-icon">📄</span> src/workflows/due_diligence_graph.py (HITL Node)</div>
+                <pre><code class="language-python">def hitl_node(state: DueDiligenceState) -> DueDiligenceState:
+    """Human-in-the-Loop checkpoint - pauses for human approval."""
+
+    print("\n" + "="*60)
+    print("🚨 HUMAN-IN-THE-LOOP CHECKPOINT")
+    print("="*60)
+    print(f"Company: {state['company_id']}")
+    print(f"Risk Keywords Detected: {', '.join(state['risk_keywords'])}")
+    print("="*60)
+
+    # Check for auto-approve mode (for testing)
+    auto_approve = os.getenv("HITL_AUTO_APPROVE", "false").lower() == "true"
+
+    if auto_approve:
+        print("\n[AUTO-APPROVE MODE] Automatically approving...")
+        state["hitl_approved"] = True
+    else:
+        # Interactive CLI pause
+        print("\n⏸️  WORKFLOW PAUSED - Awaiting human decision...")
+        while True:
+            response = input("\n👤 Approve this company? (yes/no/details): ").strip().lower()
+
+            if response in ['yes', 'y']:
+                state["hitl_approved"] = True
+                print("\n✅ APPROVED - Workflow will continue")
+                break
+            elif response in ['no', 'n']:
+                state["hitl_approved"] = False
+                print("\n❌ REJECTED - Workflow will mark as rejected")
+                break
+            elif response in ['details', 'd']:
+                # Show dashboard preview
+                print(state.get("structured_dashboard", "")[:500])
+
+    return state</code></pre>
+
+                <h3>Example HITL Output</h3>
+                <div class="terminal">
+<span class="warning">🚨 HUMAN-IN-THE-LOOP CHECKPOINT</span>
+============================================================
+Company: baseten
+Run ID: f3e557fd-dd26-474a-9b0d-29b9525a48fd
+<span class="error">Risk Keywords Detected: layoff, layoffs, workforce reduction, controversy</span>
+============================================================
+
+<span class="warning">⏸️  WORKFLOW PAUSED - Awaiting human decision...</span>
+
+Risk Summary:
+  1. LAYOFF
+  2. LAYOFFS
+  3. WORKFORCE REDUCTION
+  4. CONTROVERSY
+
+<span class="prompt">👤 Approve this company? (yes/no/details):</span> <span class="output">yes</span>
+
+<span class="success">✅ APPROVED - Workflow will continue</span>
+                </div>
+            </div>
+
+            <!-- STEP 8: Airflow DAGs -->
+            <div class="step-content" id="step7">
+                <h2><span class="emoji">✈️</span> Airflow Orchestration</h2>
+
+                <p>Apache Airflow schedules the agentic workflow to run automatically for all companies in the dataset.</p>
+
+                <h3>Three DAGs</h3>
+                <table>
+                    <tr>
+                        <th>DAG</th>
+                        <th>Schedule</th>
+                        <th>Purpose</th>
+                    </tr>
+                    <tr>
+                        <td><code>orbit_initial_load</code></td>
+                        <td>Manual (one-time)</td>
+                        <td>Initial data load and payload assembly</td>
+                    </tr>
+                    <tr>
+                        <td><code>orbit_daily_update</code></td>
+                        <td>Daily @ 2 AM UTC</td>
+                        <td>Incremental updates</td>
+                    </tr>
+                    <tr>
+                        <td><code>orbit_agentic_dashboard</code></td>
+                        <td>Daily @ 3 AM UTC</td>
+                        <td>Run agentic workflow for all companies</td>
+                    </tr>
+                </table>
+
+                <div class="code-header"><span class="file-icon">📄</span> airflow/dags/orbig_agentic_dashboard_dag.py</div>
+                <pre><code class="language-python">from airflow import DAG
+from airflow.operators.python import PythonOperator
+
+def run_agentic_workflow(**context):
+    """Run due diligence workflow for each company."""
+    companies = context['task_instance'].xcom_pull(key='companies')
+
+    for company_id in companies:
+        try:
+            # Set auto-approve for scheduled runs
+            env = os.environ.copy()
+            env['HITL_AUTO_APPROVE'] = 'true'
+
+            result = subprocess.run(
+                [sys.executable, "src/workflows/due_diligence_graph.py", company_id],
+                env=env, timeout=300
+            )
+
+            if result.returncode == 0:
+                print(f"✅ {company_id}: Completed")
+            else:
+                print(f"❌ {company_id}: Failed")
+
+        except subprocess.TimeoutExpired:
+            print(f"⏱️ {company_id}: Timeout")
+
+with DAG(
+    dag_id='orbit_agentic_dashboard',
+    schedule_interval='0 3 * * *',  # Daily at 3 AM UTC
+    catchup=False,
+    tags=['orbit', 'agentic'],
+) as dag:
+
+    t1 = PythonOperator(task_id='check_mcp_health', python_callable=check_mcp_health)
+    t2 = PythonOperator(task_id='get_company_list', python_callable=get_company_list)
+    t3 = PythonOperator(task_id='run_agentic_workflow', python_callable=run_agentic_workflow)
+    t4 = PythonOperator(task_id='generate_summary', python_callable=generate_summary_report)
+
+    t1 >> t2 >> t3 >> t4</code></pre>
+            </div>
+
+            <!-- STEP 9: Running the Demo -->
+            <div class="step-content" id="step8">
+                <h2><span class="emoji">🚀</span> Running the Demo</h2>
+
+                <h3>Option 1: Docker Compose (Recommended)</h3>
+                <div class="terminal">
+<span class="prompt">$</span> docker-compose up --build
+<span class="output">[+] Running 2/2</span>
+<span class="output"> ✔ Container orbit-mcp-server      Started</span>
+<span class="output"> ✔ Container orbit-agent-workflow  Started</span>
+                </div>
+
+                <h3>Option 2: Local Development</h3>
+
+                <p><strong>Terminal 1: Start MCP Server</strong></p>
+                <div class="terminal">
+<span class="prompt">$</span> cd pe-dashboard-ai50-v3
+<span class="prompt">$</span> export PYTHONPATH=.
+<span class="prompt">$</span> uvicorn src.server.mcp_server:app --port 9000
+
+<span class="success">INFO:     Uvicorn running on http://0.0.0.0:9000</span>
+                </div>
+
+                <p><strong>Terminal 2: Run Workflow (Interactive HITL)</strong></p>
+                <div class="terminal">
+<span class="prompt">$</span> export PYTHONPATH=.
+<span class="prompt">$</span> export HITL_AUTO_APPROVE=false
+<span class="prompt">$</span> python3 src/workflows/due_diligence_graph.py baseten
+
+<span class="output">============================================================</span>
+<span class="success">🚀 STARTING DUE DILIGENCE WORKFLOW</span>
+<span class="output">============================================================</span>
+<span class="output">Company ID: baseten</span>
+<span class="output">Run ID: f3e557fd-dd26-474a-9b0d-29b9525a48fd</span>
+
+<span class="output">📍 Completed node: planner</span>
+<span class="output">📍 Completed node: data_generator</span>
+<span class="output">📍 Completed node: evaluator</span>
+<span class="output">📍 Completed node: risk_detector</span>
+
+<span class="warning">🚨 HUMAN-IN-THE-LOOP CHECKPOINT</span>
+<span class="error">Risk Keywords Detected: layoff, layoffs, workforce reduction, controversy</span>
+
+<span class="prompt">👤 Approve this company? (yes/no/details):</span> <span class="output">yes</span>
+
+<span class="output">📍 Completed node: hitl</span>
+<span class="output">📍 Completed node: final_decision</span>
+
+<span class="output">============================================================</span>
+<span class="success">✅ WORKFLOW COMPLETE</span>
+<span class="output">============================================================</span>
+<span class="output">Execution Path: planner → data_generator → evaluator → risk_detector → hitl → final_decision</span>
+<span class="success">Branch Taken: HITL</span>
+                </div>
+
+                <h3>Test MCP Endpoints</h3>
+                <div class="terminal">
+<span class="prompt">$</span> curl http://localhost:9000/health
+<span class="output">{"status":"healthy","server":"MCP PE Dashboard"}</span>
+
+<span class="prompt">$</span> curl http://localhost:9000/resource/ai50/companies
+<span class="output">{"company_ids":["anthropic","openai","baseten"...],"count":50}</span>
+                </div>
+            </div>
+
+            <!-- STEP 10: Conclusion -->
+            <div class="step-content" id="step9">
+                <h2><span class="emoji">🎉</span> Conclusion</h2>
+
+                <p>Congratulations! You've explored <strong>Project ORBIT</strong>, a production-ready agentic system for PE due diligence.</p>
+
+                <div class="success-box">
+                    <strong>What We Built:</strong>
+                    <ul style="margin: 10px 0 0 0;">
+                        <li>✅ 3 Core Tools with async support and Pydantic validation</li>
+                        <li>✅ MCP Server exposing Tools, Resources, and Prompts</li>
+                        <li>✅ Supervisor Agent with ReAct pattern logging</li>
+                        <li>✅ LangGraph workflow with 7 nodes and conditional branching</li>
+                        <li>✅ Human-in-the-Loop checkpoints for risk management</li>
+                        <li>✅ 3 Airflow DAGs for automated orchestration</li>
+                        <li>✅ Docker Compose for containerized deployment</li>
+                        <li>✅ 37 passing tests with comprehensive coverage</li>
+                    </ul>
+                </div>
+
+                <h3>Key Takeaways</h3>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>🔌 Decouple Tools</h4>
+                        <p>MCP enables tool discovery and reuse across agents</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📊 Structured Logging</h4>
+                        <p>ReAct traces enable debugging and auditability</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🚨 Safety Gates</h4>
+                        <p>HITL ensures human oversight for high-risk decisions</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🔄 Deterministic Flows</h4>
+                        <p>LangGraph provides reliable, testable workflows</p>
+                    </div>
+                </div>
+
+                <h3>Next Steps</h3>
+                <ul>
+                    <li>Enhance Planner/Evaluator agents with LLM-based reasoning</li>
+                    <li>Add email/Slack notifications for HITL checkpoints</li>
+                    <li>Implement HTTP-based async approval workflow</li>
+                    <li>Add more risk detection patterns (sentiment analysis, NER)</li>
+                    <li>Scale to full Forbes AI 50 dataset</li>
+                </ul>
+
+                <div class="info-box">
+                    <strong>Resources:</strong><br>
+                    • <a href="https://github.com/langchain-ai/langgraph" target="_blank">LangGraph Documentation</a><br>
+                    • <a href="https://modelcontextprotocol.io/" target="_blank">Model Context Protocol Spec</a><br>
+                    • <a href="https://airflow.apache.org/" target="_blank">Apache Airflow</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <button class="secondary" id="backBtn" onclick="changeStep(-1)" disabled>← Back</button>
+            <button id="nextBtn" onclick="changeStep(1)">Next →</button>
+        </footer>
+    </main>
+
+    <!-- Prism.js Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+
+    <!-- Navigation Logic -->
+    <script>
+        let currentStep = 0;
+        const totalSteps = 10;
+
+        function updateUI() {
+            // Update Content Visibility
+            document.querySelectorAll('.step-content').forEach((el, index) => {
+                el.classList.toggle('active', index === currentStep);
+            });
+
+            // Update Sidebar Active State
+            document.querySelectorAll('.steps-list li').forEach((el, index) => {
+                el.classList.toggle('active', index === currentStep);
+            });
+
+            // Update Buttons
+            document.getElementById('backBtn').disabled = currentStep === 0;
+            document.getElementById('nextBtn').innerText = currentStep === totalSteps - 1 ? "Done ✓" : "Next →";
+
+            // Scroll to top
+            document.querySelector('main').scrollTop = 0;
+
+            // Re-highlight code blocks
+            Prism.highlightAll();
+        }
+
+        function changeStep(direction) {
+            const newStep = currentStep + direction;
+            if (newStep >= 0 && newStep < totalSteps) {
+                currentStep = newStep;
+                updateUI();
+            }
+        }
+
+        function goToStep(stepIndex) {
+            currentStep = stepIndex;
+            updateUI();
+        }
+
+        // Initialize
+        updateUI();
+    </script>
+</body>
+</html>
