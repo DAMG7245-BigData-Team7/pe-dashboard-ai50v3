@@ -179,7 +179,81 @@ PYTHONPATH=. pytest --cov=src --cov-report=html
 ## 📁 Project Structure
 
 ```
-
+.
+├── airflow/
+│   └── dags/
+│       └── orbit_agentic_dashboard_dag.py
+├── config/
+│   ├── logging_config.yaml
+│   ├── mcp_config.json
+│   └── settings_example.yaml
+├── data/
+│   ├──json
+│   │   └── mcp_server.py
+│   ├── tools/
+│   │    agentic_dag_results.json
+│   ├── dashboards/
+│   │   ├── abridge_rag├── payload_tool.py
+│   │   ├── rag_tool.py
+│   │   └── risk_20251121_112706_fa24481b.md
+│   │   ├── abridge_structured_20251121_112706_fa24481b.md
+│   │   ├── anthropic_rag_20251121_105633_b97e16f_logger.py
+│   ├── utils/
+│   │   ├── __init__.py
+│   │  5.md
+│   │   ├── anthropic_structured_20251121_112753_ed5757c5.md
+│   │   └── [... approx. 100+ other generated dashboard markdown files ...]
+│   ├── payloads/
+│   │   ├── abridge.json
+│   │   ├── anthropic.json
+│   │   ├── anysphere.json   ├── dashboard_generator.py
+│   │   └── react_logger.py
+│   └── workflows/
+│   │   ├── baseten.json
+│   │   ├── captions.json
+│   │   
+│       └── due_diligence_graph.py
+├── tests/
+│   ├── test_mc├── clay.json
+│   │   ├── coactive-ai.json
+│   │   ├── coherepserver.py
+│   ├── test_tools.py
+│   └── test_workflow_branches.py
+├── .env.example
+├── .gitignore
+├── attestments.txt
+├── docker-compose.yml
+.json
+│   │   └── [... approx. 40+ other company payload json files ...]
+│   ├── risk_signals.├── Dockerfile.agent
+├── Dockerfile.airflow
+├── Dockerfile.mcp
+├── LICENSE
+├── pytestjsonl
+│   └── test_verification.jsonl
+├── src/
+│   ├── agents/
+│.ini
+├── Readme.md
+├── repomix-output.xml
+├── requirements.txt
+└──   │   ├── evaluation_agent.py
+│   │   ├── planner_agent.py
+│   │ run_workflow.sh
+```   └── supervisor_agent.py
+│   ├── server/
+│   │   ├── mcp_server.config.json
+│   │   └── mcp_server.py
+│   ├── tools/
+│   │   ├── payload_tool.py
+│   │   ├── rag_tool.py
+│   │   └── risk_logger.py
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── dashboard_generator.py
+│   │   └── react_logger.py
+│   ├── workflows/
+│
 ```
 
 ---
