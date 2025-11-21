@@ -211,81 +211,43 @@ PYTHONPATH=. pytest --cov=src --cov-report=html
 ## 📁 Project Structure
 
 ```
-.
-├── airflow/
-│   └── dags/
-│       └── orbit_agentic_dashboard_dag.py
-├── config/
-│   ├── logging_config.yaml
-│   ├── mcp_config.json
-│   └── settings_example.yaml
-├── data/
-│   ├──json
-│   │   └── mcp_server.py
-│   ├── tools/
-│   │    agentic_dag_results.json
-│   ├── dashboards/
-│   │   ├── abridge_rag├── payload_tool.py
-│   │   ├── rag_tool.py
-│   │   └── risk_20251121_112706_fa24481b.md
-│   │   ├── abridge_structured_20251121_112706_fa24481b.md
-│   │   ├── anthropic_rag_20251121_105633_b97e16f_logger.py
-│   ├── utils/
-│   │   ├── __init__.py
-│   │  5.md
-│   │   ├── anthropic_structured_20251121_112753_ed5757c5.md
-│   │   └── [... approx. 100+ other generated dashboard markdown files ...]
-│   ├── payloads/
-│   │   ├── abridge.json
-│   │   ├── anthropic.json
-│   │   ├── anysphere.json   ├── dashboard_generator.py
-│   │   └── react_logger.py
-│   └── workflows/
-│   │   ├── baseten.json
-│   │   ├── captions.json
-│   │   
-│       └── due_diligence_graph.py
-├── tests/
-│   ├── test_mc├── clay.json
-│   │   ├── coactive-ai.json
-│   │   ├── coherepserver.py
-│   ├── test_tools.py
-│   └── test_workflow_branches.py
-├── .env.example
-├── .gitignore
-├── attestments.txt
-├── docker-compose.yml
-.json
-│   │   └── [... approx. 40+ other company payload json files ...]
-│   ├── risk_signals.├── Dockerfile.agent
-├── Dockerfile.airflow
-├── Dockerfile.mcp
-├── LICENSE
-├── pytestjsonl
-│   └── test_verification.jsonl
+pe-dashboard-ai50-v3/
 ├── src/
 │   ├── agents/
-│.ini
-├── Readme.md
-├── repomix-output.xml
-├── requirements.txt
-└──   │   ├── evaluation_agent.py
-│   │   ├── planner_agent.py
-│   │ run_workflow.sh
-```   └── supervisor_agent.py
-│   ├── server/
-│   │   ├── mcp_server.config.json
-│   │   └── mcp_server.py
+│   │   ├── supervisor_agent.py       # Main supervisor with ReAct
+│   │   ├── planner_agent.py          # Plan generation
+│   │   └── evaluation_agent.py       # Dashboard evaluation
 │   ├── tools/
-│   │   ├── payload_tool.py
-│   │   ├── rag_tool.py
-│   │   └── risk_logger.py
-│   ├── utils/
-│   │   ├── __init__.py
-│   │   ├── dashboard_generator.py
-│   │   └── react_logger.py
+│   │   ├── payload_tool.py           # Payload retrieval
+│   │   ├── rag_tool.py               # Vector DB search
+│   │   └── risk_logger.py            # Risk signal logging
 │   ├── workflows/
-│
+│   │   └── due_diligence_graph.py    # LangGraph workflow
+│   ├── server/
+│   │   └── mcp_server.py             # MCP HTTP server
+│   ├── utils/
+│   │   ├── react_logger.py           # ReAct trace logger
+│   │   └── dashboard_generator.py    # Dashboard generation
+│   └── models.py                      # Pydantic models
+├── tests/
+│   ├── test_tools.py                  # Tool unit tests
+│   ├── test_mcpserver.py              # MCP integration tests
+│   └── test_workflow_branches.py      # Workflow branch tests
+├── airflow/
+│   └── dags/
+│       └── orbig_agentic_dashboard_dag.py
+├── config/
+│   ├── mcp_config.json                # MCP client config
+│   └── settings_example.yaml          # Application settings
+├── data/                               # Runtime data
+├── logs/                               # Log files
+├── docker-compose.yml                 # Full stack orchestration
+├── .env.example                        # Environment template
+├── requirements.txt                    # Python dependencies
+├── Dockerfile.mcp                 
+├── Dockerfile.agent                
+├── Dockerfile.airflow                
+└── README.md                           # This file
 ```
 
 ---
@@ -393,13 +355,6 @@ pytest -v
 - **Workflow Nodes**: 7 nodes
 - **Risk Keywords**: 11 monitored keywords
 - **Airflow DAGs**: 3 DAGs
-
----
-
-
-## 📄 License
-
-MIT License - See [LICENSE](LICENSE) for detail
 
 ---
 
