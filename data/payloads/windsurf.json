@@ -1,0 +1,108 @@
+{
+  "company": {
+    "company_name": "windsurf",
+    "company_id": "windsurf",
+    "website": "https://codeium.com",
+    "linkedin": "Not disclosed",
+    "founded_year": null,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "Software Development",
+    "subcategory": null,
+    "tagline": "Built to Keep You in Flow State",
+    "description": "The Windsurf Editor is where the work of developers and AI truly flow together, allowing for a coding experience that feels like literal magic. It combines deep codebase understanding and a breadth of advanced tools into a powerful, seamless, and collaborative flow.",
+    "business_model": "B2B",
+    "target_customers": "Developers and non-developers",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "Not disclosed",
+    "total_funding_numeric": null,
+    "last_funding_date": null,
+    "last_funding_stage": null,
+    "valuation": "Not disclosed",
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": null,
+    "total_raised_numeric": null,
+    "funding_rounds": [],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": null,
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": 0,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 0,
+    "recent_products": [],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "Not disclosed"
+  },
+  "visibility": {
+    "news_mentions_30d": 4,
+    "sentiment_score": null,
+    "github_stars": 0,
+    "github_url": "https://github.com/windsurf",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-11-04",
+      "event_type": "product_launch",
+      "title": "Open-sourcing the successor of Jupyter Notebook",
+      "description": "Deepnote announced that they are open-sourcing the successor of Jupyter notebook, enhancing collaboration and accessibility in data science.",
+      "source": "https://deepnote.com/blog/were-open-sourcing-the-successor-of-jupyter-notebook"
+    },
+    {
+      "date": "2025-11-04",
+      "event_type": "other",
+      "title": "Scale AI's Status Post-Meta Deal",
+      "description": "An article discusses Scale AI's challenges and the CFO's assertion that the company is not a 'zombie company' following its deal with Meta.",
+      "source": "https://www.cnbc.com/2025/11/04/scale-ais-life-after-meta-has-been-rocky-cfo-insists-not-a-zombie.html"
+    }
+  ],
+  "funding_rounds": [],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Total funding amount",
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://codeium.com",
+    "News Articles: 4 articles",
+    "GitHub: windsurf"
+  ],
+  "extracted_at": "2025-11-07T05:58:37.198059Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

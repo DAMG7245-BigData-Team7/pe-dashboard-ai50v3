@@ -1,0 +1,147 @@
+{
+  "company": {
+    "company_name": "skild-ai",
+    "company_id": "skildai",
+    "website": "https://www.skild.ai",
+    "linkedin": null,
+    "founded_year": null,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "Not disclosed",
+    "subcategory": "Not disclosed",
+    "tagline": "Bringing AI into the physical world",
+    "description": "Most AI today exists solely in cyberspace. Physical reality is far more information rich, and automating physical tasks offers immense returns. We are building AI that will interact with and affect change in the real world. Our thesis is that physical AI should be omni-bodied and should not be limited by robot or task type. We are building a unified, omni-bodied brain to control any robot for any task.",
+    "business_model": "Not disclosed",
+    "target_customers": "Not disclosed",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$0M",
+    "total_funding_numeric": 0.0,
+    "last_funding_date": "2025-10-28",
+    "last_funding_stage": null,
+    "valuation": null,
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "Not disclosed",
+    "total_raised_numeric": null,
+    "funding_rounds": [
+      {
+        "date": "2025-10-28",
+        "stage": null,
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": "NVIDIA",
+        "other_investors": [
+          "Palantir",
+          "Nokia"
+        ],
+        "valuation": null,
+        "source": "https://www.globenewswire.com/news-release/2025/10/28/3175820/0/en/NVIDIA-and-US-Manufacturing-and-Robotics-Leaders-Drive-America-s-Reindustrialization-With-Physical-AI.html"
+      }
+    ],
+    "lead_investors": [
+      "NVIDIA"
+    ],
+    "all_investors": [
+      "NVIDIA",
+      "Nokia",
+      "Palantir"
+    ],
+    "last_round_date": "2025-10-28",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 0,
+    "recent_products": [
+      "Open Models and Data",
+      "AI Innovation in Language",
+      "Biology and Robotics",
+      "Autonomous Packing",
+      "Mobile Manipulation Platform",
+      "Security/Inspection Robot Platform"
+    ],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "Not disclosed"
+  },
+  "visibility": {
+    "news_mentions_30d": 5,
+    "sentiment_score": null,
+    "github_stars": null,
+    "github_url": null,
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-10-28",
+      "event_type": "product_launch",
+      "title": "NVIDIA Launches Open Models and Data to Accelerate AI Innovation Across Language, Biology and Robotics",
+      "description": "NVIDIA has launched open models and data aimed at fostering innovation in AI across various fields, including language, biology, and robotics.",
+      "source": "https://blogs.nvidia.com/blog/open-models-data-ai/"
+    },
+    {
+      "date": "2025-10-28",
+      "event_type": "partnership",
+      "title": "NVIDIA and US Manufacturing and Robotics Leaders Drive America’s Reindustrialization With Physical AI",
+      "description": "NVIDIA partners with US manufacturing and robotics leaders to drive the reindustrialization of America using Physical AI technologies.",
+      "source": "https://nvidianews.nvidia.com/news/nvidia-us-manufacturing-robotics-physical-ai"
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-10-28",
+      "stage": null,
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": "NVIDIA",
+      "other_investors": [
+        "Palantir",
+        "Nokia"
+      ],
+      "valuation": null,
+      "source": "https://www.globenewswire.com/news-release/2025/10/28/3175820/0/en/NVIDIA-and-US-Manufacturing-and-Robotics-Leaders-Drive-America-s-Reindustrialization-With-Physical-AI.html"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.skild.ai",
+    "News Articles: 5 articles"
+  ],
+  "extracted_at": "2025-11-07T05:56:01.300360Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

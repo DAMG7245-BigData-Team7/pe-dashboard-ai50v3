@@ -1,0 +1,197 @@
+{
+  "company": {
+    "company_name": "fireworks-ai",
+    "company_id": "fireworksai",
+    "website": "https://fireworks.ai",
+    "linkedin": "Not disclosed",
+    "founded_year": null,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "Artificial Intelligence",
+    "subcategory": "Generative AI",
+    "tagline": "Fastest Inference for Generative AI",
+    "description": "Fireworks AI provides a platform to build and optimize generative AI capabilities at scale, with a focus on fast inference and ease of model tuning. Their infrastructure supports various AI applications including code assistance, conversational AI, and enterprise search solutions.",
+    "business_model": "B2B",
+    "target_customers": "Enterprise, AI developers",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$250.0M",
+    "total_funding_numeric": 250.0,
+    "last_funding_date": "2025-10",
+    "last_funding_stage": "series_c",
+    "valuation": null,
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "$250.0M",
+    "total_raised_numeric": 250.0,
+    "funding_rounds": [
+      {
+        "date": "2025-10",
+        "stage": "series_c",
+        "amount": "$250M",
+        "amount_numeric": 250.0,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "Fireworks AI raises $250M Series C to power the future of enterprise AI."
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": "2025-10",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": 15,
+    "recent_hires": null,
+    "office_locations": [
+      "Redwood City, CA",
+      "New York, NY",
+      "San Mateo, CA"
+    ],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 1,
+    "recent_partnerships": [
+      "Fireworks and AMD"
+    ],
+    "product_launches_12m": 5,
+    "recent_products": [
+      "Fireworks for Startups Program",
+      "Audio September Release - Streaming Transcription V2 and Streaming Speaker Diarization",
+      "DeepSeek V3.1",
+      "Quality first: how Fireworks.ai is the go-to place for gpt-oss",
+      "Announcing Eval Protocol"
+    ],
+    "customer_growth": null,
+    "revenue_info": null
+  },
+  "visibility": {
+    "news_mentions_30d": 4,
+    "sentiment_score": null,
+    "github_stars": 0,
+    "github_url": "https://github.com/fireworksai",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-10-28",
+      "event_type": "funding",
+      "title": "Fireworks AI raises $250M Series C",
+      "description": "Fireworks AI raises $250 million in Series C funding to enhance enterprise AI capabilities.",
+      "source": null
+    },
+    {
+      "date": "2025-10-20",
+      "event_type": "partnership",
+      "title": "Fireworks and AMD partner",
+      "description": "Fireworks partners with AMD to power the next generation of AI infrastructure using AMD Instinct™ GPUs.",
+      "source": null
+    },
+    {
+      "date": "2025-10-27",
+      "event_type": "product_launch",
+      "title": "NVIDIA Nemotron Nano 2 VL Model launched",
+      "description": "Launch of the new NVIDIA Nemotron Nano 2 VL Model on Fireworks AI.",
+      "source": null
+    },
+    {
+      "date": "2025-10-01",
+      "event_type": "product_launch",
+      "title": "Launching Fireworks for Startups Program",
+      "description": "Announcement of the new Fireworks for Startups Program.",
+      "source": null
+    },
+    {
+      "date": "2025-10-15",
+      "event_type": "product_launch",
+      "title": "LLM on the edge: Model picking",
+      "description": "Introduction of model picking with Fireworks Eval Protocol and Ollama.",
+      "source": null
+    },
+    {
+      "date": "2025-09-25",
+      "event_type": "product_launch",
+      "title": "Audio September Release",
+      "description": "Release of Streaming Transcription V2 and Streaming Speaker Diarization features.",
+      "source": null
+    },
+    {
+      "date": "2025-05-29",
+      "event_type": "milestone",
+      "title": "Fireworks DevDay 2025 Wrapped",
+      "description": "Completion of Fireworks DevDay 2025 event.",
+      "source": null
+    },
+    {
+      "date": "2025-04-09",
+      "event_type": "product_launch",
+      "title": "Building Enterprise-Scale RAG Systems",
+      "description": "Introduction of enterprise-scale RAG systems using Fireworks AI and MongoDB Atlas.",
+      "source": null
+    },
+    {
+      "date": "2025-03-18",
+      "event_type": "product_launch",
+      "title": "Fireworks AI Now Supports NVIDIA NIM",
+      "description": "Fireworks AI announces support for NVIDIA NIM deployments for enhanced AI inference.",
+      "source": null
+    },
+    {
+      "date": "2025-06-11",
+      "event_type": "product_launch",
+      "title": "Fireworks Experimentation Platform launch",
+      "description": "Launch of the Fireworks Experimentation Platform (GA) and Build SDK (Beta).",
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-10",
+      "stage": "series_c",
+      "amount": "$250M",
+      "amount_numeric": 250.0,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "Fireworks AI raises $250M Series C to power the future of enterprise AI."
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://fireworks.ai",
+    "News Articles: 4 articles",
+    "GitHub: fireworksai"
+  ],
+  "extracted_at": "2025-11-07T05:50:39.799774Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

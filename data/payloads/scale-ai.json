@@ -1,0 +1,158 @@
+{
+  "company": {
+    "company_name": "scale-ai",
+    "company_id": "scaleai",
+    "website": "https://scale.com",
+    "linkedin": "Not disclosed",
+    "founded_year": 2016,
+    "hq_city": "San Francisco",
+    "hq_country": "Not disclosed",
+    "category": "AI",
+    "subcategory": "Data Solutions",
+    "tagline": "Accelerate the Development of AI Applications",
+    "description": "Scale AI's mission is to develop reliable AI systems for the world’s most important decisions. They provide high-quality data and full-stack technologies that power the world’s leading models and enable enterprises and governments to build, deploy, and oversee AI applications that deliver real impact.",
+    "business_model": "B2B",
+    "target_customers": "Governments and Enterprises",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Apply AI",
+      "Agentic Solutions"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$400.0M",
+    "total_funding_numeric": 400.0,
+    "last_funding_date": "2023",
+    "last_funding_stage": "series_b",
+    "valuation": "$29B",
+    "headcount": 1000,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "$400.0M",
+    "total_raised_numeric": 400.0,
+    "funding_rounds": [
+      {
+        "date": "2023",
+        "stage": "series_b",
+        "amount": "$400M",
+        "amount_numeric": 400.0,
+        "lead_investor": "Perplexity",
+        "other_investors": [
+          "Snapchat"
+        ],
+        "valuation": "$29B",
+        "source": "Search Engine Journal"
+      }
+    ],
+    "lead_investors": [
+      "Perplexity"
+    ],
+    "all_investors": [
+      "Snapchat",
+      "Perplexity"
+    ],
+    "last_round_date": "2023",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": 1000,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [
+      "San Francisco",
+      "New York",
+      "London",
+      "Washington D.C.",
+      "St. Louis"
+    ],
+    "geographic_expansion": "Expanding offices in New York, London, Washington D.C., and St. Louis",
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 1,
+    "recent_partnerships": [
+      "Korea’s AI Safety Institute"
+    ],
+    "product_launches_12m": null,
+    "recent_products": [],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "Not disclosed"
+  },
+  "visibility": {
+    "news_mentions_30d": 5,
+    "sentiment_score": null,
+    "github_stars": 0,
+    "github_url": "https://github.com/scaleai",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-11-05",
+      "event_type": "office_opening",
+      "title": "Expanding Our Presence with New Offices Around the World",
+      "description": "Scale AI is expanding offices in New York, London, Washington D.C., and St. Louis to support growth, innovation, and reliable AI development worldwide.",
+      "source": null
+    },
+    {
+      "date": "2025-10-28",
+      "event_type": "partnership",
+      "title": "Scale AI Partners with Korea’s AI Safety Institute to Advance Global AI Evaluation and Governance",
+      "description": "Scale AI partners with Korea’s AI Safety Institute to enhance global AI evaluation and governance efforts.",
+      "source": null
+    },
+    {
+      "date": "2025-10-29",
+      "event_type": "leadership_change",
+      "title": "Why I Joined Scale: Building the Applications for Saudi Arabia's AI Future",
+      "description": "Talal AlBakr joins Scale AI to focus on building production-ready AI applications that support Saudi Arabia’s Vision 2030.",
+      "source": null
+    },
+    {
+      "date": "2025-10-22",
+      "event_type": "partnership",
+      "title": "Partnering with Lindbergh Schools to Prepare the Next Generation for the Age of AI",
+      "description": "As part of the Pledge to America’s Youth, Scale AI collaborates with Lindbergh Schools to promote AI literacy in classrooms across America.",
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2023",
+      "stage": "series_b",
+      "amount": "$400M",
+      "amount_numeric": 400.0,
+      "lead_investor": "Perplexity",
+      "other_investors": [
+        "Snapchat"
+      ],
+      "valuation": "$29B",
+      "source": "Search Engine Journal"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://scale.com",
+    "News Articles: 5 articles",
+    "GitHub: scaleai"
+  ],
+  "extracted_at": "2025-11-07T05:55:35.639082Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

@@ -1,0 +1,122 @@
+{
+  "company": {
+    "company_name": "luminance",
+    "company_id": "luminance",
+    "website": "https://www.luminance.com",
+    "linkedin": "Not disclosed",
+    "founded_year": 2025,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "Legal Technology",
+    "subcategory": "AI for Legal",
+    "tagline": "Legal-Grade™ AI for Every Contract Touchpoint",
+    "description": "Developed by AI experts from the University of Cambridge, Luminance's Legal-Grade™ AI automates and augments every touchpoint a business has with its contracts. Today, more than 700 organizations across 70 countries use Luminance, including all of the Big Four consultancy firms and global companies such as AMD, BBC Studios, and Hitachi.",
+    "business_model": "B2B",
+    "target_customers": "Legal professionals and organizations",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$75.0M",
+    "total_funding_numeric": 75.0,
+    "last_funding_date": "2025-01-01",
+    "last_funding_stage": "series_c",
+    "valuation": null,
+    "headcount": 700,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "$75.0M",
+    "total_raised_numeric": 75.0,
+    "funding_rounds": [
+      {
+        "date": "2025-01-01",
+        "stage": "series_c",
+        "amount": "$75m",
+        "amount_numeric": 75.0,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "About Page"
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": "2025-01-01",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": 700,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [
+      "University of Cambridge"
+    ],
+    "geographic_expansion": "70 countries",
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 0,
+    "recent_products": [],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "$75 million Series C funding raised in early 2025"
+  },
+  "visibility": {
+    "news_mentions_30d": 5,
+    "sentiment_score": null,
+    "github_stars": 0,
+    "github_url": "https://github.com/luminance",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-01-01",
+      "event_type": "funding",
+      "title": "$75 Million Series C Funding",
+      "description": "Luminance raised $75 million in Series C funding to support its global expansion and technology development.",
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-01-01",
+      "stage": "series_c",
+      "amount": "$75m",
+      "amount_numeric": 75.0,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "About Page"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Company valuation",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.luminance.com",
+    "News Articles: 5 articles",
+    "GitHub: luminance"
+  ],
+  "extracted_at": "2025-11-07T05:52:34.086246Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

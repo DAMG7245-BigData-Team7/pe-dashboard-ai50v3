@@ -1,0 +1,158 @@
+{
+  "company": {
+    "company_name": "photoroom",
+    "company_id": "photoroom",
+    "website": "https://www.photoroom.com",
+    "linkedin": null,
+    "founded_year": 2019,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "Photo editing",
+    "subcategory": "AI-powered photo studio",
+    "tagline": "Create pro visuals that sell",
+    "description": "Photoroom is built for sellers: our AI removes backgrounds with best-in-class precision and generates the visuals you need to boost trust and drive sales. From product listings to social content, we help you create it all.",
+    "business_model": "B2B",
+    "target_customers": "Entrepreneurs, marketers, and global teams",
+    "pricing_model": "Starting from $7.50 a month with the yearly plan",
+    "competitors": [
+      "Adobe",
+      "Canva",
+      "Fotor"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$0M",
+    "total_funding_numeric": 0.0,
+    "last_funding_date": "2025-10-28",
+    "last_funding_stage": null,
+    "valuation": null,
+    "headcount": 300,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "Not disclosed",
+    "total_raised_numeric": null,
+    "funding_rounds": [
+      {
+        "date": "2025-10-28",
+        "stage": null,
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "Forbes"
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": "2025-10-28",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": 300,
+    "headcount_growth_yoy": null,
+    "open_roles": 13,
+    "recent_hires": null,
+    "office_locations": [
+      "Amsterdam",
+      "Baltimore",
+      "Barcelona",
+      "Berlin",
+      "Boston",
+      "Chicago",
+      "Denver",
+      "Dublin",
+      "France",
+      "Lisbon",
+      "London",
+      "New Jersey",
+      "New York",
+      "Oslo",
+      "Paris",
+      "Prague",
+      "Rome",
+      "San Francisco",
+      "Skopje",
+      "Tiranë",
+      "Vienna",
+      "Warsaw"
+    ],
+    "geographic_expansion": "Available in over 180 countries.",
+    "press_mentions_12m": 1,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 0,
+    "recent_products": [
+      "Background remover",
+      "Image generator",
+      "Virtual model",
+      "Product staging",
+      "Background generator",
+      "AI product photography",
+      "Logo maker",
+      "Resize and expand",
+      "Remove objects",
+      "Product shadows",
+      "Change background color",
+      "Brand kit"
+    ],
+    "customer_growth": null,
+    "revenue_info": null
+  },
+  "visibility": {
+    "news_mentions_30d": 1,
+    "sentiment_score": null,
+    "github_stars": 391,
+    "github_url": "https://github.com/photoroom",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2019-01-01",
+      "event_type": "milestone",
+      "title": "Company Founded",
+      "description": "Photoroom was founded by Matt and Eliot to simplify the process of creating product visuals after a frustrating experience with traditional photo editing tools.",
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-10-28",
+      "stage": null,
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "Forbes"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Company valuation",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.photoroom.com",
+    "News Articles: 1 articles",
+    "GitHub: photoroom"
+  ],
+  "extracted_at": "2025-11-07T05:54:11.920445Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

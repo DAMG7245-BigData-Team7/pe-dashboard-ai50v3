@@ -1,0 +1,266 @@
+{
+  "company": {
+    "company_name": "xai",
+    "company_id": "xai",
+    "website": "https://x.ai",
+    "linkedin": "Not disclosed",
+    "founded_year": null,
+    "hq_city": "Palo Alto",
+    "hq_country": "USA",
+    "category": "Artificial Intelligence",
+    "subcategory": "AI Development",
+    "tagline": "AI for all humanity",
+    "description": "We build AI specifically to advance human comprehension and capabilities. Our mission is to understand the universe and make AI's knowledge all-encompassing.",
+    "business_model": "B2B",
+    "target_customers": "Businesses in need of AI solutions",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$12000.0M",
+    "total_funding_numeric": 12000.0,
+    "last_funding_date": "2024-08",
+    "last_funding_stage": "series_b",
+    "valuation": null,
+    "headcount": 2,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "$12000.0M",
+    "total_raised_numeric": 12000.0,
+    "funding_rounds": [
+      {
+        "date": "2025-02",
+        "stage": "series_c",
+        "amount": "$6B",
+        "amount_numeric": 6000.0,
+        "lead_investor": "A16Z",
+        "other_investors": [
+          "Blackrock",
+          "Fidelity Management & Research Company",
+          "Kingdom Holdings",
+          "Lightspeed",
+          "MGX",
+          "Morgan Stanley",
+          "OIA",
+          "QIA",
+          "Sequoia Capital",
+          "Valor Equity Partners",
+          "Vy Capital"
+        ],
+        "valuation": null,
+        "source": null
+      },
+      {
+        "date": "2024-08",
+        "stage": "series_b",
+        "amount": "$6 billion",
+        "amount_numeric": 6000.0,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": null
+      }
+    ],
+    "lead_investors": [
+      "A16Z"
+    ],
+    "all_investors": [
+      "Sequoia Capital",
+      "Vy Capital",
+      "Morgan Stanley",
+      "Kingdom Holdings",
+      "A16Z",
+      "Blackrock",
+      "Fidelity Management & Research Company",
+      "MGX",
+      "Lightspeed",
+      "Valor Equity Partners",
+      "OIA",
+      "QIA"
+    ],
+    "last_round_date": "2025-02",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": 2,
+    "headcount_growth_yoy": null,
+    "open_roles": 0,
+    "recent_hires": null,
+    "office_locations": [
+      "Palo Alto",
+      "Seattle",
+      "San Francisco",
+      "Memphis",
+      "London"
+    ],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 9,
+    "recent_partnerships": [
+      "A16Z",
+      "Blackrock",
+      "Fidelity Management & Research Company",
+      "Kingdom Holdings",
+      "Lightspeed",
+      "MGX",
+      "Morgan Stanley",
+      "OIA",
+      "QIA",
+      "Sequoia Capital",
+      "Valor Equity Partners",
+      "Vy Capital"
+    ],
+    "product_launches_12m": 3,
+    "recent_products": [
+      "Grok 4",
+      "Grok 4 Fast",
+      "Grok Code Fast 1"
+    ],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "Not disclosed"
+  },
+  "visibility": {
+    "news_mentions_30d": 5,
+    "sentiment_score": null,
+    "github_stars": 24,
+    "github_url": "https://github.com/xai",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-09-19",
+      "event_type": "product_launch",
+      "title": "Grok 4 Fast",
+      "description": "Introducing grok-code-fast-1, a speedy and economical reasoning model that excels at agentic coding.",
+      "source": null
+    },
+    {
+      "date": "2025-08-28",
+      "event_type": "product_launch",
+      "title": "Grok 4",
+      "description": "Grok 4 is now available with native tool use and real-time search integration for SuperGrok and Premium+ subscribers.",
+      "source": null
+    },
+    {
+      "date": "2025-09-25",
+      "event_type": "product_launch",
+      "title": "xAI for Government",
+      "description": "Announcing a suite of frontier AI products available first to United States Government customers.",
+      "source": null
+    },
+    {
+      "date": "2025-07-09",
+      "event_type": "product_launch",
+      "title": "Grok 4 Release",
+      "description": "Release of Grok 4, touted as the world's best model.",
+      "source": null
+    },
+    {
+      "date": "2025-02-19",
+      "event_type": "funding",
+      "title": "Series C",
+      "description": "xAI raises $6 billion in a Series C funding round.",
+      "source": null
+    },
+    {
+      "date": "2024-12-12",
+      "event_type": "product_launch",
+      "title": "Grok Image Generation Release",
+      "description": "Updating Grok's capabilities with a new autoregressive image generation model, code-named Aurora.",
+      "source": null
+    },
+    {
+      "date": "2024-11-04",
+      "event_type": "product_launch",
+      "title": "API Public Beta",
+      "description": "Developers can begin building on Grok foundation models using the newly released API.",
+      "source": null
+    },
+    {
+      "date": "2024-07-14",
+      "event_type": "product_launch",
+      "title": "Grok 3 Beta",
+      "description": "Preview of Grok 3, blending superior reasoning with pretraining knowledge.",
+      "source": null
+    },
+    {
+      "date": "2024-03-28",
+      "event_type": "product_launch",
+      "title": "Open Release of Grok-1",
+      "description": "Releasing the weights and architecture of Grok-1.",
+      "source": null
+    },
+    {
+      "date": "2024-04-12",
+      "event_type": "product_launch",
+      "title": "Announcing Grok-1.5",
+      "description": "Grok-1.5 comes with improved reasoning capabilities and high token context.",
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-02",
+      "stage": "series_c",
+      "amount": "$6B",
+      "amount_numeric": 6000.0,
+      "lead_investor": "A16Z",
+      "other_investors": [
+        "Blackrock",
+        "Fidelity Management & Research Company",
+        "Kingdom Holdings",
+        "Lightspeed",
+        "MGX",
+        "Morgan Stanley",
+        "OIA",
+        "QIA",
+        "Sequoia Capital",
+        "Valor Equity Partners",
+        "Vy Capital"
+      ],
+      "valuation": null,
+      "source": null
+    },
+    {
+      "date": "2024-08",
+      "stage": "series_b",
+      "amount": "$6 billion",
+      "amount_numeric": 6000.0,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": null
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Company valuation",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://x.ai",
+    "News Articles: 5 articles",
+    "GitHub: xai"
+  ],
+  "extracted_at": "2025-11-07T05:59:35.073163Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

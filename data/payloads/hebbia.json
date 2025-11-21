@@ -1,0 +1,131 @@
+{
+  "company": {
+    "company_name": "hebbia",
+    "company_id": "hebbia",
+    "website": "https://www.hebbia.ai",
+    "linkedin": null,
+    "founded_year": 2020,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "AI for Finance",
+    "subcategory": "Not disclosed",
+    "tagline": "The AI platform for finance",
+    "description": "Hebbia has pioneered the most used AI architectures in the world. We continue to set the pace of innovation in useful AI. Today, we’ve evolved far beyond chat-based interfaces and RAG. Matrix tackles even the most complex tasks using our proprietary ISD architecture.",
+    "business_model": "B2B",
+    "target_customers": "Financial, legal, consulting, and Fortune 100 firms",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$130.0M",
+    "total_funding_numeric": 130.0,
+    "last_funding_date": null,
+    "last_funding_stage": "series_b",
+    "valuation": null,
+    "headcount": 5000,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "$130.0M",
+    "total_raised_numeric": 130.0,
+    "funding_rounds": [
+      {
+        "date": null,
+        "stage": "series_b",
+        "amount": "$130M",
+        "amount_numeric": 130.0,
+        "lead_investor": "a16z",
+        "other_investors": [],
+        "valuation": null,
+        "source": "HOMEPAGE"
+      }
+    ],
+    "lead_investors": [
+      "a16z"
+    ],
+    "all_investors": [
+      "a16z"
+    ],
+    "last_round_date": null,
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": 5000,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [
+      "Not disclosed"
+    ],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": 4,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": null,
+    "recent_partnerships": [
+      "Sequoia Capital"
+    ],
+    "product_launches_12m": 1,
+    "recent_products": [
+      "Automation for Excel and PowerPoint",
+      "European filings"
+    ],
+    "customer_growth": null,
+    "revenue_info": null
+  },
+  "visibility": {
+    "news_mentions_30d": 4,
+    "sentiment_score": null,
+    "github_stars": 3,
+    "github_url": "https://github.com/hebbia",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-10-28",
+      "event_type": "funding",
+      "title": "Sequoia Capital invests in AI tool",
+      "description": "Sequoia Capital invests in Hebbia, an AI tool that aims to replace junior bankers.",
+      "source": "https://economictimes.indiatimes.com/tech/artificial-intelligence/sequoia-capital-invests-in-ai-tool-that-could-replace-junior-bankers/articleshow/124876788.cms"
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": null,
+      "stage": "series_b",
+      "amount": "$130M",
+      "amount_numeric": 130.0,
+      "lead_investor": "a16z",
+      "other_investors": [],
+      "valuation": null,
+      "source": "HOMEPAGE"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Company valuation",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.hebbia.ai",
+    "News Articles: 4 articles",
+    "GitHub: hebbia"
+  ],
+  "extracted_at": "2025-11-07T05:51:28.526838Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

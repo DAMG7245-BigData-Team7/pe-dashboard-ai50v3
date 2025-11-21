@@ -1,0 +1,209 @@
+{
+  "company": {
+    "company_name": "databricks",
+    "company_id": "databricks",
+    "website": "https://www.databricks.com",
+    "linkedin": null,
+    "founded_year": 2013,
+    "hq_city": "San Francisco",
+    "hq_country": "United States",
+    "category": "Data and AI",
+    "subcategory": "Data Intelligence Platform",
+    "tagline": "Leading Data and AI Platform for Enterprises",
+    "description": "Databricks is the data and AI company. With the Data Intelligence Platform, Databricks democratizes insights to everyone in an organization. Built on an open lakehouse architecture, the platform provides a unified foundation for all data and governance, combined with AI models tuned to an organization’s unique characteristics.",
+    "business_model": "B2B",
+    "target_customers": "Organizations worldwide",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$0M",
+    "total_funding_numeric": 0.0,
+    "last_funding_date": "2013",
+    "last_funding_stage": "seed",
+    "valuation": null,
+    "headcount": 7000,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "Not disclosed",
+    "total_raised_numeric": null,
+    "funding_rounds": [
+      {
+        "date": "2013",
+        "stage": "seed",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [
+          "Block",
+          "Comcast",
+          "Condé Nast",
+          "Rivian",
+          "Shell"
+        ],
+        "valuation": null,
+        "source": "About Databricks: The data and AI company | Databricks"
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [
+      "Condé Nast",
+      "Shell",
+      "Rivian",
+      "Comcast",
+      "Block"
+    ],
+    "last_round_date": "2013",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": 7000,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [
+      "San Francisco, California",
+      "20 offices in 12 countries"
+    ],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 1200,
+    "recent_partnerships": [
+      "Palantir"
+    ],
+    "product_launches_12m": null,
+    "recent_products": [
+      "Native OpenAI Models",
+      "Google’s Gemini Models"
+    ],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "Not disclosed"
+  },
+  "visibility": {
+    "news_mentions_30d": 5,
+    "sentiment_score": null,
+    "github_stars": 8700,
+    "github_url": "https://github.com/databricks",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-11-05",
+      "event_type": "product_launch",
+      "title": "Native OpenAI Models Now Generally Available on Databricks",
+      "description": "Databricks announces the general availability of native OpenAI models.",
+      "source": null
+    },
+    {
+      "date": "2025-11-05",
+      "event_type": "product_launch",
+      "title": "Google’s Gemini Models on Databricks",
+      "description": "Databricks introduces Google’s Gemini models integrated into their platform.",
+      "source": null
+    },
+    {
+      "date": "2025-10-30",
+      "event_type": "product_launch",
+      "title": "Announcing the Public Preview of Zerobus Ingest",
+      "description": "Databricks announces the public preview of Zerobus Ingest.",
+      "source": null
+    },
+    {
+      "date": "2025-10-27",
+      "event_type": "product_launch",
+      "title": "Announcing General Availability of Python Data Source API",
+      "description": "General availability announcement for the Python Data Source API added to Databricks.",
+      "source": null
+    },
+    {
+      "date": "2025-10-27",
+      "event_type": "product_launch",
+      "title": "MLflow System Tables: Analyze Data Across All Your Experiments",
+      "description": "Launch of MLflow System Tables for data analysis across experiments.",
+      "source": null
+    },
+    {
+      "date": "2025-10-28",
+      "event_type": "product_launch",
+      "title": "Find Sensitive Data at Scale with Data Classification in Unity Catalog",
+      "description": "Introduction of data classification feature in Unity Catalog for sensitive data.",
+      "source": null
+    },
+    {
+      "date": "2025-10-30",
+      "event_type": "partnership",
+      "title": "Beyond the Partnership with Palantir",
+      "description": "Discussion on how 100+ customers are transforming business with Databricks and Palantir.",
+      "source": null
+    },
+    {
+      "date": "2025-11-04",
+      "event_type": "product_launch",
+      "title": "Building Custom LLM Judges for AI Agent Accuracy",
+      "description": "Announcement of capabilities to build custom LLM judges for AI agent accuracy.",
+      "source": null
+    },
+    {
+      "date": "2025-11-03",
+      "event_type": "product_launch",
+      "title": "Building Trusted AI Agents: New Capabilities to Choose, Govern, and Scale with Confidence",
+      "description": "Launch of new capabilities for building trusted AI agents.",
+      "source": null
+    },
+    {
+      "date": "2025-10-30",
+      "event_type": "product_launch",
+      "title": "What’s New in AI/BI - October 2025 Roundup",
+      "description": "Overview of new developments in AI and BI for October 2025.",
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2013",
+      "stage": "seed",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [
+        "Block",
+        "Comcast",
+        "Condé Nast",
+        "Rivian",
+        "Shell"
+      ],
+      "valuation": null,
+      "source": "About Databricks: The data and AI company | Databricks"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Company valuation",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.databricks.com",
+    "News Articles: 5 articles",
+    "GitHub: databricks"
+  ],
+  "extracted_at": "2025-11-07T05:49:11.315196Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

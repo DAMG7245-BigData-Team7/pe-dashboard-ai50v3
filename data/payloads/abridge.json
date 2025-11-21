@@ -1,0 +1,137 @@
+{
+  "company": {
+    "company_name": "abridge",
+    "company_id": "abridge",
+    "website": "https://www.abridge.com",
+    "linkedin": "Not disclosed",
+    "founded_year": null,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "Healthcare",
+    "subcategory": "AI for clinical documentation",
+    "tagline": "Generative AI for Clinical Conversations",
+    "description": "Abridge transforms patient-clinician conversations into contextually aware, clinically useful, and billable AI-generated notes. The platform is designed to improve outcomes for clinicians, nurses, and revenue cycle teams at scale.",
+    "business_model": "B2B",
+    "target_customers": "Healthcare systems and clinicians",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$0M",
+    "total_funding_numeric": 0.0,
+    "last_funding_date": "2025-11",
+    "last_funding_stage": "unknown",
+    "valuation": null,
+    "headcount": 53,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "Not disclosed",
+    "total_raised_numeric": null,
+    "funding_rounds": [
+      {
+        "date": "2025-11",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "https://www.globenewswire.com/news-release/2025/11/05/3181098/0/en/Wolters-Kluwer-2025-Nine-Month-Trading-Update.html"
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": "2025-11",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": 53,
+    "headcount_growth_yoy": null,
+    "open_roles": 53,
+    "recent_hires": null,
+    "office_locations": [
+      "Chicago",
+      "New York City",
+      "Pittsburgh",
+      "San Francisco",
+      "Seattle",
+      "Remote"
+    ],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 0,
+    "recent_products": [
+      "Real Time Prior Authorization at the Point of Conversation"
+    ],
+    "customer_growth": null,
+    "revenue_info": null
+  },
+  "visibility": {
+    "news_mentions_30d": 5,
+    "sentiment_score": null,
+    "github_stars": 0,
+    "github_url": "https://github.com/abridge",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-08-12",
+      "event_type": "product_launch",
+      "title": "Real Time Prior Authorization at the Point of Conversation",
+      "description": "Abridge introduces a new feature enabling real-time prior authorization during patient conversations.",
+      "source": null
+    },
+    {
+      "date": "2025-11-03",
+      "event_type": "other",
+      "title": "Abridge on Stage at NVIDIA GTC With Perpelxity, Cognition, and Crowdstrike",
+      "description": "Abridge participates in a significant event showcasing AI advancements alongside other leading companies.",
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-11",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "https://www.globenewswire.com/news-release/2025/11/05/3181098/0/en/Wolters-Kluwer-2025-Nine-Month-Trading-Update.html"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Company valuation",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.abridge.com",
+    "News Articles: 5 articles",
+    "GitHub: abridge"
+  ],
+  "extracted_at": "2025-11-07T05:46:18.929899Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

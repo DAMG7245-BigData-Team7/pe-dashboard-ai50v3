@@ -1,0 +1,195 @@
+{
+  "company": {
+    "company_name": "anthropic",
+    "company_id": "anthropic",
+    "website": "https://www.anthropic.com",
+    "linkedin": "Not disclosed",
+    "founded_year": null,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "Artificial Intelligence",
+    "subcategory": null,
+    "tagline": "Building AI to serve humanity’s long-term well-being.",
+    "description": "Anthropic is dedicated to building systems that people can rely on and generating research about the opportunities and risks of AI. We aim to build frontier AI systems that are reliable, interpretable, and steerable, employing various safety techniques and partnerships to deploy our products.",
+    "business_model": "B2B",
+    "target_customers": "Businesses, nonprofits, and civil society groups",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$13000.0M",
+    "total_funding_numeric": 13000.0,
+    "last_funding_date": "2025-09-02",
+    "last_funding_stage": "unknown",
+    "valuation": "$183B",
+    "headcount": 200,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "$13000.0M",
+    "total_raised_numeric": 13000.0,
+    "funding_rounds": [
+      {
+        "date": "2025-09-02",
+        "stage": "unknown",
+        "amount": "$13B",
+        "amount_numeric": 13000.0,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": "$183B",
+        "source": "Announcements"
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": "2025-09-02",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": 200,
+    "headcount_growth_yoy": null,
+    "open_roles": 0,
+    "recent_hires": null,
+    "office_locations": [
+      "Tokyo",
+      "Seoul"
+    ],
+    "geographic_expansion": "Opened offices in Japan and South Korea, expanding operations globally.",
+    "press_mentions_12m": 20,
+    "website_traffic_trend": "Increasing",
+    "partnerships_count": 2,
+    "recent_partnerships": [
+      "Salesforce",
+      "Japan AI Safety Institute"
+    ],
+    "product_launches_12m": 5,
+    "recent_products": [
+      "Claude Sonnet 4.5",
+      "Claude Haiku 4.5",
+      "Claude for Life Sciences",
+      "Claude for Financial Services",
+      "Claude Code"
+    ],
+    "customer_growth": null,
+    "revenue_info": null
+  },
+  "visibility": {
+    "news_mentions_30d": 5,
+    "sentiment_score": null,
+    "github_stars": 12,
+    "github_url": "https://github.com/anthropic",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-09-02",
+      "event_type": "funding",
+      "title": "Anthropic raises $13B Series F at $183B post-money valuation",
+      "description": null,
+      "source": null
+    },
+    {
+      "date": "2025-10-29",
+      "event_type": "office_opening",
+      "title": "Anthropic officially opens Tokyo office, signs Memorandum of Cooperation with the Japan AI Safety Institute",
+      "description": null,
+      "source": null
+    },
+    {
+      "date": "2025-10-14",
+      "event_type": "partnership",
+      "title": "Anthropic and Salesforce expand partnership to bring Claude to regulated industries",
+      "description": null,
+      "source": null
+    },
+    {
+      "date": "2025-10-23",
+      "event_type": "office_opening",
+      "title": "Seoul becomes Anthropic’s third office in Asia-Pacific as we continue our international growth",
+      "description": null,
+      "source": null
+    },
+    {
+      "date": "2025-10-07",
+      "event_type": "leadership_change",
+      "title": "Rahul Patil joins Anthropic as Chief Technology Officer",
+      "description": null,
+      "source": null
+    },
+    {
+      "date": "2025-07-23",
+      "event_type": "partnership",
+      "title": "Anthropic partners with the University of Chicago’s Becker Friedman Institute on AI economic research",
+      "description": null,
+      "source": null
+    },
+    {
+      "date": "2025-08-21",
+      "event_type": "partnership",
+      "title": "Developing nuclear safeguards for AI through public-private partnership",
+      "description": null,
+      "source": null
+    },
+    {
+      "date": "2025-06-27",
+      "event_type": "milestone",
+      "title": "Introducing the Anthropic Economic Futures Program",
+      "description": null,
+      "source": null
+    },
+    {
+      "date": "2025-10-15",
+      "event_type": "product_launch",
+      "title": "Introducing Claude Haiku 4.5",
+      "description": null,
+      "source": null
+    },
+    {
+      "date": "2025-10-20",
+      "event_type": "product_launch",
+      "title": "Claude for Life Sciences",
+      "description": null,
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-09-02",
+      "stage": "unknown",
+      "amount": "$13B",
+      "amount_numeric": 13000.0,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": "$183B",
+      "source": "Announcements"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.anthropic.com",
+    "News Articles: 5 articles",
+    "GitHub: anthropic"
+  ],
+  "extracted_at": "2025-11-07T05:46:34.953440Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

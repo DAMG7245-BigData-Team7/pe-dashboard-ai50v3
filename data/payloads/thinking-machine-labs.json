@@ -1,0 +1,140 @@
+{
+  "company": {
+    "company_name": "thinking-machine-labs",
+    "company_id": "thinkingmachinelabs",
+    "website": "https://thinkingmachines.ai",
+    "linkedin": null,
+    "founded_year": null,
+    "hq_city": "San Francisco",
+    "hq_country": "USA",
+    "category": "Artificial Intelligence",
+    "subcategory": "Research and Development",
+    "tagline": "AI that works for everyone",
+    "description": "Thinking Machines Lab is an artificial intelligence research and product company. We’re building a future where everyone has access to the knowledge and tools to make AI work for their unique needs and goals. The company aims to make AI systems more widely understood, customizable and generally capable, bridging gaps in current AI capabilities.",
+    "business_model": "B2B",
+    "target_customers": "Researchers, Builders, and General Public",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "OpenAI",
+      "Meta",
+      "Google DeepMind"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$1000.0M",
+    "total_funding_numeric": 1000.0,
+    "last_funding_date": "2025-10-31",
+    "last_funding_stage": "unknown",
+    "valuation": "$5 billion",
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "$1000.0M",
+    "total_raised_numeric": 1000.0,
+    "funding_rounds": [
+      {
+        "date": "2025-10-31",
+        "stage": "unknown",
+        "amount": "$1 billion",
+        "amount_numeric": 1000.0,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": "$5 billion",
+        "source": "Forbes"
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": "2025-10-31",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 3,
+    "recent_products": [
+      "Tinker",
+      "Tinker Research and Teaching Grants",
+      "On-Policy Distillation"
+    ],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "Not disclosed"
+  },
+  "visibility": {
+    "news_mentions_30d": 3,
+    "sentiment_score": null,
+    "github_stars": null,
+    "github_url": null,
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-10-31",
+      "event_type": "funding",
+      "title": "xAI Researcher, Early Googler In Talks To Raise $1 Billion At $5 Billion Valuation For New Frontier Lab",
+      "description": "Talks are underway to raise $1 billion for a new lab focused on frontier technologies.",
+      "source": "https://www.forbes.com/sites/annatong/2025/10/31/xai-researcher-early-googler-in-talks-to-raise-1-billion-at-5-billion-valuation-for-new-frontier-lab/"
+    },
+    {
+      "date": "2025-10-11",
+      "event_type": "leadership_change",
+      "title": "Meta hires Thinking Machines Lab cofounder Andrew Tulloch",
+      "description": "Andrew Tulloch, cofounder of Thinking Machines Lab, has joined Meta.",
+      "source": "https://economictimes.indiatimes.com/tech/artificial-intelligence/meta-hires-thinking-machines-lab-cofounder-andrew-tulloch/articleshow/124489605.cms"
+    },
+    {
+      "date": "2025-10-11",
+      "event_type": "leadership_change",
+      "title": "Thinking Machines Lab co-founder Andrew Tulloch heads to Meta",
+      "description": "Andrew Tulloch has left Thinking Machines Lab to take a position at Meta.",
+      "source": "https://techcrunch.com/2025/10/11/thinking-machines-lab-co-founder-andrew-tulloch-heads-to-meta/"
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-10-31",
+      "stage": "unknown",
+      "amount": "$1 billion",
+      "amount_numeric": 1000.0,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": "$5 billion",
+      "source": "Forbes"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://thinkingmachines.ai",
+    "News Articles: 3 articles"
+  ],
+  "extracted_at": "2025-11-07T05:57:28.382038Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

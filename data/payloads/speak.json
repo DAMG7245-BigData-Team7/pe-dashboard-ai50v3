@@ -1,0 +1,231 @@
+{
+  "company": {
+    "company_name": "speak",
+    "company_id": "speak",
+    "website": "https://speak.com",
+    "linkedin": "Not disclosed",
+    "founded_year": null,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "Language Learning",
+    "subcategory": "Mobile Application",
+    "tagline": "The language learning app that gets you speaking",
+    "description": "Speak is the most effective way to learn a language through speaking. It features instant feedback and is powered by the world’s most advanced AI language tutor, helping users become fluent and motivated through personalized curriculum and constant conversation practice.",
+    "business_model": "B2C",
+    "target_customers": "Language learners",
+    "pricing_model": "Free trial followed by subscription",
+    "competitors": [
+      "Duolingo",
+      "Babbel",
+      "Rosetta Stone"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$121.0M",
+    "total_funding_numeric": 121.0,
+    "last_funding_date": "2022-11-18",
+    "last_funding_stage": "series_b",
+    "valuation": null,
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "$121.0M",
+    "total_raised_numeric": 121.0,
+    "funding_rounds": [
+      {
+        "date": "2024-12-10",
+        "stage": "series_c",
+        "amount": "$78M",
+        "amount_numeric": 78.0,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": "$1B",
+        "source": "BLOG/NEWS"
+      },
+      {
+        "date": "2023-08-31",
+        "stage": "series_b",
+        "amount": "$16m",
+        "amount_numeric": 16.0,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "BLOG/NEWS"
+      },
+      {
+        "date": "2022-11-18",
+        "stage": "series_b",
+        "amount": "$27M",
+        "amount_numeric": 27.0,
+        "lead_investor": "OpenAI Startup Fund",
+        "other_investors": [],
+        "valuation": null,
+        "source": "BLOG/NEWS"
+      }
+    ],
+    "lead_investors": [
+      "OpenAI Startup Fund"
+    ],
+    "all_investors": [
+      "OpenAI Startup Fund"
+    ],
+    "last_round_date": "2024-12-10",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [],
+    "geographic_expansion": "Rapid international expansion",
+    "press_mentions_12m": null,
+    "website_traffic_trend": null,
+    "partnerships_count": null,
+    "recent_partnerships": [],
+    "product_launches_12m": null,
+    "recent_products": [],
+    "customer_growth": null,
+    "revenue_info": "Raised $78M Series C at a $1B valuation"
+  },
+  "visibility": {
+    "news_mentions_30d": 4,
+    "sentiment_score": null,
+    "github_stars": 25,
+    "github_url": "https://github.com/speak",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2024-12-10",
+      "event_type": "funding",
+      "title": "Speak Raises $78M Series C",
+      "description": "A new milestone as we bring language learning to all: Raising $78M Series C at a $1B valuation.",
+      "source": null
+    },
+    {
+      "date": "2024-10-01",
+      "event_type": "product_launch",
+      "title": "Live Roleplays Powered by OpenAI Realtime API",
+      "description": "Introduction of Live Roleplays feature powered by OpenAI Realtime API.",
+      "source": null
+    },
+    {
+      "date": "2024-06-18",
+      "event_type": "milestone",
+      "title": "Speak Hits $500M Valuation",
+      "description": "Speak achieves a valuation of $500M, expanding rapidly across markets.",
+      "source": null
+    },
+    {
+      "date": "2023-08-31",
+      "event_type": "funding",
+      "title": "Speak Announces $16M Series B-2 Financing",
+      "description": "OpenAI Startup Fund-Backed Speak announces $16M Series B-2 financing and rapid international expansion.",
+      "source": null
+    },
+    {
+      "date": "2023-03-23",
+      "event_type": "partnership",
+      "title": "Speak Collaborates with OpenAI",
+      "description": "Collaboration with OpenAI on new ChatGPT plugins.",
+      "source": null
+    },
+    {
+      "date": "2023-03-14",
+      "event_type": "product_launch",
+      "title": "AI Tutor Built on OpenAI’s GPT-4",
+      "description": "Speak shares details of AI Tutor, built on top of OpenAI’s GPT-4.",
+      "source": null
+    },
+    {
+      "date": "2023-03-01",
+      "event_type": "partnership",
+      "title": "Speak + OpenAI Speech Recognition",
+      "description": "Announcement of collaboration with OpenAI for speech recognition technology.",
+      "source": null
+    },
+    {
+      "date": "2022-11-18",
+      "event_type": "funding",
+      "title": "Speak Announces $27M Series B",
+      "description": "Speak announces $27M Series B led by OpenAI Startup Fund.",
+      "source": null
+    },
+    {
+      "date": null,
+      "event_type": "milestone",
+      "title": "Speak Named Google Play’s Best App of 2024",
+      "description": "Speak recognized as Google Play’s “Best App of 2024” in Hong Kong, Korea, and Taiwan.",
+      "source": null
+    },
+    {
+      "date": null,
+      "event_type": "product_launch",
+      "title": "New Languages on Speak",
+      "description": "Launch of new languages on Speak just in time for the summer.",
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2024-12-10",
+      "stage": "series_c",
+      "amount": "$78M",
+      "amount_numeric": 78.0,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": "$1B",
+      "source": "BLOG/NEWS"
+    },
+    {
+      "date": "2023-08-31",
+      "stage": "series_b",
+      "amount": "$16m",
+      "amount_numeric": 16.0,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "BLOG/NEWS"
+    },
+    {
+      "date": "2022-11-18",
+      "stage": "series_b",
+      "amount": "$27M",
+      "amount_numeric": 27.0,
+      "lead_investor": "OpenAI Startup Fund",
+      "other_investors": [],
+      "valuation": null,
+      "source": "BLOG/NEWS"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://speak.com",
+    "News Articles: 4 articles",
+    "GitHub: speak"
+  ],
+  "extracted_at": "2025-11-07T05:56:38.004596Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

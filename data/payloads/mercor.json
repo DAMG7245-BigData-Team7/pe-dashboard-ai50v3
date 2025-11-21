@@ -1,0 +1,183 @@
+{
+  "company": {
+    "company_name": "mercor",
+    "company_id": "mercor",
+    "website": "https://www.mercor.com",
+    "linkedin": "Not disclosed",
+    "founded_year": null,
+    "hq_city": "San Francisco",
+    "hq_country": "CA",
+    "category": "Not disclosed",
+    "subcategory": "Not disclosed",
+    "tagline": "Shape the future of AI",
+    "description": "Mercor is a platform that connects top-tier remote AI roles with experts in the field. It provides a variety of job opportunities ranging from legal experts to generalist evaluators and caters to diverse industries including finance, medical research, and software engineering.",
+    "business_model": "Not disclosed",
+    "target_customers": "Not disclosed",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$453.6M",
+    "total_funding_numeric": 453.6,
+    "last_funding_date": "2024-01-10",
+    "last_funding_stage": "seed",
+    "valuation": null,
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "$453.6M",
+    "total_raised_numeric": 453.6,
+    "funding_rounds": [
+      {
+        "date": "2025-10-27",
+        "stage": "series_c",
+        "amount": "$350M",
+        "amount_numeric": 350.0,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": "$10 billion",
+        "source": null
+      },
+      {
+        "date": "2025-02-20",
+        "stage": "series_b",
+        "amount": "$100M",
+        "amount_numeric": 100.0,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": null
+      },
+      {
+        "date": "2024-01-10",
+        "stage": "seed",
+        "amount": "$3.6M",
+        "amount_numeric": 3.6,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": null
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": "2025-10-27",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 0,
+    "recent_products": [],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "Not disclosed"
+  },
+  "visibility": {
+    "news_mentions_30d": 3,
+    "sentiment_score": null,
+    "github_stars": 10,
+    "github_url": "https://github.com/mercor",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-10-27",
+      "event_type": "funding",
+      "title": "Announcing Mercor's $350 million Series C",
+      "description": "Mercor announces a $350 million Series C at a $10 billion valuation.",
+      "source": null
+    },
+    {
+      "date": "2025-10-01",
+      "event_type": "product_launch",
+      "title": "Introducing APEX: The AI Productivity Index",
+      "description": "Launch of APEX, a new benchmark measuring the economic impact of AI.",
+      "source": null
+    },
+    {
+      "date": "2025-02-20",
+      "event_type": "funding",
+      "title": "Announcing Mercor's Series B",
+      "description": "Mercor raises a $100M Series B to connect human talent with opportunities in the AI economy.",
+      "source": null
+    },
+    {
+      "date": "2024-01-10",
+      "event_type": "funding",
+      "title": "Introducing Mercor: Redefining Hiring With AI",
+      "description": "Mercor announces $3.6M in funding and the launch of a fully-automated platform to match talent with companies.",
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-10-27",
+      "stage": "series_c",
+      "amount": "$350M",
+      "amount_numeric": 350.0,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": "$10 billion",
+      "source": null
+    },
+    {
+      "date": "2025-02-20",
+      "stage": "series_b",
+      "amount": "$100M",
+      "amount_numeric": 100.0,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": null
+    },
+    {
+      "date": "2024-01-10",
+      "stage": "seed",
+      "amount": "$3.6M",
+      "amount_numeric": 3.6,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": null
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.mercor.com",
+    "News Articles: 3 articles",
+    "GitHub: mercor"
+  ],
+  "extracted_at": "2025-11-07T05:52:46.329852Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

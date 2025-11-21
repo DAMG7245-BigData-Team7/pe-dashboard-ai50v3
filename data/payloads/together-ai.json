@@ -1,0 +1,195 @@
+{
+  "company": {
+    "company_name": "together-ai",
+    "company_id": "togetherai",
+    "website": "https://www.together.ai",
+    "linkedin": null,
+    "founded_year": null,
+    "hq_city": "San Francisco",
+    "hq_country": "USA",
+    "category": "AI",
+    "subcategory": "Generative AI",
+    "tagline": "The AI Acceleration Cloud",
+    "description": "Together AI is a research-driven AI company that empowers developers and researchers to train, fine-tune, and deploy generative AI models. They contribute leading open-source research, models, and datasets to advance the frontier of AI.",
+    "business_model": "B2B",
+    "target_customers": "Developers and researchers",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "OpenAI",
+      "Google AI",
+      "Microsoft AI"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$305.0M",
+    "total_funding_numeric": 305.0,
+    "last_funding_date": "2025-02-20",
+    "last_funding_stage": "series_b",
+    "valuation": null,
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "$305.0M",
+    "total_raised_numeric": 305.0,
+    "funding_rounds": [
+      {
+        "date": "2025-02-20",
+        "stage": "series_b",
+        "amount": "$305M",
+        "amount_numeric": 305.0,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "Together AI"
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": "2025-02-20",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": 0,
+    "recent_hires": null,
+    "office_locations": [
+      "San Francisco, CA"
+    ],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 5,
+    "recent_products": [
+      "Together AI Startup Accelerator",
+      "Together Instant Clusters",
+      "Fine-Tuning Platform Upgrades",
+      "Together Evaluations",
+      "Fastest inference for real-time voice AI agents"
+    ],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "Not disclosed"
+  },
+  "visibility": {
+    "news_mentions_30d": 5,
+    "sentiment_score": null,
+    "github_stars": 0,
+    "github_url": "https://github.com/togetherai",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-10-15",
+      "event_type": "product_launch",
+      "title": "Announcing the Together AI Startup Accelerator, purpose-built for AI Native Apps",
+      "description": "Together AI announces the launch of a new startup accelerator designed specifically for AI Native applications.",
+      "source": null
+    },
+    {
+      "date": "2025-09-09",
+      "event_type": "product_launch",
+      "title": "Announcing General Availability of Together Instant Clusters, offering ready to use, self-service NVIDIA GPUs",
+      "description": "Together AI announces the general availability of Together Instant Clusters for self-service GPU access.",
+      "source": null
+    },
+    {
+      "date": "2025-09-10",
+      "event_type": "product_launch",
+      "title": "Fine-Tuning Platform Upgrades: Larger Models, Longer Contexts, Enhanced Hugging Face Integrations",
+      "description": "Together AI announces upgrades to their fine-tuning platform, enhancing model capabilities and integrations.",
+      "source": null
+    },
+    {
+      "date": "2025-07-17",
+      "event_type": "product_launch",
+      "title": "Together AI Delivers Top Speeds for DeepSeek-R1-0528 Inference on NVIDIA Blackwell",
+      "description": "Together AI announces top inference speeds for their DeepSeek model using NVIDIA Blackwell technology.",
+      "source": null
+    },
+    {
+      "date": "2025-04-24",
+      "event_type": "partnership",
+      "title": "Salesforce, Zoom, InVideo Train Faster with Together AI Turbocharged with NVIDIA Blackwell",
+      "description": "Together AI announces collaboration with prominent companies to enhance AI training using NVIDIA technology.",
+      "source": null
+    },
+    {
+      "date": "2025-02-20",
+      "event_type": "funding",
+      "title": "Together AI Announces $305M Series B to Scale AI Acceleration Cloud for Open Source and Enterprise AI",
+      "description": "Together AI announces a $305 million Series B funding round for scaling their AI acceleration cloud services.",
+      "source": null
+    },
+    {
+      "date": "2025-09-10",
+      "event_type": "leadership_change",
+      "title": "Together AI welcomes Mahadev Konar as SVP for Infrastructure Engineering",
+      "description": "Mahadev Konar joins Together AI as Senior Vice President for Infrastructure Engineering to enhance technical leadership.",
+      "source": null
+    },
+    {
+      "date": "2025-10-15",
+      "event_type": "product_launch",
+      "title": "Expanding Together AI Model Library into multimedia generation with 40+ new image and video models",
+      "description": "Together AI expands its model library to include over 40 new models for image and video generation.",
+      "source": null
+    },
+    {
+      "date": "2025-10-22",
+      "event_type": "product_launch",
+      "title": "Dynamic AI agent testing for the real world with Collinear Simulations and Together Evals",
+      "description": "Together AI announces a new product for testing AI agents in real-world scenarios using Collinear Simulations.",
+      "source": null
+    },
+    {
+      "date": "2025-07-28",
+      "event_type": "product_launch",
+      "title": "Together Evaluations: Benchmark Models for Your Tasks",
+      "description": "Together AI launches a new evaluation tool to benchmark AI models for specific tasks.",
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-02-20",
+      "stage": "series_b",
+      "amount": "$305M",
+      "amount_numeric": 305.0,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "Together AI"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.together.ai",
+    "News Articles: 5 articles",
+    "GitHub: togetherai"
+  ],
+  "extracted_at": "2025-11-07T05:57:51.216071Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

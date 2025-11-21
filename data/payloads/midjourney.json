@@ -1,0 +1,101 @@
+{
+  "company": {
+    "company_name": "midjourney",
+    "company_id": "midjourney",
+    "website": "https://www.midjourney.com",
+    "linkedin": null,
+    "founded_year": null,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "Not disclosed",
+    "subcategory": "Not disclosed",
+    "tagline": "Not disclosed",
+    "description": "Not disclosed",
+    "business_model": "Not disclosed",
+    "target_customers": "Not disclosed",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "Not disclosed",
+    "total_funding_numeric": null,
+    "last_funding_date": null,
+    "last_funding_stage": null,
+    "valuation": "Not disclosed",
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": null,
+    "total_raised_numeric": null,
+    "funding_rounds": [],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": null,
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": 4,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 0,
+    "recent_products": [],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "Not disclosed"
+  },
+  "visibility": {
+    "news_mentions_30d": 4,
+    "sentiment_score": null,
+    "github_stars": 489,
+    "github_url": "https://github.com/midjourney",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-11-04",
+      "event_type": "milestone",
+      "title": "Stability AI largely wins UK court battle against Getty Images over copyright and trademark",
+      "description": "Stability AI has achieved a significant victory in a legal battle concerning copyright and trademark issues with Getty Images, marking a critical milestone for the company.",
+      "source": "https://abcnews.go.com/Technology/wireStory/stability-ai-largely-wins-uk-court-battle-getty-127164244"
+    }
+  ],
+  "funding_rounds": [],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Total funding amount",
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.midjourney.com",
+    "News Articles: 4 articles",
+    "GitHub: midjourney"
+  ],
+  "extracted_at": "2025-11-07T05:52:52.742594Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

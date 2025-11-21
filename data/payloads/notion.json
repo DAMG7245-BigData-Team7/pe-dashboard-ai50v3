@@ -1,0 +1,231 @@
+{
+  "company": {
+    "company_name": "notion",
+    "company_id": "notion",
+    "website": "https://www.notion.so",
+    "linkedin": null,
+    "founded_year": null,
+    "hq_city": "San Francisco",
+    "hq_country": "USA",
+    "category": "Software",
+    "subcategory": "Productivity",
+    "tagline": "The AI workspace that works for you.",
+    "description": "Notion is a comprehensive workspace that brings together various work tools into one platform. It's designed to streamline workflows and improve productivity by allowing users to customize their workspace with different tools, facilitating tasks ranging from project management to note-taking. With a focus on integrating AI, Notion aims to reduce the number of tools users need to manage and enhance collaborative efforts across teams.",
+    "business_model": "B2B and B2C",
+    "target_customers": "Teams and individuals looking for a productivity tool",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Microsoft OneNote",
+      "Trello",
+      "Asana",
+      "Evernote"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$0M",
+    "total_funding_numeric": 0.0,
+    "last_funding_date": "2025-11-05",
+    "last_funding_stage": "unknown",
+    "valuation": null,
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "Not disclosed",
+    "total_raised_numeric": null,
+    "funding_rounds": [
+      {
+        "date": null,
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "Notion 3.0"
+      },
+      {
+        "date": "2025-11-05",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "NBC Connecticut"
+      },
+      {
+        "date": "2025-11-05",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "Activistpost.com"
+      },
+      {
+        "date": "2025-11-05",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "GlobeNewswire"
+      },
+      {
+        "date": "2025-11-05",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "Smartdatacollective.com"
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": "2025-11-05",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": 0,
+    "recent_hires": null,
+    "office_locations": [
+      "San Francisco",
+      "New York",
+      "Dublin",
+      "Hyderabad",
+      "Tokyo",
+      "Seoul",
+      "Sydney"
+    ],
+    "geographic_expansion": null,
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 2,
+    "recent_partnerships": [
+      "Samsung"
+    ],
+    "product_launches_12m": 1,
+    "recent_products": [
+      "Notion 3.0"
+    ],
+    "customer_growth": null,
+    "revenue_info": null
+  },
+  "visibility": {
+    "news_mentions_30d": 4,
+    "sentiment_score": null,
+    "github_stars": 63,
+    "github_url": "https://github.com/notion",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2023-10-01",
+      "event_type": "product_launch",
+      "title": "Notion 3.0 Launch",
+      "description": "Notion 3.0 was launched featuring Agents that can perform tasks in minutes.",
+      "source": null
+    },
+    {
+      "date": null,
+      "event_type": "partnership",
+      "title": "Samsung Collaboration",
+      "description": "Notion partnered with Samsung to bring Notion AI to Galaxy TabS11 and TabS11 Ultra users.",
+      "source": null
+    },
+    {
+      "date": null,
+      "event_type": "leadership_change",
+      "title": "Appointment of New EMEA GM",
+      "description": "Mick Hodgins appointed as Notion's new EMEA GM, bringing strategic vision and international experience.",
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": null,
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "Notion 3.0"
+    },
+    {
+      "date": "2025-11-05",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "NBC Connecticut"
+    },
+    {
+      "date": "2025-11-05",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "Activistpost.com"
+    },
+    {
+      "date": "2025-11-05",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "GlobeNewswire"
+    },
+    {
+      "date": "2025-11-05",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "Smartdatacollective.com"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.notion.so",
+    "News Articles: 4 articles",
+    "GitHub: notion"
+  ],
+  "extracted_at": "2025-11-07T05:53:26.455501Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

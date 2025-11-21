@@ -1,0 +1,212 @@
+{
+  "company": {
+    "company_name": "cohere",
+    "company_id": "cohere",
+    "website": "https://cohere.com",
+    "linkedin": "Not disclosed",
+    "founded_year": 2019,
+    "hq_city": "Toronto",
+    "hq_country": "Canada",
+    "category": "Artificial Intelligence",
+    "subcategory": "Enterprise AI",
+    "tagline": "Your next breakthrough, powered by AI",
+    "description": "Cohere builds foundational models and AI solutions that help teams turn everyday effort into extraordinary impact. We believe AI’s highest purpose is to enhance human wellbeing. We’re committed to realizing that potential by empowering businesses to scale innovation, boost productivity, and drive progress that reaches everyone.",
+    "business_model": "B2B",
+    "target_customers": "Businesses and enterprises",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$0M",
+    "total_funding_numeric": 0.0,
+    "last_funding_date": "2024-01-01",
+    "last_funding_stage": "series_d_plus",
+    "valuation": null,
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "Not disclosed",
+    "total_raised_numeric": null,
+    "funding_rounds": [
+      {
+        "date": "2021-01-01",
+        "stage": "series_a",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "About Our Company | Cohere"
+      },
+      {
+        "date": "2022-01-01",
+        "stage": "series_b",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "About Our Company | Cohere"
+      },
+      {
+        "date": "2023-01-01",
+        "stage": "series_c",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "About Our Company | Cohere"
+      },
+      {
+        "date": "2024-01-01",
+        "stage": "series_d_plus",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "About Our Company | Cohere"
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": "2024-01-01",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [
+      "Toronto",
+      "New York",
+      "London",
+      "San Francisco",
+      "Montreal",
+      "Paris",
+      "Seoul"
+    ],
+    "geographic_expansion": "Cohere has expanded globally since its founding in Toronto in 2019.",
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": null,
+    "recent_partnerships": [],
+    "product_launches_12m": 1,
+    "recent_products": [
+      "North AI platform"
+    ],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "Cohere raised nearly $1 billion in funding between 2021 and 2024."
+  },
+  "visibility": {
+    "news_mentions_30d": 4,
+    "sentiment_score": null,
+    "github_stars": 0,
+    "github_url": "https://github.com/cohere",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2019-01-01",
+      "event_type": "other",
+      "title": "Cohere Founded",
+      "description": "Cohere was founded in Toronto with the vision to scale intelligence to serve humanity.",
+      "source": null
+    },
+    {
+      "date": "2021-01-01",
+      "event_type": "funding",
+      "title": "Major Funding Rounds",
+      "description": "Cohere secured four major funding rounds (Series A through D), raising nearly $1 billion between 2021 and 2024.",
+      "source": null
+    },
+    {
+      "date": "2022-01-01",
+      "event_type": "product_launch",
+      "title": "Launch of Cohere Labs",
+      "description": "Cohere launched Cohere Labs, an open science initiative focused on solving complex machine learning problems, gaining over 4,500 community members and publishing over 100 research papers.",
+      "source": null
+    },
+    {
+      "date": "2025-01-01",
+      "event_type": "product_launch",
+      "title": "Launch of North AI Platform",
+      "description": "Cohere launched North, a turnkey AI platform designed for workplace productivity, enabling automation of routine tasks and complex workflows using advanced retrieval and agentic capabilities.",
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2021-01-01",
+      "stage": "series_a",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "About Our Company | Cohere"
+    },
+    {
+      "date": "2022-01-01",
+      "stage": "series_b",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "About Our Company | Cohere"
+    },
+    {
+      "date": "2023-01-01",
+      "stage": "series_c",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "About Our Company | Cohere"
+    },
+    {
+      "date": "2024-01-01",
+      "stage": "series_d_plus",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "About Our Company | Cohere"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://cohere.com",
+    "News Articles: 4 articles",
+    "GitHub: cohere"
+  ],
+  "extracted_at": "2025-11-07T05:48:41.486282Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

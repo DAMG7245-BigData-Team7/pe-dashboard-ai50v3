@@ -1,0 +1,78 @@
+{
+  "server_name": "PE Dashboard MCP Server",
+  "base_url": "http://localhost:9000",
+  "version": "1.0.0",
+  "endpoints": {
+    "info": "/",
+    "health": "/health",
+    "tools": {
+      "generate_structured_dashboard": {
+        "url": "/tool/generate_structured_dashboard",
+        "method": "POST",
+        "description": "Generate structured PE dashboard from company payload",
+        "input_schema": {
+          "company_id": "string"
+        },
+        "output_schema": {
+          "company_id": "string",
+          "markdown": "string",
+          "method": "string",
+          "generated_at": "string"
+        }
+      },
+      "generate_rag_dashboard": {
+        "url": "/tool/generate_rag_dashboard",
+        "method": "POST",
+        "description": "Generate RAG-based PE dashboard from vector DB",
+        "input_schema": {
+          "company_id": "string"
+        },
+        "output_schema": {
+          "company_id": "string",
+          "markdown": "string",
+          "method": "string",
+          "generated_at": "string"
+        }
+      }
+    },
+    "resources": {
+      "ai50_companies": {
+        "url": "/resource/ai50/companies",
+        "method": "GET",
+        "description": "List all Forbes AI 50 company IDs",
+        "output_schema": {
+          "company_ids": "array[string]",
+          "count": "integer"
+        }
+      }
+    },
+    "prompts": {
+      "pe_dashboard": {
+        "url": "/prompt/pe-dashboard",
+        "method": "GET",
+        "description": "Get 8-section PE dashboard template",
+        "output_schema": {
+          "id": "string",
+          "name": "string",
+          "description": "string",
+          "template": "string",
+          "sections": "array[string]"
+        }
+      }
+    }
+  },
+  "security": {
+    "tool_filtering": true,
+    "allowed_tools": [
+      "generate_structured_dashboard",
+      "generate_rag_dashboard"
+    ],
+    "timeout": 30,
+    "max_retries": 3
+  },
+  "agent_config": {
+    "enable_mcp": true,
+    "prefer_mcp_tools": true,
+    "fallback_to_local": true
+  }
+}

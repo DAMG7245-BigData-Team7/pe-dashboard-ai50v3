@@ -1,0 +1,206 @@
+{
+  "company": {
+    "company_name": "captions",
+    "company_id": "captions",
+    "website": "https://www.captions.ai",
+    "linkedin": null,
+    "founded_year": 2025,
+    "hq_city": "New York City",
+    "hq_country": "United States",
+    "category": "Video Technology",
+    "subcategory": "AI Video Creation",
+    "tagline": "Your AI-powered creative studio",
+    "description": "At Mirage, we're building foundation models and products to redefine how videos get made. We create generative models that turn voice and language into rich, photorealistic video, empowering creators and businesses to reach their full creative and commercial potential.",
+    "business_model": "B2B",
+    "target_customers": "Creators and businesses",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$125.0M",
+    "total_funding_numeric": 125.0,
+    "last_funding_date": "2023-06-22",
+    "last_funding_stage": "series_b",
+    "valuation": null,
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "$125.0M",
+    "total_raised_numeric": 125.0,
+    "funding_rounds": [
+      {
+        "date": "2024-07-09",
+        "stage": "series_c",
+        "amount": "$100M",
+        "amount_numeric": 100.0,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": null
+      },
+      {
+        "date": "2023-06-22",
+        "stage": "series_b",
+        "amount": "$25 million",
+        "amount_numeric": 25.0,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": null
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": "2024-07-09",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [
+      "New York City"
+    ],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": 0,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 0,
+    "recent_products": [],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "Not disclosed"
+  },
+  "visibility": {
+    "news_mentions_30d": 5,
+    "sentiment_score": null,
+    "github_stars": 34,
+    "github_url": "https://github.com/captions",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-09-04",
+      "event_type": "product_launch",
+      "title": "Introducing Mirage: The future of video starts now.",
+      "description": "Launch of Mirage, a platform redefining video creation.",
+      "source": null
+    },
+    {
+      "date": "2025-06-02",
+      "event_type": "milestone",
+      "title": "Mirage: World's First Foundation Model for UGC Video",
+      "description": "Introduction of the world's first foundation model specifically designed for user-generated content video.",
+      "source": null
+    },
+    {
+      "date": "2025-10-28",
+      "event_type": "partnership",
+      "title": "How HubSpot built better campaigns with Mirage Studio",
+      "description": "HubSpot's collaboration with Mirage Studio for enhanced campaign management.",
+      "source": "https://millo.co/top-7-tools-for-managing-remote-teams-in-2025"
+    },
+    {
+      "date": "2025-07-22",
+      "event_type": "milestone",
+      "title": "We build synthetic humans. Here's what's keeping us up at night.",
+      "description": "Discussion on the challenges and innovations in synthetic human creation at Mirage.",
+      "source": null
+    },
+    {
+      "date": "2025-07-22",
+      "event_type": "milestone",
+      "title": "AI Video Is Inevitable. How It's Built Is Not.",
+      "description": "Exploration of the future of AI in video production and the innovative approaches being pursued by Mirage.",
+      "source": null
+    },
+    {
+      "date": "2025-10-15",
+      "event_type": "other",
+      "title": "Your guide to AI credits",
+      "description": "Resource guide released by Mirage to inform users about AI credits.",
+      "source": null
+    },
+    {
+      "date": "2025-10-02",
+      "event_type": "other",
+      "title": "Take a seat in the director's chair.",
+      "description": "A campaign or product feature launch related to user engagement in video creation.",
+      "source": null
+    },
+    {
+      "date": "2025-09-18",
+      "event_type": "other",
+      "title": "Editing videos is now as easy as typing",
+      "description": "Introduction of a new editing feature aimed at simplifying video editing processes.",
+      "source": null
+    },
+    {
+      "date": "2025-07-09",
+      "event_type": "funding",
+      "title": "Captions announces Series C to invest $100M in AI video research in New York",
+      "description": "Funding round announced to boost AI video research initiatives.",
+      "source": null
+    },
+    {
+      "date": "2023-06-22",
+      "event_type": "funding",
+      "title": "Captions announces a $25 million Series B for our AI-powered creative studio",
+      "description": "Funding raised to support the development of an AI-powered creative studio.",
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2024-07-09",
+      "stage": "series_c",
+      "amount": "$100M",
+      "amount_numeric": 100.0,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": null
+    },
+    {
+      "date": "2023-06-22",
+      "stage": "series_b",
+      "amount": "$25 million",
+      "amount_numeric": 25.0,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": null
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.captions.ai",
+    "News Articles: 5 articles",
+    "GitHub: captions"
+  ],
+  "extracted_at": "2025-11-07T05:47:32.721938Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

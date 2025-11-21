@@ -1,0 +1,158 @@
+{
+  "company": {
+    "company_name": "coactive-ai",
+    "company_id": "coactiveai",
+    "website": "https://coactive.ai",
+    "linkedin": null,
+    "founded_year": 2021,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "AI technology",
+    "subcategory": "Content management and automation",
+    "tagline": "Maximize video & images with AI search and automated metadata",
+    "description": "Coactive is an AI-driven platform that optimizes video and image content through automated metadata. It enables dynamic tagging, enhances content workflows, and provides powerful tools for content discovery and monetization.",
+    "business_model": "B2B",
+    "target_customers": "Businesses in media and entertainment",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$0M",
+    "total_funding_numeric": 0.0,
+    "last_funding_date": "2024-05-21",
+    "last_funding_stage": "series_b",
+    "valuation": null,
+    "headcount": 30,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "Not disclosed",
+    "total_raised_numeric": null,
+    "funding_rounds": [
+      {
+        "date": "2024-05-21",
+        "stage": "series_b",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "Coactive AI Series B Funding Round"
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": "2024-05-21",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": 30,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [
+      "Global hub offices"
+    ],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 1,
+    "recent_partnerships": [
+      "Coactive AI Signs Strategic Collaboration Agreement with AWS to Deliver Image and Video Analytics Solution"
+    ],
+    "product_launches_12m": 5,
+    "recent_products": [
+      "Coactive MAP Autumn â25",
+      "Smarter Metadata Tagging for the Multimodal Era",
+      "The Power to Create Video-Based Apps, Fast: How the Coactive Multimodal AI Platform Turns Months Into Minutes",
+      "Unlocking Video Insights: How an Optimized Video Ingestion Pipeline Transforms Content Discovery",
+      "Coactive is Now on Azure: Visual AI Search, Metadata Tagging, and Analytics, Built for Scale"
+    ],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "$44M funding raised"
+  },
+  "visibility": {
+    "news_mentions_30d": 2,
+    "sentiment_score": null,
+    "github_stars": 34,
+    "github_url": "https://github.com/coactiveai",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2024-05-21",
+      "event_type": "funding",
+      "title": "Coactive AI Series B Funding Round",
+      "description": "Coactive AI announced the completion of its Series B funding round.",
+      "source": null
+    },
+    {
+      "date": "2025-05-09",
+      "event_type": "partnership",
+      "title": "Coactive AI Signs Strategic Collaboration Agreement with AWS",
+      "description": "Coactive AI signed a strategic agreement with AWS to deliver image and video analytics solutions.",
+      "source": null
+    },
+    {
+      "date": "2025-06-10",
+      "event_type": "product_launch",
+      "title": "Coactive is Now on Azure",
+      "description": "Coactive launched its Visual AI Search, Metadata Tagging, and Analytics on Azure, built for scale.",
+      "source": null
+    },
+    {
+      "date": "2025-09-30",
+      "event_type": "product_launch",
+      "title": "Coactive MAP Autumn ‘25",
+      "description": "Coactive MAP Autumn ‘25 offers new ways to discover, monetize, and personalize video and image content.",
+      "source": null
+    },
+    {
+      "date": "2025-10-17",
+      "event_type": "product_launch",
+      "title": "Smarter Metadata Tagging for the Multimodal Era",
+      "description": "Coactive introduced smarter metadata tagging capabilities for the multimodal era.",
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2024-05-21",
+      "stage": "series_b",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "Coactive AI Series B Funding Round"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Company valuation",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://coactive.ai",
+    "News Articles: 2 articles",
+    "GitHub: coactiveai"
+  ],
+  "extracted_at": "2025-11-07T05:48:17.951668Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

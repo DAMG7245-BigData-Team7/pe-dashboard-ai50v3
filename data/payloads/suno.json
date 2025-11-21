@@ -1,0 +1,196 @@
+{
+  "company": {
+    "company_name": "suno",
+    "company_id": "suno",
+    "website": "https://suno.com",
+    "linkedin": null,
+    "founded_year": null,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "AI Music",
+    "subcategory": "Not disclosed",
+    "tagline": "Make any song you can imagine",
+    "description": "Suno makes high-quality music creation accessible to all. Whether you have a melody in your head, lyrics you've written, or just a feeling you want to hear, Suno allows users to turn those ideas into custom songs instantly.",
+    "business_model": "B2C",
+    "target_customers": "Not disclosed",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$0M",
+    "total_funding_numeric": 0.0,
+    "last_funding_date": "2025-11-04",
+    "last_funding_stage": "unknown",
+    "valuation": null,
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "Not disclosed",
+    "total_raised_numeric": null,
+    "funding_rounds": [
+      {
+        "date": "2025-11-05",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [
+          "Koda"
+        ],
+        "valuation": null,
+        "source": "Forbes"
+      },
+      {
+        "date": "2025-11-04",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [
+          "Danish music rights group"
+        ],
+        "valuation": null,
+        "source": "Tech Xplore"
+      },
+      {
+        "date": "2025-11-04",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [
+          "Koda"
+        ],
+        "valuation": null,
+        "source": "Music Ally"
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [
+      "Danish music rights group",
+      "Koda"
+    ],
+    "last_round_date": "2025-11-05",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": 46,
+    "recent_hires": null,
+    "office_locations": [
+      "Boston",
+      "Los Angeles",
+      "NYC",
+      "Remote"
+    ],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": 5,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 0,
+    "recent_products": [],
+    "customer_growth": null,
+    "revenue_info": null
+  },
+  "visibility": {
+    "news_mentions_30d": 5,
+    "sentiment_score": null,
+    "github_stars": 0,
+    "github_url": "https://github.com/suno",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-11-04",
+      "event_type": "milestone",
+      "title": "Xania Monet Debuts on Billboard Radio Chart",
+      "description": "Xania Monet becomes the first AI artist to debut on a Billboard radio chart, marking a significant milestone in AI music representation.",
+      "source": "https://www.celebitchy.com/948543/ai_singer_xania_monet_is_the_first_ai_artist_to_debut_on_a_billboard_radio_chart/"
+    },
+    {
+      "date": "2025-11-04",
+      "event_type": "other",
+      "title": "Koda Sues Suno for Unlicensed Training",
+      "description": "Danish collecting society Koda files a lawsuit against AI music platform Suno for alleged unlicensed training practices.",
+      "source": "http://musically.com/2025/11/04/danish-collecting-society-koda-sues-suno-for-unlicensed-training/"
+    },
+    {
+      "date": "2025-11-04",
+      "event_type": "other",
+      "title": "Danish Music Rights Group Sues Suno",
+      "description": "A Danish music rights group initiates legal action against the AI music platform Suno, highlighting industry tensions regarding AI-generated content.",
+      "source": "https://techxplore.com/news/2025-11-danish-music-rights-group-sues.html"
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-11-05",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [
+        "Koda"
+      ],
+      "valuation": null,
+      "source": "Forbes"
+    },
+    {
+      "date": "2025-11-04",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [
+        "Danish music rights group"
+      ],
+      "valuation": null,
+      "source": "Tech Xplore"
+    },
+    {
+      "date": "2025-11-04",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [
+        "Koda"
+      ],
+      "valuation": null,
+      "source": "Music Ally"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://suno.com",
+    "News Articles: 5 articles",
+    "GitHub: suno"
+  ],
+  "extracted_at": "2025-11-07T05:57:01.718198Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

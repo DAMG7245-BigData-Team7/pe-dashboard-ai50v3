@@ -1,0 +1,227 @@
+# Project ORBIT Configuration File
+# Copy this to config/settings.yaml and customize for your environment
+
+# ============================================================
+# API Keys & External Services
+# ============================================================
+api_keys:
+  openai:
+    key: "${OPENAI_API_KEY}"
+    model: "gpt-4o-mini"
+    temperature: 0
+    max_tokens: 2000
+
+  pinecone:
+    key: "${PINECONE_API_KEY}"
+    index_name: "pe-dashboard-ai50"
+    environment: "us-east-1"
+    dimension: 1536  # OpenAI embedding dimension
+
+# ============================================================
+# MCP Server Configuration
+# ============================================================
+mcp:
+  server:
+    host: "0.0.0.0"
+    port: 9000
+    base_url: "http://localhost:9000"
+    timeout: 30
+    max_retries: 3
+
+  tools:
+    enabled:
+      - "generate_structured_dashboard"
+      - "generate_rag_dashboard"
+
+  resources:
+    enabled:
+      - "ai50_companies"
+
+  prompts:
+    enabled:
+      - "pe_dashboard"
+
+# ============================================================
+# Agent Configuration
+# ============================================================
+agent:
+  supervisor:
+    model: "gpt-4o-mini"
+    temperature: 0
+    max_iterations: 10
+    tools:
+      - "get_payload"
+      - "search_company_docs"
+      - "log_risk_signal"
+
+  planner:
+    model: "gpt-4o-mini"
+    max_steps: 5
+
+  evaluator:
+    rubric_dimensions:
+      - "factual"
+      - "schema"
+      - "provenance"
+      - "hallucination"
+      - "readability"
+
+# ============================================================
+# Workflow Configuration
+# ============================================================
+workflow:
+  hitl:
+    auto_approve: false  # Set to true for automated workflows
+    timeout_minutes: 60  # Max time to wait for human approval
+
+  risk_detection:
+    keywords:
+      - "layoff"
+      - "layoffs"
+      - "workforce reduction"
+      - "breach"
+      - "data breach"
+      - "security breach"
+      - "lawsuit"
+      - "litigation"
+      - "fraud"
+      - "fraudulent"
+      - "bankruptcy"
+      - "chapter 11"
+      - "controversy"
+      - "controversial"
+
+  checkpointing:
+    enabled: true
+    storage: "memory"  # or "redis" for distributed
+
+# ============================================================
+# Data Sources
+# ============================================================
+data_sources:
+  forbes:
+    ai50_url: "https://www.forbes.com/lists/ai50"
+    cache_ttl_hours: 24
+
+  crunchbase:
+    api_key: "${CRUNCHBASE_API_KEY}"
+    base_url: "https://api.crunchbase.com/v4"
+    rate_limit_per_minute: 20
+
+  techcrunch:
+    rss_feed: "https://techcrunch.com/feed"
+    max_articles: 100
+
+# ============================================================
+# Storage & Logging
+# ============================================================
+storage:
+  payloads:
+    directory: "./data/payloads"
+    format: "json"
+
+  dashboards:
+    directory: "./data/dashboards"
+    format: "markdown"
+
+  risk_signals:
+    file: "./data/risk_signals.jsonl"
+    format: "jsonl"
+
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  format: "json"
+  outputs:
+    - type: "console"
+      enabled: true
+    - type: "file"
+      enabled: true
+      path: "./logs/react_traces.jsonl"
+
+  correlation:
+    include_run_id: true
+    include_company_id: true
+    include_timestamp: true
+
+# ============================================================
+# Airflow Configuration
+# ============================================================
+airflow:
+  dags:
+    initial_load:
+      schedule: null  # Manual trigger only
+      max_active_runs: 1
+
+    daily_update:
+      schedule: "0 2 * * *"  # 2 AM UTC daily
+      max_active_runs: 1
+      retries: 2
+
+    agentic_dashboard:
+      schedule: "0 3 * * *"  # 3 AM UTC daily
+      max_active_runs: 1
+      retries: 1
+      company_batch_size: 5  # Process N companies at a time
+
+  email_notifications:
+    enabled: false
+    smtp_host: "smtp.gmail.com"
+    smtp_port: 587
+    sender: "alerts@orbit-project.com"
+    recipients:
+      - "team@orbit-project.com"
+
+# ============================================================
+# Performance & Limits
+# ============================================================
+performance:
+  concurrent_workflows: 3
+  workflow_timeout_minutes: 30
+  mcp_call_timeout_seconds: 30
+  max_dashboard_size_kb: 500
+
+  caching:
+    enabled: true
+    ttl_minutes: 60
+    backend: "memory"  # or "redis"
+
+# ============================================================
+# Security
+# ============================================================
+security:
+  tool_filtering:
+    enabled: true
+    allowed_tools:
+      - "generate_structured_dashboard"
+      - "generate_rag_dashboard"
+      - "get_payload"
+      - "search_company_docs"
+      - "log_risk_signal"
+
+  rate_limiting:
+    enabled: true
+    requests_per_minute: 60
+
+  input_validation:
+    max_company_id_length: 100
+    allowed_company_id_pattern: "^[a-z0-9-]+$"
+
+# ============================================================
+# Monitoring & Observability
+# ============================================================
+monitoring:
+  metrics:
+    enabled: false  # Set to true for production
+    backend: "prometheus"
+    port: 8000
+
+  tracing:
+    enabled: false  # Set to true for production
+    backend: "jaeger"
+    endpoint: "http://localhost:14268/api/traces"
+
+  health_checks:
+    interval_seconds: 30
+    endpoints:
+      - url: "http://localhost:9000/health"
+        name: "mcp_server"
