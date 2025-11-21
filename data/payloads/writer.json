@@ -1,0 +1,139 @@
+{
+  "company": {
+    "company_name": "writer",
+    "company_id": "writer",
+    "website": "https://writer.com",
+    "linkedin": null,
+    "founded_year": 2020,
+    "hq_city": "San Francisco",
+    "hq_country": "USA",
+    "category": "Technology",
+    "subcategory": "AI platform",
+    "tagline": "The only end-to-end agent builder platform that unites IT & business",
+    "description": "WRITER is where the world’s leading enterprises orchestrate AI-powered work. Our vision is to expand human capacity through superintelligence. And we’re proving it’s possible – through powerful, trustworthy AI that unites IT and business teams together to unlock enterprise-wide transformation.",
+    "business_model": "B2B",
+    "target_customers": "Enterprises",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "Not disclosed",
+    "total_funding_numeric": null,
+    "last_funding_date": null,
+    "last_funding_stage": null,
+    "valuation": "Not disclosed",
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": null,
+    "total_raised_numeric": null,
+    "funding_rounds": [],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": null,
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [
+      "San Francisco",
+      "New York",
+      "London",
+      "Chicago",
+      "Austin"
+    ],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": null,
+    "recent_partnerships": [],
+    "product_launches_12m": null,
+    "recent_products": [
+      "Action Agent",
+      "AI Studio",
+      "Palmyra LLMs",
+      "Knowledge Graph"
+    ],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "Not disclosed"
+  },
+  "visibility": {
+    "news_mentions_30d": 3,
+    "sentiment_score": null,
+    "github_stars": 1762,
+    "github_url": "https://github.com/writer",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-11-01",
+      "event_type": "partnership",
+      "title": "WRITER signs on to the EU’s Code of Practice for General-Purpose AI Models",
+      "description": "WRITER commits to the EU’s Code of Practice, ensuring responsible AI development and deployment.",
+      "source": "Inside WRITER"
+    },
+    {
+      "date": "2025-11-01",
+      "event_type": "product_launch",
+      "title": "Introducing Agent Builder",
+      "description": "WRITER launches Agent Builder, a new tool designed for creating AI agents.",
+      "source": "Inside WRITER"
+    },
+    {
+      "date": "2025-11-01",
+      "event_type": "milestone",
+      "title": "WRITER achieves ISO trust triad",
+      "description": "WRITER sets a new standard for security, privacy, and responsible AI in the enterprise by achieving the ISO trust triad.",
+      "source": "Inside WRITER"
+    },
+    {
+      "date": "2025-10-01",
+      "event_type": "product_launch",
+      "title": "From execution to supervision: Scaling productivity with Action Agent",
+      "description": "WRITER introduces the Action Agent, enhancing productivity through AI supervision capabilities.",
+      "source": "Inside WRITER"
+    },
+    {
+      "date": "2025-11-01",
+      "event_type": "milestone",
+      "title": "From months to moments: IBM and WRITER’s AI solution modernizes healthcare communications",
+      "description": "IBM and WRITER collaborate to modernize healthcare communications utilizing AI solutions.",
+      "source": "Inside WRITER"
+    }
+  ],
+  "funding_rounds": [],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Total funding amount",
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://writer.com",
+    "News Articles: 3 articles",
+    "GitHub: writer"
+  ],
+  "extracted_at": "2025-11-07T05:59:13.959408Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

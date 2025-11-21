@@ -1,0 +1,195 @@
+{
+  "company": {
+    "company_name": "elevenlabs",
+    "company_id": "elevenlabs",
+    "website": "https://elevenlabs.io",
+    "linkedin": null,
+    "founded_year": null,
+    "hq_city": "London",
+    "hq_country": "United Kingdom",
+    "category": "AI Technology",
+    "subcategory": "AI audio research and deployment",
+    "tagline": "The most realistic voice AI platform",
+    "description": "ElevenLabs is an AI audio research and deployment company. As voice becomes a primary interface for using technology, we build AI that makes these interactions effortless and human. We began with ultra-realistic AI voices - clear, expressive, and multilingual. Today, we advance AI audio across speech, sound effects, and music, and turn that work into products people use every day.",
+    "business_model": "B2B",
+    "target_customers": "Developers, creators, and enterprises",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$61.0M",
+    "total_funding_numeric": 61.0,
+    "last_funding_date": "2025-11-05",
+    "last_funding_stage": "series_a",
+    "valuation": null,
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "$61.0M",
+    "total_raised_numeric": 61.0,
+    "funding_rounds": [
+      {
+        "date": "2025-11-05",
+        "stage": "series_a",
+        "amount": "$61M",
+        "amount_numeric": 61.0,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "Fortune"
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": "2025-11-05",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [
+      "London"
+    ],
+    "geographic_expansion": "Expansion into Brazil",
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 3,
+    "recent_partnerships": [
+      "Reality Defender",
+      "Audacy",
+      "Ministry of Digital Transformation"
+    ],
+    "product_launches_12m": 3,
+    "recent_products": [
+      "Eleven v3",
+      "Eleven Music",
+      "Productions"
+    ],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "Not disclosed"
+  },
+  "visibility": {
+    "news_mentions_30d": 3,
+    "sentiment_score": null,
+    "github_stars": 6403,
+    "github_url": "https://github.com/elevenlabs",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-09-27",
+      "event_type": "partnership",
+      "title": "Partnership with Ukrainian Public Services",
+      "description": "Partnering with the Ministry of Digital Transformation to add voice to core services.",
+      "source": null
+    },
+    {
+      "date": "2025-09-23",
+      "event_type": "milestone",
+      "title": "Voice AI for India Scale",
+      "description": "Marking a year of rapid development from India’s top enterprises, startups, and creators scaling customer engagement and storytelling.",
+      "source": null
+    },
+    {
+      "date": "2025-09-18",
+      "event_type": "product_launch",
+      "title": "Voice ID System Launch",
+      "description": "ElevenLabs and AILAS launch a voice ID system to protect actors from AI misuse. Japanese actors and voice actors can now mark their voices as authorized for AI use.",
+      "source": null
+    },
+    {
+      "date": "2025-09-15",
+      "event_type": "product_launch",
+      "title": "Introducing Productions",
+      "description": "Productions is our new managed service offering for ordering human-edited content that looks, sounds, and feels natural. Made for creators and media businesses.",
+      "source": null
+    },
+    {
+      "date": "2025-09-16",
+      "event_type": "milestone",
+      "title": "Scaling UK and US Presence",
+      "description": "ElevenLabs is building local talent hubs and infrastructure to deliver real-time AI audio for enterprises globally.",
+      "source": null
+    },
+    {
+      "date": "2025-09-08",
+      "event_type": "partnership",
+      "title": "Expansion into Brazil",
+      "description": "Launching our first campaign in Brazil with iconic AI voice Fábio Porchat.",
+      "source": null
+    },
+    {
+      "date": "2025-08-20",
+      "event_type": "product_launch",
+      "title": "Eleven v3 (alpha) Available in API",
+      "description": "Eleven v3 (alpha), the most expressive text to speech model, is now available in the API for developers.",
+      "source": null
+    },
+    {
+      "date": "2025-08-20",
+      "event_type": "product_launch",
+      "title": "Eleven Music Available in API",
+      "description": "Eleven Music is the first API for developers trained on licensed data and cleared for broad commercial use.",
+      "source": null
+    },
+    {
+      "date": "2025-08-12",
+      "event_type": "partnership",
+      "title": "Audio in Air Mail Magazine",
+      "description": "We’re adding audio to Air Mail magazine, so readers can follow it anywhere.",
+      "source": null
+    },
+    {
+      "date": "2025-11-05",
+      "event_type": "leadership_change",
+      "title": "Leadership Change in Hiring Practices",
+      "description": "CEO mentions that non-traditional hiring outside LinkedIn led to finding a researcher working at a call center.",
+      "source": "https://www.businessinsider.com/elevenlabs-ceo-culture-hiring-practices-mati-staniszewski-2025-11"
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-11-05",
+      "stage": "series_a",
+      "amount": "$61M",
+      "amount_numeric": 61.0,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "Fortune"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://elevenlabs.io",
+    "News Articles: 3 articles",
+    "GitHub: elevenlabs"
+  ],
+  "extracted_at": "2025-11-07T05:50:04.485501Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

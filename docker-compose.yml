@@ -1,73 +1,153 @@
 version: '3.8'
 
 services:
-  # ============================================================
-  # MCP Server Service
-  # ============================================================
+  # ============================================================================
+  # MCP Server (FastAPI)
+  # ============================================================================
   mcp-server:
     build:
       context: .
-      dockerfile: docker/Dockerfile.mcp
+      dockerfile: Dockerfile.mcp
     container_name: orbit-mcp-server
     ports:
       - "9000:9000"
     environment:
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - PINECONE_API_KEY=${PINECONE_API_KEY}
-      - PINECONE_INDEX_NAME=${PINECONE_INDEX_NAME:-pe-dashboard-ai50}
-      - MCP_PORT=9000
       - MCP_HOST=0.0.0.0
+      - MCP_PORT=9000
     volumes:
       - ./data:/app/data
       - ./logs:/app/logs
     networks:
       - orbit-network
-    restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:9000/health"]
       interval: 30s
       timeout: 10s
       retries: 3
-      start_period: 5s
 
-  # ============================================================
-  # Agent/Workflow Service
-  # ============================================================
-  agent-workflow:
+  # ============================================================================
+  # Airflow (Postgres + Scheduler + Webserver)
+  # ============================================================================
+  postgres:
+    image: postgres:13
+    container_name: orbit-postgres
+    environment:
+      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=airflow
+      - POSTGRES_DB=airflow
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+    networks:
+      - orbit-network
+
+  airflow-init:
     build:
       context: .
-      dockerfile: docker/Dockerfile.agent
-    container_name: orbit-agent-workflow
+      dockerfile: Dockerfile.airflow
+    container_name: orbit-airflow-init
     depends_on:
-      mcp-server:
-        condition: service_healthy
+      - postgres
     environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__CORE__FERNET_KEY=''
+      - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=true
+      - AIRFLOW__CORE__LOAD_EXAMPLES=false
+      - PYTHONPATH=/opt/airflow
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./src:/opt/airflow/src
+      - ./data:/opt/airflow/data
+      - ./config:/opt/airflow/config
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        airflow db init
+        airflow users create \
+          --username admin \
+          --password admin \
+          --firstname Admin \
+          --lastname User \
+          --role Admin \
+          --email admin@example.com || true
+    networks:
+      - orbit-network
+
+  airflow-webserver:
+    build:
+      context: .
+      dockerfile: Dockerfile.airflow
+    container_name: orbit-airflow-webserver
+    depends_on:
+      - postgres
+      - airflow-init
+      - mcp-server
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__CORE__FERNET_KEY=''
+      - AIRFLOW__CORE__LOAD_EXAMPLES=false
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - PINECONE_API_KEY=${PINECONE_API_KEY}
       - MCP_BASE_URL=http://mcp-server:9000
       - HITL_AUTO_APPROVE=true
-      - AGENT_MODEL=${AGENT_MODEL:-gpt-4o-mini}
-      - AGENT_TEMPERATURE=${AGENT_TEMPERATURE:-0}
+      - PYTHONPATH=/opt/airflow
     volumes:
-      - ./data:/app/data
-      - ./logs:/app/logs
+      - ./airflow/dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./src:/opt/airflow/src
+      - ./data:/opt/airflow/data
+      - ./config:/opt/airflow/config
+    ports:
+      - "8081:8080"
+    command: webserver
     networks:
       - orbit-network
-    # Override command to run a specific workflow
-    # command: ["python", "src/workflows/due_diligence_graph.py", "anthropic"]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
 
-# ============================================================
-# Networks
-# ============================================================
+  airflow-scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile.airflow
+    container_name: orbit-airflow-scheduler
+    depends_on:
+      - postgres
+      - airflow-init
+      - mcp-server
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__CORE__FERNET_KEY=''
+      - AIRFLOW__CORE__LOAD_EXAMPLES=false
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PINECONE_API_KEY=${PINECONE_API_KEY}
+      - MCP_BASE_URL=http://mcp-server:9000
+      - HITL_AUTO_APPROVE=true
+      - PYTHONPATH=/opt/airflow
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./src:/opt/airflow/src
+      - ./data:/opt/airflow/data
+      - ./config:/opt/airflow/config
+    command: scheduler
+    networks:
+      - orbit-network
+
+# ============================================================================
+# Networks & Volumes
+# ============================================================================
 networks:
   orbit-network:
     driver: bridge
 
-# ============================================================
-# Volumes (optional: for persistence)
-# ============================================================
 volumes:
-  orbit-data:
-    driver: local
-  orbit-logs:
-    driver: local
+  postgres-db-volume:

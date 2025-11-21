@@ -1,0 +1,266 @@
+{
+  "company": {
+    "company_name": "lambda",
+    "company_id": "lambda",
+    "website": "https://lambda.ai",
+    "linkedin": null,
+    "founded_year": 2012,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "Cloud Computing",
+    "subcategory": null,
+    "tagline": "The Superintelligence Cloud",
+    "description": "Lambda, The Superintelligence Cloud, builds gigawatt-scale AI factories for training and inference. From prototyping to serving billions of users in production, we build the underlying infrastructure that powers AI. Lambda was founded in 2012 by published AI engineers.",
+    "business_model": "B2B",
+    "target_customers": "AI teams and developers",
+    "pricing_model": "On-demand GPU instances priced hourly",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$0M",
+    "total_funding_numeric": 0.0,
+    "last_funding_date": "2025",
+    "last_funding_stage": "series_d_plus",
+    "valuation": null,
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "Not disclosed",
+    "total_raised_numeric": null,
+    "funding_rounds": [
+      {
+        "date": "2021",
+        "stage": "series_a",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": "Gradient Ventures",
+        "other_investors": [],
+        "valuation": null,
+        "source": null
+      },
+      {
+        "date": "2022",
+        "stage": "series_b",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": "Mercato Partners",
+        "other_investors": [],
+        "valuation": null,
+        "source": null
+      },
+      {
+        "date": "2023",
+        "stage": "series_c",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": "USIT",
+        "other_investors": [],
+        "valuation": null,
+        "source": null
+      },
+      {
+        "date": "2025",
+        "stage": "series_d_plus",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": "Andra Capital",
+        "other_investors": [
+          "SGW"
+        ],
+        "valuation": null,
+        "source": null
+      }
+    ],
+    "lead_investors": [
+      "Gradient Ventures",
+      "Mercato Partners",
+      "USIT",
+      "Andra Capital"
+    ],
+    "all_investors": [
+      "Mercato Partners",
+      "USIT",
+      "SGW",
+      "Andra Capital",
+      "Gradient Ventures"
+    ],
+    "last_round_date": "2025",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [
+      "Not disclosed"
+    ],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 1,
+    "recent_partnerships": [
+      "Microsoft"
+    ],
+    "product_launches_12m": 2,
+    "recent_products": [
+      "1-Click Clusters™",
+      "Inference API"
+    ],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "Not disclosed"
+  },
+  "visibility": {
+    "news_mentions_30d": 4,
+    "sentiment_score": null,
+    "github_stars": 16,
+    "github_url": "https://github.com/lambda",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-11-03",
+      "event_type": "partnership",
+      "title": "Multibillion-Dollar Agreement with Microsoft",
+      "description": "Lambda announces a multibillion-dollar, multi-year agreement with Microsoft to deliver mission-critical AI cloud compute at scale under a multi-year contract.",
+      "source": "Lambda Deep Learning Blog"
+    },
+    {
+      "date": "2025-10-28",
+      "event_type": "office_opening",
+      "title": "AI Factory in Kansas City, MO",
+      "description": "Lambda doubles down on Midwest expansion by announcing the construction of an AI factory in Kansas City, MO, welcoming new jobs and more than 10,000 NVIDIA GPUs.",
+      "source": "Lambda Deep Learning Blog"
+    },
+    {
+      "date": "2025-10-22",
+      "event_type": "milestone",
+      "title": "Gigawatt-Scale AI Factories",
+      "description": "Lambda unveils plans for infrastructure capable of sustaining trillion-parameter models and reasoning workloads at scale as part of their vision for superintelligence.",
+      "source": "Lambda Deep Learning Blog"
+    },
+    {
+      "date": "2022-01-01",
+      "event_type": "funding",
+      "title": "Series A Investment",
+      "description": "Lambda secures investment from Gradient Ventures, Google's AI-centric fund, prompting a pivot towards Cloud and Software services.",
+      "source": null
+    },
+    {
+      "date": "2023-01-01",
+      "event_type": "funding",
+      "title": "Series B Investment",
+      "description": "Lambda secures a Series B investment led by Mercato Partners, marking its first significant large scale GPU deployment.",
+      "source": null
+    },
+    {
+      "date": "2024-01-01",
+      "event_type": "product_launch",
+      "title": "1-Click Clusters™ Launch",
+      "description": "Lambda unveils 1-Click Clusters™, giving AI developers instant access to NVIDIA H100 Tensor Core GPU clusters with NVIDIA InfiniBand networking.",
+      "source": null
+    },
+    {
+      "date": "2025-01-01",
+      "event_type": "funding",
+      "title": "Series D Investment",
+      "description": "Lambda announces Series D investment led by Andra Capital and SGW, indicating continued growth.",
+      "source": null
+    },
+    {
+      "date": "2018-01-01",
+      "event_type": "product_launch",
+      "title": "Launch of Lambda GPU Cloud",
+      "description": "Lambda officially launches its GPU Cloud and Lambda Stack, a comprehensive AI software repository.",
+      "source": null
+    },
+    {
+      "date": "2018-01-01",
+      "event_type": "product_launch",
+      "title": "Lambda Quad Deep Learning GPU Workstation Launch",
+      "description": "Introduction of the Lambda Quad Deep Learning GPU workstation, contributing to accessible deep learning solutions.",
+      "source": null
+    },
+    {
+      "date": "2012-01-01",
+      "event_type": "milestone",
+      "title": "Lambda Founded",
+      "description": "Lambda was established to tackle the challenging task of teaching machines how to see and learn, beginning its journey in AI infrastructure.",
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2021",
+      "stage": "series_a",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": "Gradient Ventures",
+      "other_investors": [],
+      "valuation": null,
+      "source": null
+    },
+    {
+      "date": "2022",
+      "stage": "series_b",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": "Mercato Partners",
+      "other_investors": [],
+      "valuation": null,
+      "source": null
+    },
+    {
+      "date": "2023",
+      "stage": "series_c",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": "USIT",
+      "other_investors": [],
+      "valuation": null,
+      "source": null
+    },
+    {
+      "date": "2025",
+      "stage": "series_d_plus",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": "Andra Capital",
+      "other_investors": [
+        "SGW"
+      ],
+      "valuation": null,
+      "source": null
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://lambda.ai",
+    "News Articles: 4 articles",
+    "GitHub: lambda"
+  ],
+  "extracted_at": "2025-11-07T05:52:12.521379Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

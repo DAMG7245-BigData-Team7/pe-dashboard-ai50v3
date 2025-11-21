@@ -1,0 +1,243 @@
+{
+  "company": {
+    "company_name": "deepl",
+    "company_id": "deepl",
+    "website": "https://www.deepl.com",
+    "linkedin": "Not disclosed",
+    "founded_year": null,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "Business",
+    "subcategory": "Language AI",
+    "tagline": "The world's most accurate translator",
+    "description": "DeepL is transforming how 200,000+ businesses communicate globally. Our advanced Language AI platform, built on cutting-edge research, is designed to eliminate language barriers for people and businesses worldwide. Trusted by over 200,000 businesses globally, DeepL provides human-like translations in written and spoken formats, enhancing communication across over 30 languages.",
+    "business_model": "B2B",
+    "target_customers": "Businesses, governments, and individuals",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$0M",
+    "total_funding_numeric": 0.0,
+    "last_funding_date": "2025-10-24",
+    "last_funding_stage": null,
+    "valuation": null,
+    "headcount": 1000,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "Not disclosed",
+    "total_raised_numeric": null,
+    "funding_rounds": [
+      {
+        "date": "2025-11-05",
+        "stage": null,
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "Israelnationalnews.com"
+      },
+      {
+        "date": "2025-11-04",
+        "stage": null,
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "TechRadar"
+      },
+      {
+        "date": "2025-10-31",
+        "stage": null,
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "Securityaffairs.com"
+      },
+      {
+        "date": "2025-10-31",
+        "stage": null,
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "Pairaphrase.com"
+      },
+      {
+        "date": "2025-10-24",
+        "stage": null,
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "ComputerWeekly.com"
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": "2025-11-05",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": 1000,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [
+      "Germany"
+    ],
+    "geographic_expansion": "Used in 228 global markets",
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 4,
+    "recent_products": [
+      "DeepL Translator",
+      "DeepL Write",
+      "DeepL API",
+      "DeepL Voice for Meetings"
+    ],
+    "customer_growth": null,
+    "revenue_info": null
+  },
+  "visibility": {
+    "news_mentions_30d": 5,
+    "sentiment_score": null,
+    "github_stars": 0,
+    "github_url": "https://github.com/deepl",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-10-20",
+      "event_type": "leadership_change",
+      "title": "Gonçalo Gaiolas joins DeepL as Chief Product Officer",
+      "description": "Discover how Gonçalo Gaiolas, DeepL's new Chief Product Officer, plans to enhance DeepL's AI-driven solutions.",
+      "source": null
+    },
+    {
+      "date": "2025-10-11",
+      "event_type": "product_launch",
+      "title": "Launch of DeepL Agent",
+      "description": "Unlock the future of business with DeepL Agent, an autonomous AI designed to enhance workflows beyond translation.",
+      "source": null
+    },
+    {
+      "date": "2025-10-01",
+      "event_type": "milestone",
+      "title": "DeepL celebrates culture and connection with Roots and Routes",
+      "description": "DeepL’s Roots & Routes ERG celebrates diversity through Mosaic Fest, showcasing culture and connection.",
+      "source": null
+    },
+    {
+      "date": "2025-09-30",
+      "event_type": "partnership",
+      "title": "Latest partner integrations in DeepL Marketplace",
+      "description": "Learn how to find and utilize the latest partner integrations in DeepL Marketplace to enhance productivity.",
+      "source": null
+    },
+    {
+      "date": "2025-09-18",
+      "event_type": "product_launch",
+      "title": "DeepL Voice enhances multilingual business engagement",
+      "description": "Discover how real-time voice translations and new Zoom integration foster collaboration in diverse teams.",
+      "source": null
+    },
+    {
+      "date": "2025-10-03",
+      "event_type": "milestone",
+      "title": "DeepL achieves C5 Type 2 attestation",
+      "description": "DeepL's C5 Type 2 attestation enhances data security for organizations in regulated industries.",
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-11-05",
+      "stage": null,
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "Israelnationalnews.com"
+    },
+    {
+      "date": "2025-11-04",
+      "stage": null,
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "TechRadar"
+    },
+    {
+      "date": "2025-10-31",
+      "stage": null,
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "Securityaffairs.com"
+    },
+    {
+      "date": "2025-10-31",
+      "stage": null,
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "Pairaphrase.com"
+    },
+    {
+      "date": "2025-10-24",
+      "stage": null,
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "ComputerWeekly.com"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Company valuation",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.deepl.com",
+    "News Articles: 5 articles",
+    "GitHub: deepl"
+  ],
+  "extracted_at": "2025-11-07T05:49:45.535219Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

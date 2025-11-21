@@ -1,0 +1,206 @@
+{
+  "company": {
+    "company_name": "world-labs",
+    "company_id": "worldlabs",
+    "website": "https://www.worldlabs.ai",
+    "linkedin": "Not disclosed",
+    "founded_year": 2024,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "AI",
+    "subcategory": "Spatial Intelligence",
+    "tagline": "Building Large World Models to perceive, generate, and interact with the 3D world.",
+    "description": "World Labs is a spatial intelligence AI company building Large World Models (LWMs) to perceive, generate, and interact with the 3D world. The company aims to lift AI models from the 2D plane of pixels to full 3D worlds - both virtual and real - endowing them with spatial intelligence as rich as our own.",
+    "business_model": "Not disclosed",
+    "target_customers": "Artists, designers, developers, engineers, and anyone looking to create their own worlds using generative AI.",
+    "pricing_model": null,
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$267.4M",
+    "total_funding_numeric": 267.4,
+    "last_funding_date": "2025-10-16",
+    "last_funding_stage": "unknown",
+    "valuation": null,
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "$267.4M",
+    "total_raised_numeric": 267.4,
+    "funding_rounds": [
+      {
+        "date": "2025-10",
+        "stage": "unknown",
+        "amount": "$133.7M",
+        "amount_numeric": 133.7,
+        "lead_investor": "Khosla Ventures",
+        "other_investors": [
+          "General Catalyst",
+          "Raine"
+        ],
+        "valuation": null,
+        "source": "The Times of India"
+      },
+      {
+        "date": "2025-10-16",
+        "stage": "unknown",
+        "amount": "$133.7M",
+        "amount_numeric": 133.7,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "SiliconANGLE News"
+      }
+    ],
+    "lead_investors": [
+      "Khosla Ventures"
+    ],
+    "all_investors": [
+      "Khosla Ventures",
+      "Raine",
+      "General Catalyst"
+    ],
+    "last_round_date": "2025-10-16",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": 4,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 3,
+    "recent_products": [
+      "RTFM: A Real-Time Frame Model",
+      "Announcing our latest breakthrough in 3D world generation",
+      "Sharing our first step towards spatial intelligence"
+    ],
+    "customer_growth": null,
+    "revenue_info": null
+  },
+  "visibility": {
+    "news_mentions_30d": 4,
+    "sentiment_score": null,
+    "github_stars": 0,
+    "github_url": "https://github.com/worldlabs",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-10-19",
+      "event_type": "funding",
+      "title": "General Intuition raises $133.7 million from Khosla Ventures, General Catalyst, Raine",
+      "description": "Funding to enhance spatial-temporal reasoning capabilities.",
+      "source": "https://economictimes.indiatimes.com/tech/funding/general-intuition-raises-133-7-million-from-khosla-ventures-general-catalyst-raine/articleshow/124684299.cms"
+    },
+    {
+      "date": "2025-10-16",
+      "event_type": "funding",
+      "title": "Spatial-temporal reasoning startup General Intuition closes $133.7M investment",
+      "description": "Completion of funding round for the startup focused on spatial-temporal reasoning.",
+      "source": "https://siliconangle.com/2025/10/16/spatial-temporal-reasoning-startup-general-intuition-closes-133-7m-investment/"
+    },
+    {
+      "date": "2025-09-16",
+      "event_type": "product_launch",
+      "title": "Generating Bigger and Better Worlds",
+      "description": "Announcing breakthrough in 3D world generation with larger, more detailed environments and improved fidelity.",
+      "source": null
+    },
+    {
+      "date": "2025-10-16",
+      "event_type": "product_launch",
+      "title": "RTFM: A Real-Time Frame Model",
+      "description": "Research preview of a new generative world model that generates video in real-time as you interact with it.",
+      "source": null
+    },
+    {
+      "date": "2024-12-02",
+      "event_type": "milestone",
+      "title": "Generating Worlds",
+      "description": "First step towards spatial intelligence with an AI system that generates 3D worlds from a single image.",
+      "source": null
+    },
+    {
+      "date": "2024-09-13",
+      "event_type": "other",
+      "title": "Formation of World Labs",
+      "description": "Announcement of the company's formation focused on spatial intelligence AI and Large World Models.",
+      "source": null
+    },
+    {
+      "date": "2025-10-19",
+      "event_type": "partnership",
+      "title": "General Intuition partners with major investors",
+      "description": "Collaboration with Khosla Ventures, General Catalyst, and Raine for funding.",
+      "source": null
+    },
+    {
+      "date": "2025-11-05",
+      "event_type": "leadership_change",
+      "title": "Fei-Fei Li speaks on her role in AI",
+      "description": "Fei-Fei Li emphasizes her unique contributions to AI development.",
+      "source": "https://www.bbc.com/news/articles/c5yp2vj92e9o"
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-10",
+      "stage": "unknown",
+      "amount": "$133.7M",
+      "amount_numeric": 133.7,
+      "lead_investor": "Khosla Ventures",
+      "other_investors": [
+        "General Catalyst",
+        "Raine"
+      ],
+      "valuation": null,
+      "source": "The Times of India"
+    },
+    {
+      "date": "2025-10-16",
+      "stage": "unknown",
+      "amount": "$133.7M",
+      "amount_numeric": 133.7,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "SiliconANGLE News"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.worldlabs.ai",
+    "News Articles: 4 articles",
+    "GitHub: worldlabs"
+  ],
+  "extracted_at": "2025-11-07T05:59:00.782062Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

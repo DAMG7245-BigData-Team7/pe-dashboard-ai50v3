@@ -1,0 +1,250 @@
+{
+  "company": {
+    "company_name": "hugging-face",
+    "company_id": "huggingface",
+    "website": "https://huggingface.co",
+    "linkedin": null,
+    "founded_year": null,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "Artificial Intelligence",
+    "subcategory": "Machine Learning",
+    "tagline": "The AI community building the future.",
+    "description": "Hugging Face is the platform where the machine learning community collaborates on models, datasets, and applications. We are building the foundation of ML tooling with the community.",
+    "business_model": "B2B",
+    "target_customers": "More than 50,000 organizations",
+    "pricing_model": "Starting at $20/user/month",
+    "competitors": [
+      "Google",
+      "Microsoft",
+      "Amazon",
+      "Intel",
+      "Grammarly"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$0M",
+    "total_funding_numeric": 0.0,
+    "last_funding_date": "2025-11-05",
+    "last_funding_stage": "unknown",
+    "valuation": null,
+    "headcount": 30,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "Not disclosed",
+    "total_raised_numeric": null,
+    "funding_rounds": [
+      {
+        "date": null,
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "Help Net Security"
+      },
+      {
+        "date": "2025-11-05",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "Internet"
+      },
+      {
+        "date": "2025-11-05",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "SiliconANGLE News"
+      },
+      {
+        "date": "2025-11-05",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "Theregister.com"
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": "2025-11-05",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": 30,
+    "headcount_growth_yoy": null,
+    "open_roles": 11,
+    "recent_hires": null,
+    "office_locations": [
+      "New York, United States"
+    ],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 0,
+    "recent_products": [],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "Not disclosed"
+  },
+  "visibility": {
+    "news_mentions_30d": 4,
+    "sentiment_score": null,
+    "github_stars": 97036,
+    "github_url": "https://github.com/huggingface",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-10-22",
+      "event_type": "partnership",
+      "title": "Hugging Face and VirusTotal collaborate to strengthen AI security",
+      "description": "A collaboration aimed at enhancing AI security measures.",
+      "source": null
+    },
+    {
+      "date": "2025-10-22",
+      "event_type": "other",
+      "title": "Sentence Transformers is joining Hugging Face!",
+      "description": "Integration of Sentence Transformers into Hugging Face's ecosystem.",
+      "source": null
+    },
+    {
+      "date": "2025-10-27",
+      "event_type": "product_launch",
+      "title": "huggingface_hub v1.0: Five Years of Building the Foundation of Open Machine Learning",
+      "description": "Launch of version 1.0 of Hugging Face Hub, celebrating five years of progress.",
+      "source": null
+    },
+    {
+      "date": "2025-10-23",
+      "event_type": "product_launch",
+      "title": "Building the Open Agent Ecosystem Together: Introducing OpenEnv",
+      "description": "Introduction of OpenEnv, aimed at fostering open agent ecosystems.",
+      "source": null
+    },
+    {
+      "date": "2025-10-21",
+      "event_type": "product_launch",
+      "title": "Unlock the power of images with AI Sheets",
+      "description": "Launch of AI Sheets to enhance image processing capabilities.",
+      "source": null
+    },
+    {
+      "date": "2025-10-21",
+      "event_type": "product_launch",
+      "title": "Supercharge your OCR Pipelines with Open Models",
+      "description": "Launch aimed at improving Optical Character Recognition (OCR) through open models.",
+      "source": null
+    },
+    {
+      "date": "2025-10-16",
+      "event_type": "other",
+      "title": "Google Cloud C4 Brings a 70% TCO improvement on GPT OSS with Intel and Hugging Face",
+      "description": "Google Cloud C4 enhancement for improved total cost of ownership using Intel and Hugging Face technologies.",
+      "source": null
+    },
+    {
+      "date": "2025-10-15",
+      "event_type": "product_launch",
+      "title": "Get your VLM running in 3 simple steps on Intel CPUs",
+      "description": "Launch focused on streamlining Variable Length Models (VLM) deployment on Intel CPUs.",
+      "source": null
+    },
+    {
+      "date": "2025-10-2",
+      "event_type": "product_launch",
+      "title": "SOTA OCR on-device with Core ML and dots.ocr",
+      "description": "Launch of state-of-the-art Optical Character Recognition technology optimized for on-device use.",
+      "source": null
+    },
+    {
+      "date": "2025-10-1",
+      "event_type": "other",
+      "title": "Introducing RTEB: A New Standard for Retrieval Evaluation",
+      "description": "Launch of a new standard for evaluating retrieval performance.",
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": null,
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "Help Net Security"
+    },
+    {
+      "date": "2025-11-05",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "Internet"
+    },
+    {
+      "date": "2025-11-05",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "SiliconANGLE News"
+    },
+    {
+      "date": "2025-11-05",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "Theregister.com"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Company valuation",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://huggingface.co",
+    "News Articles: 4 articles",
+    "GitHub: huggingface"
+  ],
+  "extracted_at": "2025-11-07T05:51:53.323636Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

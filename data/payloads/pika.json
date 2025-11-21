@@ -1,0 +1,192 @@
+{
+  "company": {
+    "company_name": "pika",
+    "company_id": "pika",
+    "website": "https://pika.art",
+    "linkedin": "Not disclosed",
+    "founded_year": null,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "Not disclosed",
+    "subcategory": "Not disclosed",
+    "tagline": "Reality is optional",
+    "description": "Reality sucks. So we’re giving you the option to change it. Hate it? Deflate it. Wanna stop it? Just swap it. Try new Pikapocaylpse Pikaffects, available now.",
+    "business_model": "Not disclosed",
+    "target_customers": "Not disclosed",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$80.0M",
+    "total_funding_numeric": 80.0,
+    "last_funding_date": "2024-06-05",
+    "last_funding_stage": "series_b",
+    "valuation": null,
+    "headcount": 13,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "$80.0M",
+    "total_raised_numeric": 80.0,
+    "funding_rounds": [
+      {
+        "date": "2024-06-05",
+        "stage": "series_b",
+        "amount": "$80M",
+        "amount_numeric": 80.0,
+        "lead_investor": "Spark Capital",
+        "other_investors": [
+          "Greycroft",
+          "Lightspeed",
+          "Neo",
+          "Makers Fund",
+          "Jared Leto",
+          "Craig Kallman",
+          "Nat Friedman",
+          "Daniel Gross",
+          "Elad Gil",
+          "Adam D’Angelo",
+          "Mike Vernal",
+          "Karim Atiyeh",
+          "Aaron Levie",
+          "Andrej Karpathy",
+          "Aravind Srinivas",
+          "Clem Delangue",
+          "Alex Chung",
+          "Mateusz Staniszewski",
+          "Conviction",
+          "SV Angel"
+        ],
+        "valuation": null,
+        "source": null
+      }
+    ],
+    "lead_investors": [
+      "Spark Capital"
+    ],
+    "all_investors": [
+      "SV Angel",
+      "Greycroft",
+      "Mike Vernal",
+      "Jared Leto",
+      "Alex Chung",
+      "Clem Delangue",
+      "Elad Gil",
+      "Nat Friedman",
+      "Daniel Gross",
+      "Conviction",
+      "Aaron Levie",
+      "Makers Fund",
+      "Spark Capital",
+      "Craig Kallman",
+      "Karim Atiyeh",
+      "Lightspeed",
+      "Adam D’Angelo",
+      "Aravind Srinivas",
+      "Andrej Karpathy",
+      "Mateusz Staniszewski",
+      "Neo"
+    ],
+    "last_round_date": "2024-06-05",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": 13,
+    "headcount_growth_yoy": null,
+    "open_roles": 0,
+    "recent_hires": 10,
+    "office_locations": [
+      "Palo Alto, CA"
+    ],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": 1,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 2,
+    "recent_products": [
+      "1.0 model",
+      "web app"
+    ],
+    "customer_growth": null,
+    "revenue_info": null
+  },
+  "visibility": {
+    "news_mentions_30d": 3,
+    "sentiment_score": null,
+    "github_stars": 3831,
+    "github_url": "https://github.com/pika",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2024-06-05",
+      "event_type": "funding",
+      "title": "Pika raises $80M Series B funding",
+      "description": "Pika announced that it has raised $80M in Series B funding, bringing the total funding to $135M. The round was led by Spark Capital and aims to enhance their video foundation model and product for creators.",
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2024-06-05",
+      "stage": "series_b",
+      "amount": "$80M",
+      "amount_numeric": 80.0,
+      "lead_investor": "Spark Capital",
+      "other_investors": [
+        "Greycroft",
+        "Lightspeed",
+        "Neo",
+        "Makers Fund",
+        "Jared Leto",
+        "Craig Kallman",
+        "Nat Friedman",
+        "Daniel Gross",
+        "Elad Gil",
+        "Adam D’Angelo",
+        "Mike Vernal",
+        "Karim Atiyeh",
+        "Aaron Levie",
+        "Andrej Karpathy",
+        "Aravind Srinivas",
+        "Clem Delangue",
+        "Alex Chung",
+        "Mateusz Staniszewski",
+        "Conviction",
+        "SV Angel"
+      ],
+      "valuation": null,
+      "source": null
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Company valuation",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://pika.art",
+    "News Articles: 3 articles",
+    "GitHub: pika"
+  ],
+  "extracted_at": "2025-11-07T05:54:23.860498Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

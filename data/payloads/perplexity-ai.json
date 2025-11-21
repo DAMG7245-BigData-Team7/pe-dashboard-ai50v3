@@ -1,0 +1,128 @@
+{
+  "company": {
+    "company_name": "perplexity-ai",
+    "company_id": "perplexityai",
+    "website": "https://www.perplexity.ai",
+    "linkedin": "Not disclosed",
+    "founded_year": null,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "Not disclosed",
+    "subcategory": "Not disclosed",
+    "tagline": "Not disclosed",
+    "description": "Not disclosed",
+    "business_model": "Not disclosed",
+    "target_customers": "Not disclosed",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$400.0M",
+    "total_funding_numeric": 400.0,
+    "last_funding_date": "2025-11-05",
+    "last_funding_stage": "unknown",
+    "valuation": null,
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "$400.0M",
+    "total_raised_numeric": 400.0,
+    "funding_rounds": [
+      {
+        "date": "2025-11-05",
+        "stage": "unknown",
+        "amount": "$400 Million",
+        "amount_numeric": 400.0,
+        "lead_investor": "Snap",
+        "other_investors": [],
+        "valuation": null,
+        "source": "Deadline"
+      }
+    ],
+    "lead_investors": [
+      "Snap"
+    ],
+    "all_investors": [
+      "Snap"
+    ],
+    "last_round_date": "2025-11-05",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": 5,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 1,
+    "recent_partnerships": [
+      "Perplexity AI"
+    ],
+    "product_launches_12m": 0,
+    "recent_products": [],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "Not disclosed"
+  },
+  "visibility": {
+    "news_mentions_30d": 3,
+    "sentiment_score": null,
+    "github_stars": 2721,
+    "github_url": "https://github.com/perplexityai",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-11-05",
+      "event_type": "partnership",
+      "title": "Snap Announces Partnership with Perplexity AI",
+      "description": "Snap has entered into a partnership with Perplexity AI, leading to a significant increase in their stock prices.",
+      "source": "http://deadline.com/2025/11/snap-shares-soar-perplexity-ai-deal-snapchat-1236608565/"
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-11-05",
+      "stage": "unknown",
+      "amount": "$400 Million",
+      "amount_numeric": 400.0,
+      "lead_investor": "Snap",
+      "other_investors": [],
+      "valuation": null,
+      "source": "Deadline"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.perplexity.ai",
+    "News Articles: 3 articles",
+    "GitHub: perplexityai"
+  ],
+  "extracted_at": "2025-11-07T05:54:00.351485Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

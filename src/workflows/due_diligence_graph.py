@@ -22,6 +22,7 @@ from src.agents.planner_agent import plan_due_diligence
 from src.agents.evaluation_agent import evaluate_dashboards
 from src.agents.supervisor_agent import MCPClient, get_mcp_client
 from src.utils.react_logger import ReActLogger
+from src.utils.dashboard_generator import DashboardGenerator
 
 
 # ============================================================
@@ -140,6 +141,30 @@ def data_generator_node(state: DueDiligenceState) -> DueDiligenceState:
             f"RAG dashboard generated ({len(state['rag_dashboard'])} chars)",
             company_id=state["company_id"]
         )
+
+        # Save dashboards to disk
+        try:
+            structured_path = DashboardGenerator.save_dashboard(
+                state["company_id"],
+                state["structured_dashboard"],
+                "structured",
+                state["run_id"]
+            )
+            rag_path = DashboardGenerator.save_dashboard(
+                state["company_id"],
+                state["rag_dashboard"],
+                "rag",
+                state["run_id"]
+            )
+            logger.log_observation(
+                f"Dashboards saved: {structured_path.name}, {rag_path.name}",
+                company_id=state["company_id"]
+            )
+        except Exception as e:
+            logger.log_observation(
+                f"Warning: Could not save dashboards to disk: {str(e)}",
+                company_id=state["company_id"]
+            )
 
         state["execution_path"].append("data_generator")
 

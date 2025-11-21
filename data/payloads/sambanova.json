@@ -1,0 +1,214 @@
+{
+  "company": {
+    "company_name": "sambanova",
+    "company_id": "sambanova",
+    "website": "https://sambanova.ai",
+    "linkedin": "Not disclosed",
+    "founded_year": 2017,
+    "hq_city": "Palo Alto",
+    "hq_country": "California",
+    "category": "AI Technology",
+    "subcategory": null,
+    "tagline": "The Fastest AI Inference Platform & Hardware",
+    "description": "SambaNova strives to be the most efficient and adaptable AI platform on the planet. Our AI solution is designed to empower enterprises to control the trajectory of their data and AI future. The company was founded in 2017 in Palo Alto, California, by a group of industry luminaries, business leaders, and world-class innovators who understand AI.",
+    "business_model": "B2B",
+    "target_customers": "Developers, Enterprises, Government, Public Sector, and Data Centers",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$0M",
+    "total_funding_numeric": 0.0,
+    "last_funding_date": "2025-10-31",
+    "last_funding_stage": "unknown",
+    "valuation": null,
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "Not disclosed",
+    "total_raised_numeric": null,
+    "funding_rounds": [
+      {
+        "date": "2025-10-31",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": "Intel",
+        "other_investors": [],
+        "valuation": null,
+        "source": "Verdict"
+      },
+      {
+        "date": "2025-10-31",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": "Intel",
+        "other_investors": [],
+        "valuation": null,
+        "source": "The Times of India"
+      }
+    ],
+    "lead_investors": [
+      "Intel",
+      "Intel"
+    ],
+    "all_investors": [
+      "Intel"
+    ],
+    "last_round_date": "2025-10-31",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [
+      "Palo Alto, California"
+    ],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": 3,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 1,
+    "recent_partnerships": [
+      "SambaNova and CrewAI"
+    ],
+    "product_launches_12m": 7,
+    "recent_products": [
+      "SambaNova SDK",
+      "SambaManaged",
+      "DeepSeek-V3.1-Terminus",
+      "Lightning-Fast GPT-OSS 120B",
+      "DeepSeek-V3.1",
+      "Supercharging AI Agents with Function Calling on DeepSeek!",
+      "SambaNova 2.0"
+    ],
+    "customer_growth": null,
+    "revenue_info": null
+  },
+  "visibility": {
+    "news_mentions_30d": 3,
+    "sentiment_score": null,
+    "github_stars": 1158,
+    "github_url": "https://github.com/sambanova",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-10-31",
+      "event_type": "acquisition",
+      "title": "Intel in talks to acquire AI chip startup SambaNova",
+      "description": "Intel is exploring the acquisition of AI chipmaker SambaNova, as confirmed by multiple reports.",
+      "source": "https://www.verdict.co.uk/intel-acquisition-talks-sambanova/"
+    },
+    {
+      "date": "2025-10-14",
+      "event_type": "partnership",
+      "title": "SambaNova and CrewAI Partner to Deliver Agentic AI at Scale on CrewAI AMP",
+      "description": "SambaNova announced a partnership with CrewAI to enhance AI capabilities through the CrewAI AMP platform.",
+      "source": "https://www.verdict.co.uk/intel-acquisition-talks-sambanova/"
+    },
+    {
+      "date": "2025-10-09",
+      "event_type": "product_launch",
+      "title": "Introducing the SambaNova SDK",
+      "description": "SambaNova launches its SDK aimed at empowering developers and enterprises in building AI applications.",
+      "source": "https://www.verdict.co.uk/intel-acquisition-talks-sambanova/"
+    },
+    {
+      "date": "2025-09-30",
+      "event_type": "product_launch",
+      "title": "Start Building with The Fastest DeepSeek-V3.1-Terminus",
+      "description": "SambaNova unveiled the DeepSeek-V3.1-Terminus, promising enhanced performance for AI applications.",
+      "source": "https://www.verdict.co.uk/intel-acquisition-talks-sambanova/"
+    },
+    {
+      "date": "2025-07-08",
+      "event_type": "product_launch",
+      "title": "SambaNova 2.0: Build with Relentless Intelligence",
+      "description": "The company released SambaNova 2.0, which focuses on improving AI-driven solutions for enterprises.",
+      "source": "https://www.verdict.co.uk/intel-acquisition-talks-sambanova/"
+    },
+    {
+      "date": "2025-07-07",
+      "event_type": "product_launch",
+      "title": "Introducing SambaManaged: A Turnkey Path to AI for Data Centers",
+      "description": "SambaNova launched SambaManaged, offering a streamlined solution to integrate AI in data centers.",
+      "source": "https://www.verdict.co.uk/intel-acquisition-talks-sambanova/"
+    },
+    {
+      "date": "2025-05-14",
+      "event_type": "product_launch",
+      "title": "Introducing Whisper Large-V3 to SambaNova Cloud",
+      "description": "SambaNova added Whisper Large-V3 to its cloud offerings, enhancing their product range.",
+      "source": "https://www.verdict.co.uk/intel-acquisition-talks-sambanova/"
+    },
+    {
+      "date": "2025-05-02",
+      "event_type": "product_launch",
+      "title": "Qwen3 Is Here - Now Live on SambaNova Cloud",
+      "description": "The company launched Qwen3, expanding its AI model offerings on the cloud platform.",
+      "source": "https://www.verdict.co.uk/intel-acquisition-talks-sambanova/"
+    },
+    {
+      "date": "2025-02-13",
+      "event_type": "product_launch",
+      "title": "SambaNova Cloud Launches the Fastest DeepSeek-R1 671B: Sign Up for Early Access",
+      "description": "SambaNova previewed their latest cloud model, the DeepSeek-R1 671B, for early access sign-up.",
+      "source": "https://www.verdict.co.uk/intel-acquisition-talks-sambanova/"
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-10-31",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": "Intel",
+      "other_investors": [],
+      "valuation": null,
+      "source": "Verdict"
+    },
+    {
+      "date": "2025-10-31",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": "Intel",
+      "other_investors": [],
+      "valuation": null,
+      "source": "The Times of India"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://sambanova.ai",
+    "News Articles: 3 articles",
+    "GitHub: sambanova"
+  ],
+  "extracted_at": "2025-11-07T05:55:21.212037Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

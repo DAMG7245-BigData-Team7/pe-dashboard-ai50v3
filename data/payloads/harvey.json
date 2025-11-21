@@ -1,0 +1,172 @@
+{
+  "company": {
+    "company_name": "harvey",
+    "company_id": "harvey",
+    "website": "https://www.harvey.ai",
+    "linkedin": "Not disclosed",
+    "founded_year": null,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "Legal Technology",
+    "subcategory": "AI for Law Firms",
+    "tagline": "Work Without Boundaries: The AI Platform for Legal Work",
+    "description": "Harvey is a domain-specific AI platform designed for legal professionals, enabling them to ask questions, analyze documents, and draft faster. It provides tools for securely storing legal documents, researching complex legal issues, and streamlining workflows through customizable solutions.",
+    "business_model": "B2B",
+    "target_customers": "Law firms, professional service providers, and the Fortune 500",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$0M",
+    "total_funding_numeric": 0.0,
+    "last_funding_date": "2025-11-04",
+    "last_funding_stage": "unknown",
+    "valuation": null,
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "Not disclosed",
+    "total_raised_numeric": null,
+    "funding_rounds": [
+      {
+        "date": "2025-09-29",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "Harvey's Momentum in Q3"
+      },
+      {
+        "date": "2025-11-04",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "Introducing Harvey's New Reasoning Capabilities"
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": "2025-11-04",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 0,
+    "recent_products": [
+      "Workflow Builder"
+    ],
+    "customer_growth": null,
+    "revenue_info": null
+  },
+  "visibility": {
+    "news_mentions_30d": 3,
+    "sentiment_score": null,
+    "github_stars": 8,
+    "github_url": "https://github.com/harvey",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-10-29",
+      "event_type": "product_launch",
+      "title": "Introducing Workflow Builder",
+      "description": "Design and deploy customizable workflows designed to capture your firm’s differentiators and deliver high-quality legal work.",
+      "source": null
+    },
+    {
+      "date": "2025-11-04",
+      "event_type": "product_launch",
+      "title": "Introducing Harvey's New Reasoning Capabilities",
+      "description": "Launch of new reasoning capabilities to enhance legal processes using AI.",
+      "source": null
+    },
+    {
+      "date": "2025-10-21",
+      "event_type": "partnership",
+      "title": "How Macfarlanes partners with Harvey",
+      "description": "Collaboration between Macfarlanes and Harvey to enhance legal service delivery.",
+      "source": null
+    },
+    {
+      "date": "2025-10-30",
+      "event_type": "product_launch",
+      "title": "Harvey Integrates With Microsoft 365 Applications",
+      "description": "Integration of Harvey's legal platform with Microsoft 365 applications to streamline legal workflows.",
+      "source": null
+    },
+    {
+      "date": "2025-09-29",
+      "event_type": "milestone",
+      "title": "Harvey’s Momentum in Q3",
+      "description": "Celebrated major customer wins, introduced product breakthroughs, and expanded global presence during Q3.",
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-09-29",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "Harvey's Momentum in Q3"
+    },
+    {
+      "date": "2025-11-04",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "Introducing Harvey's New Reasoning Capabilities"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.harvey.ai",
+    "News Articles: 3 articles",
+    "GitHub: harvey"
+  ],
+  "extracted_at": "2025-11-07T05:51:17.786755Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

@@ -1,0 +1,175 @@
+{
+  "company": {
+    "company_name": "openevidence",
+    "company_id": "openevidence",
+    "website": "https://www.openevidence.com",
+    "linkedin": "Not disclosed",
+    "founded_year": null,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "Medical Information Platform",
+    "subcategory": "Not disclosed",
+    "tagline": "The leading medical information platform",
+    "description": "OpenEvidence is the leading medical information platform. Launched from the Mayo Clinic Platform Accelerate program, it features multimedia and clinical findings from The New England Journal of Medicine and JAMA. Our mission is to organize and expand the world's collective medical knowledge, addressing the challenge of information overload in medicine.",
+    "business_model": "B2B",
+    "target_customers": "U.S. healthcare professionals",
+    "pricing_model": "Free for verified U.S. HCPs",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$0M",
+    "total_funding_numeric": 0.0,
+    "last_funding_date": null,
+    "last_funding_stage": "unknown",
+    "valuation": null,
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "Not disclosed",
+    "total_raised_numeric": null,
+    "funding_rounds": [
+      {
+        "date": null,
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [
+          "Sequoia",
+          "Google Ventures",
+          "Kleiner Perkins",
+          "Coatue",
+          "Thrive",
+          "Conviction",
+          "ICONIQ",
+          "Greycroft",
+          "Breyer Capital",
+          "BOND",
+          "Blackstone",
+          "Mayo Clinic"
+        ],
+        "valuation": null,
+        "source": null
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [
+      "Thrive",
+      "BOND",
+      "Sequoia",
+      "ICONIQ",
+      "Coatue",
+      "Kleiner Perkins",
+      "Breyer Capital",
+      "Mayo Clinic",
+      "Greycroft",
+      "Blackstone",
+      "Google Ventures",
+      "Conviction"
+    ],
+    "last_round_date": null,
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": 0,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 0,
+    "recent_products": [],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "Not disclosed"
+  },
+  "visibility": {
+    "news_mentions_30d": 3,
+    "sentiment_score": null,
+    "github_stars": 3,
+    "github_url": "https://github.com/openevidence",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-11-05",
+      "event_type": "leadership_change",
+      "title": "HIStalk Interviews Peter Bonis, MD, Chief Medical Officer, Wolters Kluwer Health",
+      "description": "Interview with Peter Bonis discussing changes in leadership at Wolters Kluwer Health.",
+      "source": "https://histalk2.com/2025/11/05/histalk-interviews-peter-bonis-md-chief-medical-officer-wolters-kluwer-health/"
+    },
+    {
+      "date": "2025-11-05",
+      "event_type": "other",
+      "title": "Meet Sequoia Capital’s new stewards",
+      "description": "An article detailing new leadership at Sequoia Capital.",
+      "source": "https://fortune.com/2025/11/05/meet-sequoia-capitals-new-stewards/"
+    },
+    {
+      "date": "2025-11-04",
+      "event_type": "milestone",
+      "title": "Artificial Intelligence Powered Rare Disease Diagnosis Research Report 2025",
+      "description": "Market forecast indicating growth in AI-powered healthcare, projected to surpass $5.5 billion by 2029.",
+      "source": "https://www.globenewswire.com/news-release/2025/11/04/3180611/28124/en/Artificial-Intelligence-Powered-Rare-Disease-Diagnosis-Research-Report-2025-Market-to-Surpass-5-5-Billion-by-2029-on-Accelerated-Adoption-of-Predictive-and-Personalized-Healthcare-.html"
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": null,
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [
+        "Sequoia",
+        "Google Ventures",
+        "Kleiner Perkins",
+        "Coatue",
+        "Thrive",
+        "Conviction",
+        "ICONIQ",
+        "Greycroft",
+        "Breyer Capital",
+        "BOND",
+        "Blackstone",
+        "Mayo Clinic"
+      ],
+      "valuation": null,
+      "source": null
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.openevidence.com",
+    "News Articles: 3 articles",
+    "GitHub: openevidence"
+  ],
+  "extracted_at": "2025-11-07T05:53:52.313662Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

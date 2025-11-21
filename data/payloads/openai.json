@@ -1,0 +1,232 @@
+{
+  "company": {
+    "company_name": "openai",
+    "company_id": "openai",
+    "website": "https://openai.com",
+    "linkedin": "Not disclosed",
+    "founded_year": null,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "Artificial Intelligence",
+    "subcategory": null,
+    "tagline": "Not disclosed",
+    "description": "OpenAI is an AI research and deployment company that aims to ensure that artificial intelligence benefits all of humanity. They develop advanced AI models and technologies, including language and machine learning systems, to contribute to various societal applications and improve human productivity.",
+    "business_model": "Not disclosed",
+    "target_customers": "Not disclosed",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Google",
+      "Microsoft",
+      "IBM"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$0M",
+    "total_funding_numeric": 0.0,
+    "last_funding_date": "2025-11",
+    "last_funding_stage": "unknown",
+    "valuation": null,
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "Not disclosed",
+    "total_raised_numeric": null,
+    "funding_rounds": [
+      {
+        "date": "2025-11",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [
+          "OpenAI"
+        ],
+        "valuation": null,
+        "source": "Nep123.com"
+      },
+      {
+        "date": "2025-11",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [
+          "OpenAI"
+        ],
+        "valuation": null,
+        "source": "Digitimes"
+      },
+      {
+        "date": "2025-11",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [
+          "OpenAI"
+        ],
+        "valuation": null,
+        "source": "Biztoc.com"
+      },
+      {
+        "date": "2025-11",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [
+          "OpenAI"
+        ],
+        "valuation": null,
+        "source": "Github.com"
+      },
+      {
+        "date": "2025-11",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [
+          "OpenAI"
+        ],
+        "valuation": null,
+        "source": "Mactrast.com"
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [
+      "OpenAI"
+    ],
+    "last_round_date": "2025-11",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": 0,
+    "recent_hires": null,
+    "office_locations": [
+      "Not disclosed"
+    ],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": 5,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [
+      "Not disclosed"
+    ],
+    "product_launches_12m": 1,
+    "recent_products": [
+      "Sora App"
+    ],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "Not disclosed"
+  },
+  "visibility": {
+    "news_mentions_30d": 5,
+    "sentiment_score": null,
+    "github_stars": 453683,
+    "github_url": "https://github.com/openai",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-11-05",
+      "event_type": "product_launch",
+      "title": "Sora App: Android Rollout",
+      "description": "The rollout of the Sora app for Android has been announced, expanding its availability to a wider user base.",
+      "source": "https://nep123.com/sora-app-android-rollout/"
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-11",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [
+        "OpenAI"
+      ],
+      "valuation": null,
+      "source": "Nep123.com"
+    },
+    {
+      "date": "2025-11",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [
+        "OpenAI"
+      ],
+      "valuation": null,
+      "source": "Digitimes"
+    },
+    {
+      "date": "2025-11",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [
+        "OpenAI"
+      ],
+      "valuation": null,
+      "source": "Biztoc.com"
+    },
+    {
+      "date": "2025-11",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [
+        "OpenAI"
+      ],
+      "valuation": null,
+      "source": "Github.com"
+    },
+    {
+      "date": "2025-11",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [
+        "OpenAI"
+      ],
+      "valuation": null,
+      "source": "Mactrast.com"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://openai.com",
+    "News Articles: 5 articles",
+    "GitHub: openai"
+  ],
+  "extracted_at": "2025-11-07T05:53:38.613066Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

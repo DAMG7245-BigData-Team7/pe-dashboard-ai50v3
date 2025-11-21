@@ -1,0 +1,128 @@
+{
+  "company": {
+    "company_name": "synthesia",
+    "company_id": "synthesia",
+    "website": "https://www.synthesia.io",
+    "linkedin": null,
+    "founded_year": 2017,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "AI Video Platform",
+    "subcategory": "Not disclosed",
+    "tagline": "#1 AI Video Platform for Business",
+    "description": "Synthesia was founded in 2017 by a team of AI researchers and entrepreneurs from UCL, Stanford, TUM and Cambridge. Our mission is to empower everyone to make video content - without cameras, microphones, or studios.",
+    "business_model": "B2B",
+    "target_customers": "Businesses",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$200.0M",
+    "total_funding_numeric": 200.0,
+    "last_funding_date": "2025-10-31",
+    "last_funding_stage": "series_b",
+    "valuation": "$4bn",
+    "headcount": 500,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "$200.0M",
+    "total_raised_numeric": 200.0,
+    "funding_rounds": [
+      {
+        "date": "2025-10-31",
+        "stage": "series_b",
+        "amount": "$200m",
+        "amount_numeric": 200.0,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": "$4bn",
+        "source": "Biztoc.com"
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": "2025-10-31",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": 500,
+    "headcount_growth_yoy": null,
+    "open_roles": 0,
+    "recent_hires": null,
+    "office_locations": [
+      "London",
+      "New York City",
+      "Copenhagen",
+      "Munich",
+      "Amsterdam",
+      "Zurich"
+    ],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": 4,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 1,
+    "recent_products": [
+      "Synthesia 3.0"
+    ],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "$345M raised to date"
+  },
+  "visibility": {
+    "news_mentions_30d": 5,
+    "sentiment_score": null,
+    "github_stars": 0,
+    "github_url": "https://github.com/synthesia",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-10-31",
+      "event_type": "funding",
+      "title": "Synthesia reportedly raises $200m",
+      "description": "UK AI video start-up Synthesia raises $200 million at a $4 billion valuation.",
+      "source": "https://biztoc.com/x/a09e0ccf67e7628a"
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-10-31",
+      "stage": "series_b",
+      "amount": "$200m",
+      "amount_numeric": 200.0,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": "$4bn",
+      "source": "Biztoc.com"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.synthesia.io",
+    "News Articles: 5 articles",
+    "GitHub: synthesia"
+  ],
+  "extracted_at": "2025-11-07T05:57:12.881207Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

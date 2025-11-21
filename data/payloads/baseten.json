@@ -1,0 +1,169 @@
+{
+  "company": {
+    "company_name": "baseten",
+    "company_id": "baseten",
+    "website": "https://www.baseten.co",
+    "linkedin": null,
+    "founded_year": null,
+    "hq_city": "San Francisco",
+    "hq_country": "United States",
+    "category": "Technology",
+    "subcategory": "AI Inference Platform",
+    "tagline": "Deploy AI models in production",
+    "description": "Baseten provides a platform for deploying AI models in production with performant model runtimes and seamless developer workflows. It offers dedicated deployments for high-scale workloads and enables users to serve open-source and custom models effectively.",
+    "business_model": "B2B",
+    "target_customers": "Engineering and machine learning teams",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Amazon Web Services",
+      "Microsoft Azure",
+      "Nvidia"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$504.0M",
+    "total_funding_numeric": 504.0,
+    "last_funding_date": "2025-10-28",
+    "last_funding_stage": "unknown",
+    "valuation": "$4B",
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "$504.0M",
+    "total_raised_numeric": 504.0,
+    "funding_rounds": [
+      {
+        "date": "2025-10-28",
+        "stage": "unknown",
+        "amount": "$254M",
+        "amount_numeric": 254.0,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": "$4B",
+        "source": "SiliconANGLE News"
+      },
+      {
+        "date": "2025-10-28",
+        "stage": "unknown",
+        "amount": "$250M",
+        "amount_numeric": 250.0,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": "$4B",
+        "source": "SiliconANGLE News"
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": "2025-10-28",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": 6,
+    "recent_hires": null,
+    "office_locations": [
+      "San Francisco",
+      "New York"
+    ],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 1,
+    "recent_products": [
+      "Brain MAX"
+    ],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "Not disclosed"
+  },
+  "visibility": {
+    "news_mentions_30d": 5,
+    "sentiment_score": null,
+    "github_stars": 12,
+    "github_url": "https://github.com/baseten",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-10-28",
+      "event_type": "funding",
+      "title": "Fireworks AI raises $250M at $4B valuation to help enterprises with AI inference workloads",
+      "description": "Fireworks AI announced it has raised $250 million to support enterprises in managing AI inference workloads, achieving a valuation of $4 billion.",
+      "source": "https://siliconangle.com/2025/10/28/fireworks-ai-gets-250m-funding-help-enterprises-ai-inference-workloads/"
+    },
+    {
+      "date": "2025-10-28",
+      "event_type": "funding",
+      "title": "Fireworks AI raises $254M at $4B valuation to help enterprises with AI inference workloads",
+      "description": "Fireworks AI announced it has raised $254 million for its AI inference solutions with a valuation of $4 billion.",
+      "source": "https://siliconangle.com/2025/10/28/fireworks-ai-gets-254m-funding-help-enterprises-ai-inference-workloads/"
+    },
+    {
+      "date": "2025-11-05",
+      "event_type": "other",
+      "title": "Nebius takes on Amazon and Microsoft with new AI platform",
+      "description": "Nebius has launched a new AI platform that aims to compete with giants like Amazon and Microsoft in the AI space.",
+      "source": "https://rollingout.com/2025/11/05/nebius-takes-on-amazon-and-microsoft-ai/"
+    },
+    {
+      "date": "2025-11-04",
+      "event_type": "other",
+      "title": "Partnerships and hiring data show AI companies are expanding beyond Nvidia chips",
+      "description": "A report discusses how AI companies are moving beyond dependence on Nvidia chips, highlighting partnerships and hiring trends.",
+      "source": "https://www.cbinsights.com/research/ai-companies-expand-beyond-nvidia/"
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-10-28",
+      "stage": "unknown",
+      "amount": "$254M",
+      "amount_numeric": 254.0,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": "$4B",
+      "source": "SiliconANGLE News"
+    },
+    {
+      "date": "2025-10-28",
+      "stage": "unknown",
+      "amount": "$250M",
+      "amount_numeric": 250.0,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": "$4B",
+      "source": "SiliconANGLE News"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.baseten.co",
+    "News Articles: 5 articles",
+    "GitHub: baseten"
+  ],
+  "extracted_at": "2025-11-07T05:47:13.803377Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

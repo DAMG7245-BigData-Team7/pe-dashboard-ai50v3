@@ -1,0 +1,198 @@
+{
+  "company": {
+    "company_name": "glean",
+    "company_id": "glean",
+    "website": "https://www.glean.com",
+    "linkedin": null,
+    "founded_year": null,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "Not disclosed",
+    "subcategory": "Not disclosed",
+    "tagline": "Work AI that works for all",
+    "description": "Glean was founded by a seasoned team of former Google search engineers and industry veterans who wondered why we don’t have an easier way to find answers at work. So they built the world’s most advanced AI-powered enterprise search. That was just the beginning. Today, employees around the globe rely on Glean’s AI assistant and Work AI platform to find answers, generate content, and automate work with AI.",
+    "business_model": "Not disclosed",
+    "target_customers": "Not disclosed",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "Not disclosed"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$0M",
+    "total_funding_numeric": 0.0,
+    "last_funding_date": "2025-11-04",
+    "last_funding_stage": "unknown",
+    "valuation": null,
+    "headcount": null,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "Not disclosed",
+    "total_raised_numeric": null,
+    "funding_rounds": [
+      {
+        "date": "2025-09-25",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "Glean and Snowflake Intelligence combines Snowflake data with enterprise context to deliver actionable insights"
+      },
+      {
+        "date": "2025-11-04",
+        "stage": "unknown",
+        "amount": "Not disclosed",
+        "amount_numeric": null,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": null,
+        "source": "Glean and Snowflake Intelligence combines Snowflake data with enterprise context to deliver actionable insights"
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": "2025-11-04",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": null,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": 0,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 0,
+    "recent_products": [],
+    "customer_growth": "Not disclosed",
+    "revenue_info": "Not disclosed"
+  },
+  "visibility": {
+    "news_mentions_30d": 5,
+    "sentiment_score": null,
+    "github_stars": 147,
+    "github_url": "https://github.com/glean",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2025-09-25",
+      "event_type": "product_launch",
+      "title": "11 AI agents powering every stage of security operations",
+      "description": "Discover the security AI agents that help teams detect, investigate, and respond faster, strengthening protection with trusted, governed intelligence.",
+      "source": "Glean + Product"
+    },
+    {
+      "date": "2025-10-30",
+      "event_type": "product_launch",
+      "title": "6 AI agents helping product teams build smarter, ship faster, and stay aligned",
+      "description": "Explore examples of AI agents for product management that help product teams plan, build, and ship faster.",
+      "source": "Glean + Product"
+    },
+    {
+      "date": "2025-10-07",
+      "event_type": "product_launch",
+      "title": "Introducing contextual image understanding in Glean",
+      "description": "Get the full picture with contextual image understanding that surfaces relevant charts, diagrams, and screenshots directly in chat responses.",
+      "source": "Glean + Product"
+    },
+    {
+      "date": "2025-10-03",
+      "event_type": "partnership",
+      "title": "Glean joins the Slack Marketplace",
+      "description": "Glean is now an official application in the Slack Marketplace, allowing enterprises to access trusted data and context directly in Slack.",
+      "source": "Glean + Product"
+    },
+    {
+      "date": "2025-11-04",
+      "event_type": "partnership",
+      "title": "Glean and Snowflake Intelligence collaboration",
+      "description": "The integration will enable Snowflake Intelligence agents to leverage Glean and integrate company knowledge directly into data insights.",
+      "source": "Glean"
+    },
+    {
+      "date": "2025-11-03",
+      "event_type": "product_launch",
+      "title": "Glean integration with Miro",
+      "description": "Collaborative work in Miro made easy with Glean's integration, allowing users to find answers without switching tools.",
+      "source": "Glean + Product"
+    },
+    {
+      "date": "2025-11-04",
+      "event_type": "product_launch",
+      "title": "Glean's new structured query agents",
+      "description": "Glean's new structured data tools simplify data management and automation across businesses.",
+      "source": "Glean + Product"
+    },
+    {
+      "date": "2025-10-01",
+      "event_type": "milestone",
+      "title": "Intern life at Glean: Making an impact, together",
+      "description": "Glean’s interns made contributions that delivered lasting value across various initiatives.",
+      "source": "Glean + Product"
+    },
+    {
+      "date": "2025-10-17",
+      "event_type": "milestone",
+      "title": "Gleaniverse’s collaborative future",
+      "description": "The Gleaniverse presents opportunities for community-built AI and Agentic workflows, showcasing creativity and curiosity.",
+      "source": "Glean + Product"
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2025-09-25",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "Glean and Snowflake Intelligence combines Snowflake data with enterprise context to deliver actionable insights"
+    },
+    {
+      "date": "2025-11-04",
+      "stage": "unknown",
+      "amount": "Not disclosed",
+      "amount_numeric": null,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": null,
+      "source": "Glean and Snowflake Intelligence combines Snowflake data with enterprise context to deliver actionable insights"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Company valuation",
+      "Headcount",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.glean.com",
+    "News Articles: 5 articles",
+    "GitHub: glean"
+  ],
+  "extracted_at": "2025-11-07T05:50:58.077480Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

@@ -1,292 +1,256 @@
 """
-ORBIT Agentic Dashboard DAG
+ORBIT Agentic Dashboard DAG (Assignment 5)
+Runs agentic workflow for all Forbes AI 50 companies
 
-Purpose: Invokes MCP Server + Agentic Workflow to generate PE dashboards
-Trigger: Scheduled (daily at 3 AM UTC, after daily_update completes)
-Schedule: 0 3 * * * (cron)
-
-Tasks:
-1. Check MCP Server health
-2. Get Forbes AI 50 company list
-3. Run due diligence workflow for each company
-4. Collect and store dashboards
-5. Generate summary report
+Invokes MCP + Agent Workflow to:
+1. Load structured payloads
+2. Generate dashboards via agentic workflow
+3. Detect risks and trigger HITL if needed
+4. Save final dashboards
 """
 
-from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-from airflow.operators.bash import BashOperator
-import json
-import os
+from airflow.utils.dates import days_ago
+from datetime import datetime, timedelta
 import sys
 from pathlib import Path
-import subprocess
+import json
+import os
 
-
-# ============================================================
-# Configuration
-# ============================================================
-
-MCP_BASE_URL = os.getenv("MCP_BASE_URL", "http://localhost:9000")
+# Add project root to path
 PROJECT_ROOT = Path(__file__).parent.parent.parent
-DATA_DIR = Path(os.getenv("AIRFLOW_HOME", "/usr/local/airflow")) / "data"
-DASHBOARDS_DIR = DATA_DIR / "dashboards"
+sys.path.insert(0, str(PROJECT_ROOT))
 
+from src.workflows.due_diligence_graph import run_workflow
+from src.utils import ScraperConfig, load_json
 
-# ============================================================
-# Task Functions
-# ============================================================
-
-def check_mcp_health(**context):
-    """Task 1: Check MCP Server health before starting"""
-    import requests
-
-    print(f"🏥 Checking MCP Server health at {MCP_BASE_URL}...")
-
-    try:
-        response = requests.get(f"{MCP_BASE_URL}/health", timeout=5)
-        if response.status_code == 200:
-            health_data = response.json()
-            print(f"✅ MCP Server is healthy: {health_data}")
-            return True
-        else:
-            raise Exception(f"MCP Server unhealthy: HTTP {response.status_code}")
-    except Exception as e:
-        print(f"❌ MCP Server health check failed: {e}")
-        raise
-
-
-def get_company_list(**context):
-    """Task 2: Get Forbes AI 50 company list from MCP Server"""
-    import requests
-
-    print(f"📋 Fetching company list from MCP Server...")
-
-    try:
-        response = requests.get(f"{MCP_BASE_URL}/resource/ai50/companies", timeout=10)
-        if response.status_code == 200:
-            data = response.json()
-            companies = data.get("companies", [])
-            print(f"✅ Retrieved {len(companies)} companies")
-
-            # For demo, limit to first 5 companies to avoid long execution
-            companies = companies[:5]
-            print(f"   Processing {len(companies)} companies for this run")
-
-            context['task_instance'].xcom_push(key='companies', value=companies)
-            return len(companies)
-        else:
-            raise Exception(f"Failed to fetch companies: HTTP {response.status_code}")
-    except Exception as e:
-        print(f"❌ Error fetching company list: {e}")
-        # Fallback to hardcoded list
-        fallback = ["anthropic", "openai", "cohere"]
-        context['task_instance'].xcom_push(key='companies', value=fallback)
-        return len(fallback)
-
-
-def run_agentic_workflow(**context):
-    """
-    Task 3: Run due diligence workflow for each company
-    Invokes the LangGraph workflow via CLI
-    """
-    companies = context['task_instance'].xcom_pull(
-        task_ids='get_company_list', key='companies'
-    )
-
-    print(f"🤖 Running agentic workflow for {len(companies)} companies...")
-
-    DASHBOARDS_DIR.mkdir(parents=True, exist_ok=True)
-
-    results = []
-    for idx, company_id in enumerate(companies, 1):
-        print(f"\n{'='*60}")
-        print(f"[{idx}/{len(companies)}] Processing {company_id}...")
-        print('='*60)
-
-        try:
-            # Run workflow using subprocess
-            env = os.environ.copy()
-            env['PYTHONPATH'] = str(PROJECT_ROOT)
-            env['HITL_AUTO_APPROVE'] = 'true'  # Auto-approve for scheduled runs
-
-            workflow_script = PROJECT_ROOT / "src" / "workflows" / "due_diligence_graph.py"
-
-            result = subprocess.run(
-                [sys.executable, str(workflow_script), company_id],
-                env=env,
-                capture_output=True,
-                text=True,
-                timeout=300  # 5 minute timeout per company
-            )
-
-            if result.returncode == 0:
-                print(f"✅ Workflow completed for {company_id}")
-                results.append({
-                    "company_id": company_id,
-                    "status": "success",
-                    "timestamp": datetime.utcnow().isoformat()
-                })
-            else:
-                print(f"❌ Workflow failed for {company_id}")
-                print(f"Error: {result.stderr}")
-                results.append({
-                    "company_id": company_id,
-                    "status": "failed",
-                    "error": result.stderr[:500],
-                    "timestamp": datetime.utcnow().isoformat()
-                })
-
-        except subprocess.TimeoutExpired:
-            print(f"⏱️  Workflow timeout for {company_id}")
-            results.append({
-                "company_id": company_id,
-                "status": "timeout",
-                "timestamp": datetime.utcnow().isoformat()
-            })
-        except Exception as e:
-            print(f"❌ Unexpected error for {company_id}: {e}")
-            results.append({
-                "company_id": company_id,
-                "status": "error",
-                "error": str(e),
-                "timestamp": datetime.utcnow().isoformat()
-            })
-
-    # Save results
-    results_path = DASHBOARDS_DIR / f"workflow_results_{context['ds']}.json"
-    with open(results_path, 'w') as f:
-        json.dump(results, f, indent=2)
-
-    print(f"\n✅ Completed workflows for {len(companies)} companies")
-    print(f"   Successes: {sum(1 for r in results if r['status'] == 'success')}")
-    print(f"   Failures: {sum(1 for r in results if r['status'] in ['failed', 'timeout', 'error'])}")
-
-    context['task_instance'].xcom_push(key='results', value=results)
-
-    return len(results)
-
-
-def generate_summary_report(**context):
-    """Task 4: Generate summary report of all dashboards"""
-    results = context['task_instance'].xcom_pull(
-        task_ids='run_agentic_workflow', key='results'
-    )
-
-    print(f"📊 Generating summary report...")
-
-    summary = {
-        "execution_date": context['ds'],
-        "total_companies": len(results),
-        "successful": sum(1 for r in results if r['status'] == 'success'),
-        "failed": sum(1 for r in results if r['status'] != 'success'),
-        "results": results,
-        "generated_at": datetime.utcnow().isoformat()
-    }
-
-    # Save summary report
-    report_path = DASHBOARDS_DIR / f"summary_report_{context['ds']}.json"
-    with open(report_path, 'w') as f:
-        json.dump(summary, f, indent=2)
-
-    print(f"✅ Summary report saved to {report_path}")
-    print(f"\n📈 SUMMARY:")
-    print(f"   Total Companies: {summary['total_companies']}")
-    print(f"   Successful: {summary['successful']}")
-    print(f"   Failed: {summary['failed']}")
-
-    return summary
-
-
-# ============================================================
-# DAG Definition
-# ============================================================
+# ============================================================================
+# DAG Configuration
+# ============================================================================
 
 default_args = {
-    'owner': 'orbit-team',
+    'owner': 'orbit',
     'depends_on_past': False,
-    'email_on_failure': True,
-    'email_on_success': False,
+    'email_on_failure': False,
+    'email_on_retry': False,
     'retries': 1,
-    'retry_delay': timedelta(minutes=15),
+    'retry_delay': timedelta(minutes=5),
 }
 
-with DAG(
+dag = DAG(
     dag_id='orbit_agentic_dashboard',
     default_args=default_args,
-    description='Generate PE dashboards using MCP + Agentic Workflow',
-    schedule_interval='0 3 * * *',  # Daily at 3 AM UTC (after daily_update)
-    start_date=datetime(2025, 1, 1),
+    description='Generate dashboards using agentic workflow for all AI 50 companies',
+    schedule_interval='0 4 * * *',  # Run daily at 4 AM
+    start_date=days_ago(1),
     catchup=False,
-    tags=['orbit', 'agentic', 'dashboards'],
-) as dag:
+    tags=['orbit', 'agentic', 'assignment5'],
+)
 
-    t1_health = PythonOperator(
-        task_id='check_mcp_health',
-        python_callable=check_mcp_health,
-        provide_context=True,
-    )
+# ============================================================================
+# Task Functions
+# ============================================================================
 
-    t2_companies = PythonOperator(
-        task_id='get_company_list',
-        python_callable=get_company_list,
-        provide_context=True,
-    )
+def get_company_list(**context):
+    """
+    Task 1: Load list of companies from payloads folder
+    """
+    print("\n" + "="*60)
+    print("TASK 1: LOADING COMPANY LIST")
+    print("="*60 + "\n")
+    
+    # Load from payloads directory (your Assignment 4 output)
+    payloads_dir = ScraperConfig.DATA_DIR / "payloads"
+    
+    if not payloads_dir.exists():
+        # Fallback to structured directory if payloads doesn't exist
+        payloads_dir = ScraperConfig.DATA_DIR / "structured"
+    
+    company_files = list(payloads_dir.glob("*_payload.json")) or list(payloads_dir.glob("*.json"))
+    
+    # Extract company IDs
+    company_ids = []
+    for file in company_files:
+        # Handle both formats: anthropic_payload.json or anthropic.json
+        company_id = file.stem.replace('_payload', '')
+        company_ids.append(company_id)
+    
+    print(f"Found {len(company_ids)} companies in {payloads_dir}")
+    print(f"Companies: {', '.join(company_ids[:5])}...")
+    
+    # Push to XCom for next task
+    context['task_instance'].xcom_push(key='company_ids', value=company_ids)
+    
+    return f"Found {len(company_ids)} companies"
 
-    t3_workflow = PythonOperator(
-        task_id='run_agentic_workflow',
-        python_callable=run_agentic_workflow,
-        provide_context=True,
-        execution_timeout=timedelta(hours=2),  # Max 2 hours for all workflows
-    )
 
-    t4_summary = PythonOperator(
-        task_id='generate_summary_report',
-        python_callable=generate_summary_report,
-        provide_context=True,
-    )
+def run_agentic_workflow_for_all(**context):
+    """
+    Task 2: Run agentic workflow for each company
+    
+    This runs your LangGraph workflow (due_diligence_graph.py) which:
+    - Calls MCP server to generate dashboards
+    - Evaluates them
+    - Detects risks
+    - Triggers HITL if needed
+    - Saves final dashboards
+    """
+    print("\n" + "="*60)
+    print("TASK 2: RUNNING AGENTIC WORKFLOWS")
+    print("="*60 + "\n")
+    
+    # Get company list from previous task
+    ti = context['task_instance']
+    company_ids = ti.xcom_pull(task_ids='get_company_list', key='company_ids')
+    
+    if not company_ids:
+        print("No companies found!")
+        return "No companies processed"
+    
+    # Set auto-approve mode for Airflow (no interactive HITL)
+    os.environ['HITL_AUTO_APPROVE'] = 'true'
+    
+    # Track results
+    results = {
+        'total': len(company_ids),
+        'successful': 0,
+        'failed': 0,
+        'hitl_triggered': 0,
+        'companies': []
+    }
+    
+    # Run workflow for each company
+    for idx, company_id in enumerate(company_ids, 1):
+        print(f"\n{'='*60}")
+        print(f"[{idx}/{len(company_ids)}] Processing: {company_id}")
+        print(f"{'='*60}")
+        
+        try:
+            # Run the workflow (from due_diligence_graph.py)
+            # This will:
+            # 1. Call MCP server to generate dashboards
+            # 2. Evaluate and detect risks
+            # 3. Save dashboards to data/dashboards/
+            final_state = run_workflow(company_id)
+            
+            # Track results
+            company_result = {
+                'company_id': company_id,
+                'status': 'success',
+                'risk_detected': final_state.get('risk_detected', False),
+                'hitl_required': final_state.get('hitl_required', False),
+                'recommendation': final_state.get('final_decision', {}).get('recommendation'),
+                'execution_path': final_state.get('execution_path', [])
+            }
+            
+            results['successful'] += 1
+            if final_state.get('hitl_required'):
+                results['hitl_triggered'] += 1
+            
+            results['companies'].append(company_result)
+            
+            print(f"✅ {company_id}: SUCCESS")
+            print(f"   Risk detected: {final_state.get('risk_detected')}")
+            print(f"   Branch: {'HITL' if final_state.get('hitl_required') else 'Auto-Approve'}")
+            
+        except Exception as e:
+            print(f"❌ {company_id}: FAILED - {str(e)}")
+            
+            results['failed'] += 1
+            results['companies'].append({
+                'company_id': company_id,
+                'status': 'failed',
+                'error': str(e)
+            })
+    
+    # Save results summary
+    results_file = ScraperConfig.DATA_DIR / "agentic_dag_results.json"
+    with open(results_file, 'w') as f:
+        json.dump({
+            'execution_date': context['execution_date'].isoformat(),
+            'results': results
+        }, f, indent=2)
+    
+    print(f"\n{'='*60}")
+    print("AGENTIC WORKFLOW COMPLETE")
+    print(f"{'='*60}")
+    print(f"Total: {results['total']}")
+    print(f"Successful: {results['successful']}")
+    print(f"Failed: {results['failed']}")
+    print(f"HITL triggered: {results['hitl_triggered']}")
+    print(f"Results saved: {results_file}")
+    print(f"{'='*60}\n")
+    
+    # Push summary to XCom
+    context['task_instance'].xcom_push(key='results', value=results)
+    
+    return f"Processed {results['successful']}/{results['total']} companies"
 
-    # Task dependencies
-    t1_health >> t2_companies >> t3_workflow >> t4_summary
+
+def cleanup_old_dashboards(**context):
+    """
+    Task 3: Optional cleanup of old dashboard files
+    Keeps only the latest 5 dashboards per company
+    """
+    print("\n" + "="*60)
+    print("TASK 3: CLEANING UP OLD DASHBOARDS")
+    print("="*60 + "\n")
+    
+    dashboards_dir = ScraperConfig.DATA_DIR / "dashboards"
+    
+    if not dashboards_dir.exists():
+        print("No dashboards directory found")
+        return "No cleanup needed"
+    
+    cleaned = 0
+    
+    for company_dir in dashboards_dir.iterdir():
+        if not company_dir.is_dir():
+            continue
+        
+        # Get all dashboard files sorted by timestamp
+        dashboard_files = sorted(
+            company_dir.glob("structured_*.md"),
+            key=lambda f: f.stat().st_mtime,
+            reverse=True
+        )
+        
+        # Keep only latest 5, delete rest
+        for old_file in dashboard_files[5:]:
+            old_file.unlink()
+            cleaned += 1
+            print(f"Deleted: {old_file}")
+    
+    print(f"\nCleaned up {cleaned} old dashboard files")
+    
+    return f"Cleaned {cleaned} files"
 
 
-# ============================================================
-# Documentation
-# ============================================================
+# ============================================================================
+# Define Tasks
+# ============================================================================
 
-"""
-How to Run:
------------
+task_get_companies = PythonOperator(
+    task_id='get_company_list',
+    python_callable=get_company_list,
+    dag=dag,
+)
 
-1. Manual trigger:
-   ```bash
-   airflow dags trigger orbit_agentic_dashboard
-   ```
+task_run_workflow = PythonOperator(
+    task_id='run_agentic_workflow',
+    python_callable=run_agentic_workflow_for_all,
+    dag=dag,
+)
 
-2. Check status:
-   ```bash
-   airflow dags state orbit_agentic_dashboard <execution_date>
-   ```
+task_cleanup = PythonOperator(
+    task_id='cleanup_old_dashboards',
+    python_callable=cleanup_old_dashboards,
+    dag=dag,
+)
 
-3. View logs:
-   ```bash
-   airflow tasks logs orbit_agentic_dashboard run_agentic_workflow <execution_date>
-   ```
+# ============================================================================
+# Task Dependencies
+# ============================================================================
 
-4. Check results:
-   ```bash
-   cat /usr/local/airflow/data/dashboards/summary_report_<date>.json
-   ```
-
-Expected Behavior:
-------------------
-- Runs daily at 3 AM UTC (after daily_update completes)
-- Processes all Forbes AI 50 companies (or subset for testing)
-- Each company runs through full LangGraph workflow
-- HITL auto-approves (no manual intervention needed)
-- Results saved to data/dashboards/
-- Summary report generated
-
-Duration: ~30-60 minutes (depends on number of companies)
-"""
+task_get_companies >> task_run_workflow >> task_cleanup

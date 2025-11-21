@@ -1,0 +1,196 @@
+{
+  "company": {
+    "company_name": "clay",
+    "company_id": "clay",
+    "website": "https://www.clay.com",
+    "linkedin": null,
+    "founded_year": null,
+    "hq_city": "Not disclosed",
+    "hq_country": "Not disclosed",
+    "category": "Not disclosed",
+    "subcategory": null,
+    "tagline": "Go to market with unique data—and the ability to act on it",
+    "description": "We make creative tools to help people grow their businesses. We help teams get the best data foundation possible to reach their best-fit customers. We care about helping people grow businesses: whether taking a solo dream to a small team or scaling a mature enterprise company.",
+    "business_model": "Not disclosed",
+    "target_customers": "Not disclosed",
+    "pricing_model": "Not disclosed",
+    "competitors": [
+      "OpenAI",
+      "Anthropic",
+      "Rippling",
+      "Notion",
+      "Vanta"
+    ]
+  },
+  "snapshot": {
+    "snapshot_date": "2025-11-07",
+    "total_funding": "$100.0M",
+    "total_funding_numeric": 100.0,
+    "last_funding_date": "2023",
+    "last_funding_stage": "series_c",
+    "valuation": "$3.1B",
+    "headcount": 100,
+    "leadership_count": null,
+    "customer_count": null,
+    "revenue_range": null
+  },
+  "investor_profile": {
+    "total_raised": "$100.0M",
+    "total_raised_numeric": 100.0,
+    "funding_rounds": [
+      {
+        "date": "2023",
+        "stage": "series_c",
+        "amount": "$100M",
+        "amount_numeric": 100.0,
+        "lead_investor": null,
+        "other_investors": [],
+        "valuation": "$3.1B",
+        "source": "Clay Series C announcement. The GTM engineering era begins now"
+      }
+    ],
+    "lead_investors": [],
+    "all_investors": [],
+    "last_round_date": "2023",
+    "estimated_runway": null
+  },
+  "growth_metrics": {
+    "headcount": 100,
+    "headcount_growth_yoy": null,
+    "open_roles": null,
+    "recent_hires": null,
+    "office_locations": [
+      "New York City"
+    ],
+    "geographic_expansion": "Not disclosed",
+    "press_mentions_12m": null,
+    "website_traffic_trend": "Not disclosed",
+    "partnerships_count": 0,
+    "recent_partnerships": [],
+    "product_launches_12m": 6,
+    "recent_products": [
+      "Website Intent",
+      "Bulk Enrichment",
+      "Conversational Data",
+      "GTM Precision with HG Insights",
+      "AI Transformation Tools",
+      "Sculpting GTM"
+    ],
+    "customer_growth": null,
+    "revenue_info": null
+  },
+  "visibility": {
+    "news_mentions_30d": 3,
+    "sentiment_score": null,
+    "github_stars": 145,
+    "github_url": "https://github.com/clay",
+    "glassdoor_rating": null,
+    "glassdoor_reviews": null,
+    "awards": [],
+    "media_coverage": []
+  },
+  "events": [
+    {
+      "date": "2023-01-01",
+      "event_type": "funding",
+      "title": "Clay Series C announcement",
+      "description": "We raised a $100M Series C at a $3.1B valuation to power GTM engineering!",
+      "source": null
+    },
+    {
+      "date": "2023-01-01",
+      "event_type": "product_launch",
+      "title": "Announcing Web Intent",
+      "description": "Use Website Intent in Clay to see which companies visit your site, track engagement, and trigger personalized GTM plays.",
+      "source": null
+    },
+    {
+      "date": "2023-01-01",
+      "event_type": "product_launch",
+      "title": "Introducing Bulk Enrichment",
+      "description": "Clay’s Bulk Enrichment lets Enterprise teams enrich millions of Salesforce records with firmographics, tech stack data, and AI research at scale.",
+      "source": null
+    },
+    {
+      "date": "2023-01-01",
+      "event_type": "product_launch",
+      "title": "Introducing Claygent Navigator",
+      "description": "A new Claygent model that can use a browser to take actions and extract information from webpages.",
+      "source": null
+    },
+    {
+      "date": "2023-01-01",
+      "event_type": "product_launch",
+      "title": "Introducing GPT-5 in Claygent",
+      "description": "GPT-5 is now a model option across Clay, enhancing research and conversational writing capabilities.",
+      "source": null
+    },
+    {
+      "date": "2023-01-01",
+      "event_type": "milestone",
+      "title": "Claygent surpasses 1 billion runs",
+      "description": "The world's most loved AI research agent in GTM has surpassed a huge milestone at 1 billion runs.",
+      "source": null
+    },
+    {
+      "date": "2023-01-01",
+      "event_type": "partnership",
+      "title": "Announcing the Clay Partner Program",
+      "description": "The Clay Partner Program is designed to provide essential resources for partners to grow their businesses as Clay grows.",
+      "source": null
+    },
+    {
+      "date": "2023-01-01",
+      "event_type": "product_launch",
+      "title": "Announcing custom signals at Clay",
+      "description": "Clay's new platform helps sales teams track unique data changes indicating buying opportunities and automate outreach.",
+      "source": null
+    },
+    {
+      "date": "2023-01-01",
+      "event_type": "product_launch",
+      "title": "Create personalized presentations at scale with Clay and Google Slides",
+      "description": "Automate personalized sales decks using Clay’s Google Slides integration to generate tailored presentations at scale.",
+      "source": null
+    },
+    {
+      "date": "2023-01-01",
+      "event_type": "product_launch",
+      "title": "Turn Gong conversations into automated GTM workflows",
+      "description": "Clay integrates with Gong, allowing messy call transcripts to be used for automations in various platforms.",
+      "source": null
+    }
+  ],
+  "funding_rounds": [
+    {
+      "date": "2023",
+      "stage": "series_c",
+      "amount": "$100M",
+      "amount_numeric": 100.0,
+      "lead_investor": null,
+      "other_investors": [],
+      "valuation": "$3.1B",
+      "source": "Clay Series C announcement. The GTM engineering era begins now"
+    }
+  ],
+  "leadership": [],
+  "products": [],
+  "disclosure_gaps": {
+    "missing_fields": [
+      "Founded year",
+      "Headcount growth rate",
+      "Customer count",
+      "Revenue"
+    ],
+    "confidence_notes": {}
+  },
+  "data_sources": [
+    "Website: https://www.clay.com",
+    "News Articles: 3 articles",
+    "GitHub: clay"
+  ],
+  "extracted_at": "2025-11-07T05:48:03.636819Z",
+  "analyst_notes": null,
+  "risks": [],
+  "opportunities": []
+}

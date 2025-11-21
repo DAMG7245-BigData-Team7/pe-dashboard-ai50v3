@@ -35,13 +35,13 @@ async def get_latest_structured_payload(company_id: str) -> Optional[CompanyPayl
     # Try multiple possible payload locations
     possible_paths = [
         # Assignment 2 structure (from original project)
-        Path(f"../../pe-dashboard-ai50/data/payloads/{company_id}_payload.json"),
-        Path(f"../pe-dashboard-ai50/data/payloads/{company_id}_payload.json"),
-        Path(f"pe-dashboard-ai50/data/payloads/{company_id}_payload.json"),
+        Path(f"../../pe-dashboard-ai50/data/payloads/{company_id}.json"),
+        Path(f"../pe-dashboard-ai50/data/payloads/{company_id}.json"),
+        Path(f"pe-dashboard-ai50/data/payloads/{company_id}.json"),
 
         # v3 structure (if we create payloads here)
-        Path(f"data/payloads/{company_id}_payload.json"),
-        Path(f"../data/payloads/{company_id}_payload.json"),
+        Path(f"data/payloads/{company_id}.json"),
+        Path(f"../data/payloads/{company_id}.json"),
     ]
 
     payload_path = None
