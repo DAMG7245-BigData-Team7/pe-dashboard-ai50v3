@@ -350,30 +350,6 @@ export HITL_AUTO_APPROVE=true
 # Run tests
 pytest -v
 ```
-
----
-
-## 📚 Documentation
-
-- [Phase 1 Complete](PHASE1_COMPLETE.md) - Agent Infrastructure & Tools
-- [Phase 2 Complete](PHASE2_COMPLETE.md) - MCP Server Integration
-- [Phase 3 Complete](PHASE3_COMPLETE.md) - Advanced Workflows
-- [Phase 4 Complete](PHASE4_COMPLETE.md) - Orchestration & Deployment
-- [Workflow Graph](docs/WORKFLOW_GRAPH.md) - LangGraph workflow docs
-- [ReAct Trace Example](docs/REACT_TRACE_EXAMPLE.md) - ReAct pattern demo
-- [System Architecture](docs/SYSTEM_ARCHITECTURE.md) - Architecture overview
-
----
-
-## 📈 Metrics & Performance
-
-- **Total Lines of Code**: ~5,700 lines
-- **Test Coverage**: 37 tests, 100% passing
-- **MCP Endpoints**: 6 endpoints
-- **Workflow Nodes**: 7 nodes
-- **Risk Keywords**: 11 monitored keywords
-- **Airflow DAGs**: 3 DAGs
-
 ---
 
 ## 🤝 Contributing
